@@ -1,0 +1,25 @@
+/*
+    Jungjae Lee, Personal Portfolio
+*/
+
+
+/* .lab-section{padding-left: 20%; padding-right: 20%;} */
+
+.lab_name-header{text-align: left; font-size: 27px;}
+
+.lab_company-para-section{padding-top:1%;}
+.lab_company-para{text-align: left; font-size: 20px;}
+
+.lab_PI-para-section{padding-top:1%;}
+.lab_PI-para{text-align: left; font-size: 20px;}
+
+.lab_work_hour-section{padding-top: 3%;}
+.lab_description-section{padding-top: 3%;}
+
+/* .lab_project-section{padding-left: 20%; padding-right: 20%;} */
+
+
+/* .company_buton-container{padding-left: 20%; padding-right: 20%; padding-top: 3%} */
+.lab_buton-section{display: absolute; position: relative; text-align: center; list-style: none; padding-top: 3%; flex: 1;}
+.lab_buton-section button{position: relative; color: rgb(0, 0, 0); background-color: rgb(240, 248, 255); text-align:center; cursor: pointer; padding: 16px 32px; transition-duration: 0.4s; list-style: none; font-size: 16px;}
+.lab_buton-section button a{color: rgb(0, 0, 0); cursor: pointer; font-size: 15px;}
