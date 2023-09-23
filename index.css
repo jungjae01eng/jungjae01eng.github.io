@@ -1,0 +1,194 @@
+/*
+    Jungjae Lee, Personal Portfolio
+*/
+
+
+.intro-container{display: flex; flex-direction: row; position: relative; margin-top: 5%; margin-left: 20%; margin-right: 20%;}
+.intro_text-container{float: left; padding: auto auto; margin-right: 10%; width: 65%;}
+.intro_text-para1-section{position:relative; padding-top: 2%;}
+.intro_photo-section{float: right; padding: auto auto; width: 25%; height: 25%;}
+
+
+@media (min-width: 200px) and (max-width: 350px){
+    .intro-container{display: flex; flex-direction: column; position: relative; margin-top: 15%; margin-left: 7%; margin-right: 7%;}
+    .intro_text-container{float: left; padding: auto auto; width: 100%; height: auto;}
+    .intro_text-para1-section{position:relative;}
+    .intro_photo-section{float: center; padding: auto auto; width: 25%; height: 25%;}
+}
+
+
+@media (min-width: 350px) and (max-width: 550px){
+    .intro-container{display: flex; flex-direction: column; position: relative; margin-top: 5%; margin-left: 5%; margin-right: 5%;}
+    .intro_text-container{float: left; padding: auto auto; margin-right: 2%; width: 100%;}
+    .intro_text-para1-section{position:relative;}
+    .intro_photo-section{float: center; padding: auto auto; width: 25%; height: 25%;}
+}
+
+
+@media (min-width: 550px) and (max-width: 800px){
+    .intro-container{display: flex; flex-direction: row; position: relative; margin-top: 5%; margin-left: 10%; margin-right: 10%;}
+    .intro_text-container{float: left; padding: auto auto; margin-right: 2%; width: 55%;}
+    .intro_text-para1-section{position:relative;}
+    .intro_photo-section{float: right; padding: auto auto; width: 20%; height: 20%;}
+}
+
+
+
+
+
+.publications-container{display: flex; position: relative; margin-left: 20%; margin-right: 20%;}
+.publications_text-container{float: left; width: 100%;}
+.publications_text-header1-section{color:rgb(0, 0, 0); position: relative; font-size: 18px;}
+.publications-text-para1-section{color:rgb(0, 0, 0); position: relative; text-align: left; margin-top: 10px; margin-right: auto; padding-left: 10px;}
+
+
+@media (min-width: 200px) and (max-width: 350px){
+    .publications-container{display: flex; position: relative; margin-left: 5%; margin-right: 5%;}
+    .publications_text-container{float: left; width: 100%;}
+    .publications_text-header1-section{color:rgb(0, 0, 0); position: relative; font-size: 10px;}
+    .publications-text-para1-section{color:rgb(0, 0, 0); position: relative; text-align: left; margin-top: auto; margin-right: auto; padding-left: 5px;}
+}
+
+
+@media (min-width: 350px) and (max-width: 800px){
+    .publications-container{display: flex; position: relative; margin-left: 5%; margin-right: 5%;}
+    .publications_text-container{float: left; width: 100%;}
+    .publications_text-header1-section{color:rgb(0, 0, 0); position: relative; font-size: 10px;}
+    .publications-text-para1-section{color:rgb(0, 0, 0); position: relative; text-align: left; margin-top: auto; margin-right: auto; padding-left: 5px;}
+}
+
+
+
+
+
+.skills-container{display: flex; position: relative; margin-top: 50px; margin-left: 20%; margin-right: 20%;}
+.skills_text-container{float: left; width: 100%;}
+.skills_text_header1-section{color:rgb(0, 0, 0); position: relative; font-size: 18px;}
+.skills_text_para1-section{color:rgb(0, 0, 0); position: relative; text-align: left; margin-top: 10px; padding-left: 10px;}
+
+
+@media (min-width: 200px) and (max-width: 350px){
+    .skills-container{display: flex; position: relative; margin-left: 5%; margin-right: 5%;}
+    .skills_text-container{float: left; width: 100%;}
+    .skills_text_header1-section{color:rgb(0, 0, 0); position: relative; font-size: 10px;}
+    .skills_text_para1-section{color:rgb(0, 0, 0); position: relative; text-align: left; margin-top: 10px; padding-left: 10px;}
+}
+
+
+@media (min-width: 350px) and (max-width: 800px){
+    .skills-container{display: flex; position: relative; margin-left: 5%; margin-right: 5%;}
+    .skills_text-container{float: left; width: 100%;}
+    .skills_text_header1-section{color:rgb(0, 0, 0); position: relative; font-size: 10px;}
+    .skills_text_para1-section{color:rgb(0, 0, 0); position: relative; text-align: left; margin-top: 10px; padding-left: 10px;}
+}
+
+
+
+
+
+.experiences-container{display: flex; position: relative; flex-direction: row; margin-top: 60px; margin-left: 20%; margin-right: 20%;}
+.experiences-text-container{float: left; width: 100%;}
+.experiences-text-header-section{color:rgb(0, 0, 0); position: relative; text-align: left;}
+.experiences-row1-container{display: flex; float: left; position: relative; flex-direction: column; margin-top: 30px; margin-bottom: auto;
+    margin-left: 0%; text-align: center; background-color: rgb(255, 254, 186); width: 31.33%; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    height: 60vh;}
+.experiences-row2-container{display: flex; float: left; position: relative; flex-direction: column; margin-top: 30px; margin-bottom: auto;
+    margin-left: 0%; text-align: center; background-color: rgb(174, 255, 222); width: 31.33%; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    height: 60vh;}
+
+
+@media (min-width: 200px) and (max-width: 350px){
+    .experiences-container{display: flex; position: relative; flex-direction: row; margin-left: 5%; margin-right: 5%;}
+    .experiences-text-container{float: left; width: 100%;}
+    .experiences-text-header-section{color:rgb(0, 0, 0); position: relative; text-align: left;}
+    .experiences-row1-container{display: flex; float: left; position: relative; flex-direction: column; margin-bottom: auto;
+        margin-left: auto; text-align: center; background-color: rgb(255, 254, 186); width:100%; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        height: 40vh;}
+    .experiences-row2-container{display: flex; float: left; position: relative; flex-direction: column; margin-bottom: auto;
+        margin-left: auto; text-align: center; background-color: rgb(174, 255, 222); width: 100%; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        height: 40vh;}
+}
+
+
+@media (min-width: 350px) and (max-width: 800px){
+    .experiences-container{display: flex; position: relative; flex-direction: column; margin-left: 5%; margin-right: 5%;}
+    .experiences-text-container{float: left; width: 100%;}
+    .experiences-text-header-section{color:rgb(0, 0, 0); position: relative; text-align: left;}
+    .experiences-row1-container{display: flex; float: left; position: relative; flex-direction: column; margin-bottom: auto;
+        margin-left: auto; text-align: center; background-color: rgb(255, 254, 186); width: 31.33%; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        height: 30vh;}
+    .experiences-row2-container{display: flex; float: left; position: relative; flex-direction: column; margin-bottom: auto;
+        margin-left: auto; text-align: center; background-color: rgb(174, 255, 222); width: 31.33%; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        height: 30vh;}
+}
+
+
+
+
+
+.company_position-section{padding-top: 15%; padding-left: 5%; padding-right: 5%; font-size: 21px; font-family: 'arial', sans-serif;}
+.company-section{padding-top: 15%; padding-left: 5%; padding-right: 5%; font-size: 24px; font-family: 'arial', sans-serif;}
+.company_lab-section{padding-top: 5%; padding-left: 5%; padding-right: 5%; font-size: 25px; font-family: 'arial', sans-serif;}
+.company_description-section{padding-top: 15%; padding-left: 7%; padding-right: 7%; font-size: 19px; font-family: 'arial', sans-serif;}
+
+
+@media (min-width: 200px) and (max-width: 350px){
+    .company_position-section{padding-top: 15%; padding-left: 5%; padding-right: 5%; font-size: 7px; font-family: 'arial', sans-serif;}
+    .company-section{padding-top: 15%; padding-left: 5%; padding-right: 5%; font-size: 6px; font-family: 'arial', sans-serif;}
+    .company_lab-section{padding-top: 5%; padding-left: 5%; padding-right: 5%; font-size: 9px; font-family: 'arial', sans-serif;}
+    .company_description-section{padding-top: 15%; padding-left: 7%; padding-right: 7%; font-size: 6px; font-family: 'arial', sans-serif;}
+}
+
+
+@media (min-width: 350px) and (max-width: 800px){
+    .company_position-section{padding-top: 15%; padding-left: 5%; padding-right: 5%; font-size: 7px; font-family: 'arial', sans-serif;}
+    .company-section{padding-top: 15%; padding-left: 5%; padding-right: 5%; font-size: 6px; font-family: 'arial', sans-serif;}
+    .company_lab-section{padding-top: 5%; padding-left: 5%; padding-right: 5%; font-size: 9px; font-family: 'arial', sans-serif;}
+    .company_description-section{padding-top: 15%; padding-left: 7%; padding-right: 7%; font-size: 6px; font-family: 'arial', sans-serif;}
+}
+
+
+
+
+
+.company_button-container{display: flex; position: relative; margin-left: 20%; margin-right: 20%;}
+.company-button-det-container{float: left; width: 100%;}
+.company_buton-row1-container{display: flex; float: left; justify-content: space-between; position: relative; flex-direction: column; text-align: center;
+    background-color: rgb(255, 254, 186); padding-bottom: 5%; width: 31.33%; margin-left: 0%;}
+.company_buton-row2-container{display: flex; float: left; justify-content: space-between; position: relative; flex-direction: column; text-align: center;
+    background-color: rgb(174, 255, 222); padding-bottom: 5%; width: 31.33%; margin-left: 0%;}
+
+.company_buton-section{display: absolute; padding: 8px, 15px; position: relative; text-align: center; list-style: none; flex: 1;}
+.company_buton-section button{padding: 16px 32px; position: relative; color: rgb(0, 0, 0); background-color: rgb(240, 248, 255); 
+    text-align:center; cursor: pointer; font-size: 16px; transition-duration: 0.4s; list-style: none;}
+.company_buton-section button a{color: rgb(0, 0, 0); cursor: pointer; font-size: 15px;}
+
+
+@media (min-width: 200px) and (max-width: 350px){
+    .company_button-container{display: flex; position: relative; margin-left: 5%; margin-right: 5%;}
+    .company-button-det-container{float: left; width: 100%;}
+    .company_buton-row1-container{display: flex; float: left; justify-content: space-between; position: relative; flex-direction: column; text-align: center;
+        background-color: rgb(255, 254, 186); padding-bottom: 5%; width: 31.33%; margin-left: 0%;}
+    .company_buton-row2-container{display: flex; float: left; justify-content: space-between; position: relative; flex-direction: column; text-align: center;
+        background-color: rgb(174, 255, 222); padding-bottom: 5%; width: 31.33%; margin-left: 0%;}
+
+    .company_buton-section{display: absolute; position: relative; text-align: center; list-style: none; flex: 1;}
+    .company_buton-section button{position: relative; color: rgb(0, 0, 0); background-color: rgb(240, 248, 255); 
+        text-align:center; cursor: pointer; font-size: 16px; transition-duration: 0.4s; list-style: none;}
+    .company_buton-section button a{color: rgb(0, 0, 0); cursor: pointer; font-size: 10px;}
+}
+
+
+@media (min-width: 350px) and (max-width: 800px){
+    .company_button-container{display: flex; position: relative; margin-left: 5%; margin-right: 5%;}
+    .company-button-det-container{float: left; width: 100%;}
+    .company_buton-row1-container{display: flex; float: left; justify-content: space-between; position: relative; flex-direction: column; text-align: center;
+        background-color: rgb(255, 254, 186); padding-bottom: 5%; width: 31.33%; margin-left: 0%;}
+    .company_buton-row2-container{display: flex; float: left; justify-content: space-between; position: relative; flex-direction: column; text-align: center;
+        background-color: rgb(174, 255, 222); padding-bottom: 5%; width: 31.33%; margin-left: 0%;}
+
+    .company_buton-section{display: absolute; padding: 8px, 15px; position: relative; text-align: center; list-style: none; flex: 1;}
+    .company_buton-section button{padding: 16px 32px; position: relative; color: rgb(0, 0, 0); background-color: rgb(240, 248, 255); 
+        text-align:center; cursor: pointer; font-size: 16px; transition-duration: 0.4s; list-style: none;}
+    .company_buton-section button a{color: rgb(0, 0, 0); cursor: pointer; font-size: 5px;}
+}
