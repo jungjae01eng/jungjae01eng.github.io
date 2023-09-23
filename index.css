@@ -2,72 +2,52 @@
     Jungjae Lee, Personal Portfolio
 */
 
-
-.main_header{background: linear-gradient(rgb(0, 0, 0), rgb(0, 86, 179), rgb(156, 204, 255)); background-position: center;
-    background-size: cover; position: relative; width: 100%; min-height: 20vh;}
-.main_header-name{color:rgb(255, 255, 255); position: relative; text-align: center; padding-top: 3%; padding-bottom: 1%; font-size: 18px;}
-.main_header-body{color:rgb(255, 255, 255); position: relative; text-align: center; padding: .1%; font-size: 13px;}
-.main_header-hr1{margin: 1% 25%;}
+/* To check: box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
 
 
-.main_header-nav nav{display: flex; align-items: center; justify-content: space-between; padding-top: 1px; padding-bottom: 1.5%;}
+.intro-container{display: flex; flex-direction: row; position: relative; margin-top: 5%; margin-left: 20%; margin-right: 20%;}
+.intro_text-container{float: left; padding: auto auto; margin-right: 10%; width: 65%;}
+.intro_text-para1-section{position:relative; padding-top: 2%;}
+.intro_photo-section{float: right; padding: auto auto; width: auto; height: auto; width: 25%;}
 
 
-#main_header-nav-ul{display: inline-block; position: relative; text-align: center; list-style: none; padding: 8px, 15px; flex: 1;}
-#main_header-nav-ul li{display: inline-block; position: relative; list-style: none; padding: 8px, 15px;}
-#main_header-nav-ul li a{color: rgb(255, 255, 255); cursor: pointer; text-decoration: none; padding: 15px; font-size: 15px;}
+.publications-container{display: flex; position: relative; margin-left: 20%; margin-right: 20%;}
+.publications_text-container{float: left; width: 100%;}
+.publications_text-header1-section{color:rgb(0, 0, 0); position: relative; font-size: 18px;}
+.publications-text-para1-section{color:rgb(0, 0, 0); position: relative; text-align: left; margin-top: 10px; margin-right: auto; padding-left: 10px;}
 
 
-.code_introduction{max-width: 1000px; margin: auto auto; text-align: center; padding: 15px;
-    /* background-color: rgb(255, 255, 255); box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */}
-.code_introduction p{font-size: 15px;}
+.skills-container{display: flex; position: relative; margin-top: 50px; margin-left: 20%; margin-right: 20%;}
+.skills_text-container{float: left; width: 100%;}
+.skills_text_header1-section{color:rgb(0, 0, 0); position: relative; font-size: 18px;}
+.skills_text_para1-section{color:rgb(0, 0, 0); position: relative; text-align: left; margin-top: 10px; padding-left: 10px;}
 
 
-.main_header-sec2{position: relative; background-position: center; background-size: cover; width: 100%; min-height: 60vh;
-    background-image: url(images/intro-background.jpg);}
-
-
-.introduction-container{display: flex; flex-direction: row; position: relative;}
-.introduction-text{float: left; margin-top: auto; margin-bottom: auto; margin-left: 20%; margin-right: 3%; width: 42%;
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */}
-.introduction-text-header{color:rgb(0, 0, 0); position: relative; text-align: left; padding-top: 8%; padding-bottom: 1%; font-size: 18px;}
-.introduction-text-para1{color:rgb(0, 0, 0); padding: .1%; text-align: left; position:relative; font-size: 13px;}
-.introduction-photo{float: right; margin-top: auto; margin-bottom: auto; margin-right: 20%; width: 20%; height: auto;
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */}
-
-
-.publications-container{display: flex; position: relative; margin-top: 50px; margin-left: 20%; margin-right: 20%;
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */}
-.publications-text{float: left; width: 100%;
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */}
-.publications-text-header{color:rgb(0, 0, 0); position: relative; font-size: 18px;}
-.publications-text-para1{color:rgb(0, 0, 0); position: relative; text-align: left; margin-top: 10px; margin-right: auto; padding-left: 10px;}
-
-
-.skills-container{display: flex; position: relative; margin-top: 50px; margin-left: 20%; margin-right: 20%;
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */}
-.skills-text{float: left; width: 100%;
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */}
-.skills-text-header{color:rgb(0, 0, 0); position: relative; font-size: 18px;}
-.skills-text-para1{color:rgb(0, 0, 0); position: relative; text-align: left; margin-top: 10px; padding-left: 10px;}
-
-
-.experiences-container{display: flex; position: relative; flex-direction: row; margin-top: 50px; margin-left: 20%; margin-right: 20%;
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */}
-.experiences-text{float: left; width: 100%;
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */}
-.experiences-text-header{color:rgb(0, 0, 0); position: relative; text-align: left;}
-.experiences-container-row1{display: flex; float: left; position: relative; flex-direction: column; margin-top: 30px; margin-bottom: auto;
+.experiences-container{display: flex; position: relative; flex-direction: row; margin-top: 60px; margin-left: 20%; margin-right: 20%;}
+.experiences-text-container{float: left; width: 100%;}
+.experiences-text-header-section{color:rgb(0, 0, 0); position: relative; text-align: left;}
+.experiences-row1-container{display: flex; float: left; position: relative; flex-direction: column; margin-top: 30px; margin-bottom: auto;
     margin-left: 0%; text-align: center; background-color: rgb(255, 254, 186); width: 31.33%; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     height: 60vh;}
-.experiences-container-row2{display: flex; float: left; position: relative; flex-direction: column; margin-top: 30px; margin-bottom: auto;
+.experiences-row2-container{display: flex; float: left; position: relative; flex-direction: column; margin-top: 30px; margin-bottom: auto;
     margin-left: 0%; text-align: center; background-color: rgb(174, 255, 222); width: 31.33%; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     height: 60vh;}
 
 
-.company_position{padding-top: 15%; font-size: 20px; font-family: 'arial', sans-serif;}
-.company{padding-top: 50px; font-size: 23px; font-family: 'arial', sans-serif;}
-.company_lab{padding-top: 10px; font-size: 25px; font-family: 'arial', sans-serif;}
-.company_description{padding-top: 30px; padding-left: 7%; padding-right: 7%; font-size: 18px; font-family: 'arial', sans-serif;}
+.company_position-section{padding-top: 15%; padding-left: 5%; padding-right: 5%; font-size: 21px; font-family: 'arial', sans-serif;}
+.company-section{padding-top: 15%; padding-left: 5%; padding-right: 5%; font-size: 24px; font-family: 'arial', sans-serif;}
+.company_lab-section{padding-top: 5%; padding-left: 5%; padding-right: 5%; font-size: 25px; font-family: 'arial', sans-serif;}
+.company_description-section{padding-top: 15%; padding-left: 7%; padding-right: 7%; font-size: 19px; font-family: 'arial', sans-serif;}
 
-/* .experiences-text-para1{color:rgb(0, 0, 0); position: relative; text-align: left; margin-top: 10px; padding-left: 10px;} */
+
+.company_button-container{display: flex; position: relative; margin-left: 20%; margin-right: 20%;}
+.company-button-det-container{float: left; width: 100%;}
+.company_buton-row1-container{display: flex; float: left; justify-content: space-between; position: relative; flex-direction: column; text-align: center;
+    background-color: rgb(255, 254, 186); padding-bottom: 5%; width: 31.33%; margin-left: 0%;}
+.company_buton-row2-container{display: flex; float: left; justify-content: space-between; position: relative; flex-direction: column; text-align: center;
+    background-color: rgb(174, 255, 222); padding-bottom: 5%; width: 31.33%; margin-left: 0%;}
+
+.company_buton-section{display: absolute; padding: 8px, 15px; position: relative; text-align: center; list-style: none; flex: 1;}
+.company_buton-section button{padding: 16px 32px; position: relative; color: rgb(0, 0, 0); background-color: rgb(240, 248, 255); 
+    text-align:center; cursor: pointer; font-size: 16px; transition-duration: 0.4s; list-style: none;}
+.company_buton-section button a{color: rgb(0, 0, 0); cursor: pointer; font-size: 15px;}

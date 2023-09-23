@@ -1,0 +1,31 @@
+/*
+    Jungjae Lee, Personal Portfolio
+*/
+
+
+.universal02-main_header{font-family: Arial, sans-serif;}
+.universal02-nav-container{background: linear-gradient(rgb(0, 0, 0), rgb(0, 86, 179), rgb(156, 204, 255)); 
+    background-position: center; background-size: cover; position: relative; width: 100%;}
+.universal02-nav_name-section{color:rgb(255, 255, 255); position: relative; text-align: center; padding-top: 3%; padding-bottom: 1%; font-size: 18px;}
+.universal02-nav_body-section{color:rgb(255, 255, 255); position: relative; text-align: center; padding: .1%; font-size: 13px;}
+
+
+/* space-line in Navigation section */
+.universal02-nav-hr{margin: 1% 25%;}
+
+
+/* Navigation section */
+.universal02-nav-section nav{display: flex; align-items: center; justify-content: space-between; padding-top: 1px; padding-bottom: 1.5%;}
+
+.universal02-nav_ul{display: inline-block; position: relative; text-align: center; list-style: none; flex: 1;}
+.universal02-nav_ul li{display: inline-block; position: relative; list-style: none;}
+.universal02-nav_ul li a{color: rgb(255, 255, 255); cursor: pointer; text-decoration: none; padding: 15px; font-size: 15px;}
+
+
+
+/* The following code is intended exclusively for the index.html file. */
+.universal02-code_intro-container{margin: auto auto; text-align: center; padding: 15px;}
+.universal02-code_intro-container p{font-size: 15px;}
+
+.universal02-photo_intro-container{position: relative; background-position: center; background-size: cover; width: 100%;
+    min-height: 60vh; background-image: url(images/intro-background.jpg);}

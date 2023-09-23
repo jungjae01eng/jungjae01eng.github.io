@@ -10,69 +10,58 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jungjae's Portfolio</title>
         <link rel="stylesheet" href="sources.css">
+        <link rel="stylesheet" href="index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <header>
-            <div class="main_header">
-                <div class="main_header-name">
-                    <h1>
-                        <p>
-                            JUNGJAE LEE
-                        </p>
-                    </h1>
-                </div>
-        
-                <div class="main_header-body">
-                    <p>
-                        Boston University College of Engineering '27
-                    </p>
-                </div>
+        <header class="universal02-main_header">
+            <div class="universal02-nav-container">
+                <section class="universal02-nav_name-section">
+                    <h1>JUNGJAE LEE</h1>
+                </section>
+                <section class="universal02-nav_body-section">
+                    <p>Boston University College of Engineering '27</p>
+                </section>
             
-                <div class="main_header-hr1">
-                    <hr>
-                </div>
+                <hr class="universal02-nav-hr">
 
-                <div class="main_header-nav">
+                <section class="universal02-nav-section">
                     <nav>
-                        <a href="index.html"></a>
-                        <ul id="main_header-nav-ul">
+                        <ul class="universal02-nav_ul">
                             <li><a href="index.html">About Me</a></li>
-                            <li><a href="researchExperiences.html">Research Experiences</a></li>
-                            <li><a href="extracurricular.html">Extracurricular</a></li>
+                            <li><a href="experiences/research/researchExperiences.html">Research Experiences</a></li>
+                            <li><a href="experiences/extracurricular/extracurriculars.html">Leadership Experiences</a></li>
                             <li><a href="personalProjects.html">Personal Projects</a></li>
                             <li><a href="resume.html">Resume</a></li>
                             <li><a href="code.html">Codes</a></li>
                         </ul>
                     </nav>
-                </div>
-
-                <div class="code_introduction">
+                </section>
+                <div class="universal02-code_intro-container">
                     <p>
-                        This website has been entirely coded in HTML, CSS, and JavaScript.
+                        This website was entirely coded in HTML, CSS, and JavaScript and started on September 23rd, 2023.<br><br>
+                        This website will be updated as frequently as possible.
                     </p>
                 </div>
-
             </div>
-
-            <div class="main_header-sec2">
+            <div class="universal02-photo_intro-container">
                 <!-- photos -->
             </div>
         </header>
 
         <main>
-            <div class="introduction-container">
-                <div class="introduction-text">
-                    <div class="introduction-text-header">
-                        <h1 class="header1">
+            <div class="intro-container">
+                <div class="intro_text-container">
+                    <section>
+                        <h1 class="universal01-header">
                             Hello!
                         </h1>
-                    </div>
-                    <div class="introduction-text-para1">
-                        <p class="paragraph1">
+                    </section>
+                    <section class="intro_text-para1-section">
+                        <p class="universal01-para1">
                             My name is Jungjae, and I am a sophomore majoring in Computer engineering 
                             at Boston University.
                             <br><br>
@@ -86,129 +75,117 @@
                             My passion lies in the field of robotics, but I am equally intrigued
                             by self-driving vehicles and Artificial Intelligence.
                         </p>
-                    </div>
+                    </section>
                 </div>
-
-                <div class="introduction-photo">
+                <section class="intro_photo-section">
                     <img src="images/jungjae-photo.JPG", alt="Jungjae Lee", style="width:100%; height:100%;">
-                </div>
+                </section>
             </div>
 
-            <hr class="hr1">
+            <hr class="universal01-space">
             
             <div class="publications-container">
-                <div class="publications-text">
-                    <div class="publication-text-header">
-                        <h1 class="header1">
+                <div class="publications_text-container">
+                    <section class="publications_text-header1-section">
+                        <h1 class="universal01-header">
                             Publications
                         </h1>
-                    </div>
-                    <div class="publication-text-para1">
+                    </section>
+                    <section class="publications-text-para1-section">
                         <br>
-                        <ul class="ul-bullet_points1">
-                            <li class="list1">
-                                <a class="links", href="">
+                        <ul class="universal01-ul_BP1">
+                            <li class="universal01-li_list1">
+                                <a class="universal01-a-links", href="">
                                     L. Kinnicutt, J. Lee, et. al, “Minimally Invasive Soft Robotic Prototypes Provide
                                     Variable Occlusion in a Simplified Aortic Flow Model”, Manuscript In Progress. (Journal)
                                 </a>
                             </li>
                             <br>
-                            <li class="list1">
-                                <a class="links", href="">
+                            <li class="universal01-li_list1">
+                                <a class="universal01-a-links", href="https://www.researchgate.net/publication/371866615_A_Soft_Laparoscopic_Grasper_for_Retraction_of_the_Small_Intestine">
                                     L. Kinnicutt, J. Lee, et. al, “A Modular Soft Robotic Grasper for Atraumatic Manipulation and Retraction of 
                                     the Small Intestine”, Nature Communications, Manuscript In Progress. (Journal, Co-2nd Author)
                                 </a>
                             </li>
                                 <br>
-                            <li class="list1">
-                                <a class="links", href="">
+                            <li class="universal01-li_list1">
+                                <a class="universal01-a-links", href="">
                                     L. Kinnicutt, J. Lee, et. al, “A Soft Laparoscopic Grasper for Retraction of the Small Intestine", Hamlyn 
                                     Symposium on Medical Robotics, London, UK. June 2023. (Conference, 2nd Author)
                                 </a>
                             </li>
                         </ul>
-                    </div>
+                    </section>
                 </div>
             </div>
 
-            <hr class="hr1">
+            <hr class="universal01-space">
 
             <div class="skills-container">
-                <div class="skills-text">
-                    <div class="skills-text-header">
-                        <h1 class="header1">
+                <div class="skills_text-container">
+                    <section class="skills_text_header1-section">
+                        <h1 class="universal01-header">
                             Have experiences in various engineering fields
                         </h1>
-                    </div>
-                    <div class="skills-text-para1">
-                        <ul class="ul-bullet_points1">
-                            <li class="list1">
+                    </section>
+                    <section class="skills_text_para1-section">
+                        <ul class="universal01-ul_BP1">
+                            <li class="universal01-li_list1">
                                 Mechanical Engineering (Machinery)
-                                <ul class="ul-bullet_points2">
-                                    <li class="list2">
+                                <ul class="universal01-ul_BP2">
+                                    <li class="universal01-li_list2">
                                         CAD (Solidworks, Onshape, AutoCAD)
                                     </li>
-                                    <li class="list2">
+                                    <li class="universal01-li_list2">
                                         3D Printing
                                     </li>
-                                    <li class="list2">
+                                    <li class="universal01-li_list2">
                                         Heat Press
                                     </li>
-                                    <li class="list2">
+                                    <li class="universal01-li_list2">
                                         Milling
                                     </li>
-                                    <li class="list2">
+                                    <li class="universal01-li_list2">
                                         Lathes
                                     </li>
-                                    <li class="list2">
+                                    <li class="universal01-li_list2">
                                         Drill Press
                                     </li>
-                                    <li class="list2">
+                                    <li class="universal01-li_list2">
                                         Laser Cutter
                                     </li>
-                                    <li class="list2">
+                                    <li class="universal01-li_list2">
                                         Welding
                                     </li>
                                 </ul>
                             </li>
                         </ul>
 
-                        <ul class="ul-bullet_points1">
-                            <li class="list1">
-                                Computer Engineering
-                                <ul class="ul-bullet_points2">
-                                    <li class="list2">
+                        <ul class="universal01-ul_BP1">
+                            <li class="universal01-li_list1">
+                                Electrical & Computer Engineering
+                                <ul class="universal01-ul_BP2">
+                                    <li class="universal01-li_list2">
                                         Codes (C++, Python, XML, C, Java, HTML, CSS, JavaScript)
                                     </li>
-                                    <li class="list2">
+                                    <li class="universal01-li_list2">
                                         Simulation (SOFA, COMSOL, MuJoCo)
                                     </li>
-                                    <li class="list2">
+                                    <li class="universal01-li_list2">
                                         Verilog (w/ FPGA)
+                                    </li>
+                                    <li class="universal01-li_list2">
+                                        EDA (KiCAD, EagleCAD)
                                     </li>
                                 </ul>
                             </li>
                         </ul>
                         
-                        <ul class="ul-bullet_points1">
-                            <li class="list1">
-                                Electrical Engineering
-                                <ul class="ul-bullet_points2">
-                                    <li class="list2">
-                                        EDA (KiCAD, EagleCAD)
-                                    </li>
-                                    <!-- <li class="list2">
-                                        Soldering
-                                    </li> -->
-                                </ul>
-                            </li>
-                        </ul>
-
-                        <ul class="ul-bullet_points1">
-                            <li class="list1">
+                        <ul class="universal01-ul_BP1">
+                            <li class="universal01-li_list1">
                                 Biomedical Engineering
-                                <ul class="ul-bullet_points2">
-                                    <li class="list2">
+                                <ul class="universal01-ul_BP2">
+                                    <li class="universal01-li_list2">
                                         Research at Boston University Morphable Biorobotics Lab
                                     </li>
                                 </ul>
@@ -218,200 +195,218 @@
                 </div>
             </div>
 
-            <hr class="hr1">
+            <hr class="universal01-space">
 
             <div class="experiences-container">
-                <div class="experiences-text">
-                    <div class="experiences-text-header">
-                        <h1 class="header1">
-                            Experiences
-                        </h1>
-                    </div>
-                    
-                    <div class="experiences-container-row1", style="margin-right: 3%;">
-                        <div class="company_position">
-                            <p>
-                                Visiting Researcher
-                            </p>
-                        </div>
-
-                        <div class="company">
-                            <p>
-                                Seoul National University
-                            </p>
-                        </div>
-
-                        <div class="company_lab">
-                            <p>
-                                <b>
-                                    Soft Robotics & Bionics Lab
-                                </b>
-                            </p>
-                        </div>
-
-                        <div class="company_description">
+                <div class="experiences-text-container">
+                    <section class="experiences-text-header-section">
+                        <h1 class="universal01-header">Experiences</h1>
+                    </section>
+                    <div class="experiences-row1-container", style="margin-right: 3%;">
+                        <section class="company_position-section">
+                            <p>Visiting Researcher</p>
+                        </section>
+                        <section class="company-section">
+                            <p>Seoul National University</p>
+                        </section>
+                        <section class="company_lab-section">
+                            <p><b>Soft Robotics & Bionics Lab</b></p>
+                        </section>
+                        <section class="company_description-section">
                             <p>
                                 Our research goal is to analyze the design and dynamics of biological systems and transform them 
                                 into robotic/mechatronic systems for human life. <br><br>
                                 We are interested in bio-inspired design of soft robots and development of novel manufacturing 
                                 methods for multi-material smart structures.
                             </p>
-                        </div>
+                        </section>
                     </div>
-                    <div class="experiences-container-row1", style="margin-right: 3%;">
-                        <div class="company_position">
-                            <p>
-                                Student Researcher & UROP
-                            </p>
-                        </div>
 
-                        <div class="company">
+                    <div class="experiences-row1-container", style="margin-right: 3%;">
+                        <section class="company_position-section">
+                            <p>Student Researcher & UROP</p>
+                        </section>
+                        <section class="company-section">
+                            <p>Boston University</p>
+                        </section>
+                        <section class="company_lab-section">
+                            <p><b>Morphable Biorobotics Lab</b></p>
+                        </section>
+                        <section class="company_description-section">
                             <p>
-                                Boston University
+                                Our research focuses on robotics, and how robotic technologies can impact society. <br><br>
+                                We are particularly interested in how robotics can improve our lives and create new opportunities in 
+                                fields like medicine, surgery, rehabilitation, and exploration.
                             </p>
-                        </div>
-
-                        <div class="company_lab">
-                            <p>
-                                <b>
-                                    Morphable Biorobotics Lab
-                                </b>
-                            </p>
-                        </div>
-
-                        <div class="company_description">
-                            Our research focuses on robotics, and how robotic technologies can impact society. <br><br>
-                            We are particularly interested in how robotics can improve our lives and create new opportunities in 
-                            fields like medicine, surgery, rehabilitation, and exploration.
-                        </div>
+                        </section>
                     </div>
-                    <div class="experiences-container-row1">
-                        <div class="company_position">
+
+                    <div class="experiences-row1-container">
+                        <section class="company_position-section">
+                            <p>Student Researcher</p>
+                        </section>
+
+                        <section class="company-section">
+                            <p>Boston University</p>
+                        </section>
+
+                        <section class="company_lab-section">
+                            <p><b>Kolachalama Lab</b></p>
+                        </section>
+
+                        <section class="company_description-section">
                             <p>
-                                Student Researcher
+                                Our mission is to create methods to fit the science and not make science fit the methods. <br><br>
+                                Our research focuses on creating software frameworks that can assist dementia screening in 
+                                various real-world settings.
                             </p>
-                        </div>
-
-                        <div class="company">
-                            Boston University
-                        </div>
-
-                        <div class="company_lab">
-                            <p>
-                                <b>
-                                    Kolachalama Lab
-                                </b>
-                            </p>
-                        </div>
-
-                        <div class="company_description">
-                            Our mission is to create methods to fit the science and not make science fit the methods. <br><br>
-                            Our research focuses on creating software frameworks that can assist dementia screening in 
-                            various real-world settings.
-                        </div>
+                        </section>
                     </div>
                 </div>
             </div>
 
-            <div class="experiences-container", style="margin-top: 10px;">
-                <div class="experiences-text">                   
-                    <div class="experiences-container-row2", style="margin-right: 3%;">
-                        <div class="company_position">
-                            <p>
-                                
-                            </p>
-                        </div>
-
-                        <div class="company">
-                            <p>
-                                
-                            </p>
-                        </div>
-
-                        <div class="company_lab">
-                            <p>
-                                <b>
-
-                                </b>
-                            </p>
-                        </div>
-
-                        <div class="company_description">
-                            <p>
-                                
-                            </p>
+            <div class="company_button-container">
+                <div class="company-button-det-container">
+                    <div class="company_buton-row1-container", style="margin-right: 3%;">
+                        <section class="company_buton-section">
+                            <section>
+                                <button>
+                                    <a href="experiences/research/SRBL.html">
+                                        More Details
+                                    </a>
+                                </button>
+                            </section>
+                        </section>
+                    </div>
+                    <div class="company_buton-row1-container", style="margin-right: 3%;">
+                        <div class="company_buton-section">
+                            <section>
+                                <button>
+                                    <a href="experiences/research/MBL.html">
+                                        More Details
+                                    </a>
+                                </button>
+                            </section>
                         </div>
                     </div>
-                    <div class="experiences-container-row2", style="margin-right: 3%;">
-                        <div class="company_position">
-                            <p>
-                                Vice President (E-Board) & <br>
-                                Mobility Chassis Team & <br>
-                                Robotics Arm Hardware Team
-                            </p>
+                    <div class="company_buton-row1-container">
+                        <div class="company_buton-section">
+                            <section>
+                                <button>
+                                    <a href="experiences/research/KL.html">
+                                        More Details
+                                    </a>
+                                </button>
+                            </section>
                         </div>
+                    </div>
+                </div>
+            </div>
+            
 
-                        <div class="company">
+            <div class="experiences-container">
+                <div class="experiences-text-container">                   
+                    <div class="experiences-row2-container", style="margin-right: 3%;">
+                        <section class="company_position-section">
+                            <p></p>
+                        </section>
+                        <section class="company-section">
+                            <p></p>
+                        </section>
+                        <section class="company_lab-section">
+                            <p><b></b></p>
+                        </section>
+                        <section class="company_description-section">
+                            <p></p>
+                        </section>
+                    </div>
+                    <div class="experiences-row2-container", style="margin-right: 3%;">
+                        <section class="company_position-section">
                             <p>
-                                Boston University
+                                Vice President<br>
+                                (Executive-Board Member)
                             </p>
-                        </div>
-
-                        <div class="company_lab">
-                            <p>
-                                <b>
-                                    Mars Rover Club
-                                </b>
-                            </p>
-                        </div>
-
-                        <div class="company_description">
+                        </section>
+                        <section class="company-section">
+                            <p>Boston University</p>
+                        </section>
+                        <section class="company_lab-section">
+                            <p><b>Mars Rover Club</b></p>
+                        </section>
+                        <section class="company_description-section">
                             <p>
                                 The BU Mars Rover Club is an entirely student-run organization building the next best Mars Rover. <br><br>
                                 We plan to showcase its rover and compete in the annual University Rover Challenge in Utah.
                             </p>
-                        </div>
+                        </section>
                     </div>
-                    <div class="experiences-container-row2">
-                        <div class="company_position">
+                    <div class="experiences-row2-container">
+                        <section class="company_position-section">
                             <p>
-                                Safety Officer (E-Board) & <br>
-                                Electrical Team & <br>
-                                Project Management Team
+                                Safety Officer<br>
+                                (Executive-Board Member)
                             </p>
-                        </div>
-
-                        <div class="company">
-                            <p>
-                                Boston University
-                            </p>
-                        </div>
-
-                        <div class="company_lab">
-                            <p>
-                                <b>
-                                    Terrier Motorsport
-                                </b>
-                            </p>
-                        </div>
-
-                        <div class="company_description">
+                        </section>
+                        <section class="company-section">
+                            <p>Boston University</p>
+                        </section>
+                        <section class="company_lab-section">
+                            <p><b>Terrier Motorsport</b></p>
+                        </section>
+                        <section class="company_description-section">
                             <p>
                                 The Terrier Motorsport is Boston University's premier Formula SAE team competing under the hybrid 
                                 category at Formula Hybrid + Electric. <br><br>
                                 We are tasked with designing and manufacturing our own electric race car.
                             </p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="company_button-container">
+                <div class="company-button-det-container">
+                    <div class="company_buton-row2-container", style="margin-right: 3%;">
+                        <section class="company_buton-section">
+                            <section>
+                                <button>
+                                    <a href="">
+                                        More Details
+                                    </a>
+                                </button>
+                            </section>
+                        </section>
+                    </div>
+                    <div class="company_buton-row2-container", style="margin-right: 3%;">
+                        <div class="company_buton-section">
+                            <section>
+                                <button>
+                                    <a href="experiences/extracurricular/MR.html">
+                                        More Details
+                                    </a>
+                                </button>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="company_buton-row2-container">
+                        <div class="company_buton-section">
+                            <section>
+                                <button>
+                                    <a href="experiences/extracurricular/TM.html">
+                                        More Details
+                                    </a>
+                                </button>
+                            </section>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer">
+
+            <div class="universal01-footer">
                 <p>
                     &copy; 2021-2023 by Jungjae Lee. Boston University College of Engineering
                 </p>
             </div>
         </main>
-        <!-- Include the JavaScript file -->
-        <!-- <script src="main.js"></script> -->
     </body>
 </html>

@@ -5,18 +5,22 @@
 
 *{margin: 0; padding: 0;}
 
-header {font-family: Arial, sans-serif;}
+.universal01-new_section{padding: 0% 20%}
 
-.header1{font-size: 30px; font-family: 'arial', sans-serif;}
-.paragraph1{font-size: 20px; font-family: 'barlow', sans-serif; padding: 10px 0%;}
-.hr1{margin: 2% 20%;}
+.universal01-header{font-size: 30px; font-family: Arial, sans-serif;}
 
-.ul-bullet_points1{display: inline-block; position: relative; text-align: left; list-style-type: initial; flex: 1; margin-left: 5%;}
-.ul-bullet_points2{display: inline-block; position: relative; text-align: left; list-style-type: circle; flex: 1; margin-left: 10%;}
+.universal01-para1{font-size: 20px; font-family: 'barlow', sans-serif;}
 
-.list1{position: relative; font-size: 20px; font-family: 'barlow', sans-serif; padding-top: 5px; padding-bottom: 5px;}
-.list2{position: relative; font-size: 20px; font-family: 'barlow', sans-serif; padding-top: 5px; padding-bottom: 5px;}
+.universal01-space{margin: 3% 20%;}
 
-.links{color: rgb(0, 0, 0); text-decoration: none; cursor: pointer;}
 
-.footer{margin-top: 70px; margin-bottom: 40px; text-align: center;}
+.universal01-ul_BP1{display: inline-block; position: relative; text-align: left; list-style-type: initial; flex: 1; margin-left: 5%;}
+.universal01-ul_BP2{display: inline-block; position: relative; text-align: left; list-style-type: circle; flex: 1; margin-left: 7%;}
+
+.universal01-li_list1{position: relative; font-size: 20px; font-family: 'barlow', sans-serif; padding-top: 1%;}
+.universal01-li_list2{position: relative; font-size: 20px; font-family: 'barlow', sans-serif; padding-top: 1%;}
+
+.universal01-a-links{color: rgb(0, 0, 0); text-decoration: none; cursor: pointer;}
+
+
+.universal01-footer{margin-top: 5%; margin-bottom: 3%; text-align: center;}
