@@ -82,7 +82,7 @@
     
     .universal01-ul_BP1{display: inline-block; position: relative; text-align: left; list-style-type: initial; flex: 1; padding-left: 5%;}
     .universal01-ul_BP2{display: inline-block; position: relative; text-align: left; list-style-type: circle; flex: 1; padding-left: 7%;}
-    .universal01-ul_BP3{display: inline-block; position: relative; text-align: left; list-style-type: initial;}
+    .universal01-ul_BP3{display: inline-block; position: relative; text-align: left; list-style-type: initial; padding-left: 4%;}
 
     .universal01-li_list1{position: relative; font-size: 20px; font-family: 'barlow', sans-serif; padding-top: 1%;}
     .universal01-li_list2{position: relative; font-size: 20px; font-family: 'barlow', sans-serif; padding-top: 1%;}
