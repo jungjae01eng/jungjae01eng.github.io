@@ -6,26 +6,8 @@
 .universal02-main_header{font-family: Arial, sans-serif;}
 .universal02-nav-container{background: linear-gradient(rgb(0, 0, 0), rgb(0, 86, 179), rgb(156, 204, 255)); 
     background-position: center; background-size: cover; position: relative; width: 100%;}
-.universal02-nav_name-section{color:rgb(255, 255, 255); position: relative; text-align: center; padding-top: 3%; padding-bottom: 1%; font-size: 18px;}
-.universal02-nav_body-section{color:rgb(255, 255, 255); position: relative; text-align: center; padding: .1%; font-size: 13px;}
-
-
-@media (min-width: 200px) and (max-width: 350px){
-    .universal02-main_header{font-family: Arial, sans-serif;}
-    .universal02-nav-container{background: linear-gradient(rgb(0, 0, 0), rgb(0, 86, 179), rgb(156, 204, 255)); 
-        background-position: center; background-size: cover; position: relative; width: 100%;}
-    .universal02-nav_name-section{color:rgb(255, 255, 255); position: relative; text-align: center; padding-top: 10%; padding-bottom: 1%; font-size: 10px;}
-    .universal02-nav_body-section{color:rgb(255, 255, 255); position: relative; text-align: center; padding: .1%; font-size: 8px;}
-}
-
-
-@media (min-width: 350px) and (max-width: 800px){
-    .universal02-main_header{font-family: Arial, sans-serif;}
-    .universal02-nav-container{background: linear-gradient(rgb(0, 0, 0), rgb(0, 86, 179), rgb(156, 204, 255)); 
-        background-position: center; background-size: cover; position: relative; width: 100%;}
-    .universal02-nav_name-section{color:rgb(255, 255, 255); position: relative; text-align: center; padding-top: 3%; padding-bottom: 1%; font-size: 13px;}
-    .universal02-nav_body-section{color:rgb(255, 255, 255); position: relative; text-align: center; padding: .1%; font-size: 9px;}
-}
+.universal02-nav_name-section{color:rgb(255, 255, 255); position: relative; text-align: center; padding-top: 3%; padding-bottom: 1%; font-size: min(2.5vw, 18px);}
+.universal02-nav_body-section{color:rgb(255, 255, 255); position: relative; text-align: center; padding: .1%; font-size: min(2vw, 13px);}
 
 
 
@@ -43,7 +25,7 @@
 
 @media (min-width: 300px) and (max-width: 800px){
     /* space-line in Navigation section */
-    .universal02-nav-hr{margin: 2% 15%;}
+    .universal02-nav-hr{margin: 3% 15%;}
 }
 
 
@@ -51,59 +33,19 @@
 
 
 /* Navigation section */
-.universal02-nav-section nav{display: flex; align-items: center; justify-content: space-between; padding-top: 1px; padding-bottom: 1.5%;}
+.universal02-nav-section nav{display: flex; align-items: center; justify-content: space-between; padding-top: .5vw; padding-bottom: 1vw ;}
 
 .universal02-nav_ul{display: inline-block; position: relative; text-align: center; list-style: none; flex: 1;}
 .universal02-nav_ul li{display: inline-block; position: relative; list-style: none;}
-.universal02-nav_ul li a{color: rgb(255, 255, 255); cursor: pointer; text-decoration: none; padding: 15px; font-size: 15px;}
-
-
-@media (min-width: 200px) and (max-width: 350px){
-    /* Navigation section */
-    .universal02-nav-section nav{display: flex; align-items: center; justify-content: space-between; padding-top: 1px; padding-bottom: 1.5%;}
-
-    .universal02-nav_ul{display: inline-block; position: relative; text-align: center; list-style: none; flex: 1;}
-    .universal02-nav_ul li{display: inline-block; position: relative; list-style: none;}
-    .universal02-nav_ul li a{color: rgb(255, 255, 255); cursor: pointer; text-decoration: none; padding: 5px; font-size: 8px;}
-}
-
-
-@media (min-width: 300px) and (max-width: 800px){
-    /* Navigation section */
-    .universal02-nav-section nav{display: flex; align-items: center; justify-content: space-between; padding-top: 1px; padding-bottom: 1.5%;}
-
-    .universal02-nav_ul{display: inline-block; position: relative; text-align: center; list-style: none; flex: 1;}
-    .universal02-nav_ul li{display: inline-block; position: relative; list-style: none;}
-    .universal02-nav_ul li a{color: rgb(255, 255, 255); cursor: pointer; text-decoration: none; padding: 10px; font-size: 10px;}
-}
+.universal02-nav_ul li a{color: rgb(255, 255, 255); cursor: pointer; text-decoration: none; padding: 1vw; font-size: 1vw;}
 
 
 
 
 
 /* The following code is intended exclusively for the index.html file. */
-.universal02-code_intro-container{margin: auto auto; text-align: center; padding: 15px;}
-.universal02-code_intro-container p{font-size: 15px;}
+.universal02-code_intro-container{margin: auto auto; text-align: center; padding-top: 1.5vw;}
+.universal02-code_intro-container p{font-size: 1vw;}
 
 .universal02-photo_intro-container{position: relative; background-position: center; background-size: cover; width: 100%;
-    min-height: 60vh; background-image: url(images/intro-background.jpg);}
-
-
-@media (min-width: 200px) and (max-width: 350px){
-    /* The following code is intended exclusively for the index.html file. */
-    .universal02-code_intro-container{margin: auto auto; text-align: center; padding: 15px;}
-    .universal02-code_intro-container p{font-size: 8px;}
-
-    .universal02-photo_intro-container{position: relative; background-position: center; background-size: cover; width: 100%;
-        min-height: 30vh; background-image: url(images/intro-background.jpg);}
-}
-
-
-@media (min-width: 350px) and (max-width: 800px){
-    /* The following code is intended exclusively for the index.html file. */
-    .universal02-code_intro-container{margin: auto auto; text-align: center; padding: 15px;}
-    .universal02-code_intro-container p{font-size: 9px;}
-
-    .universal02-photo_intro-container{position: relative; background-position: center; background-size: cover; width: 100%;
-        min-height: 40vh; background-image: url(images/intro-background.jpg);}
-}
+    min-height: 40vw; background-image: url(images/intro-background.jpg);}
