@@ -3,23 +3,92 @@
 */
 
 
-/* .lab-section{padding-left: 20%; padding-right: 20%;} */
+@media (max-width: 767px){
+    .extracurricular_name-header{text-align: left; font-size: clamp(10px, 2.0vw, 27px);}
 
-.extracurricular_name-header{text-align: left; font-size: 27px;}
+    .lab_company-para-section{padding-top: 1%;}
+    .extracurricular_school-para{text-align: left; font-size: clamp(10px, 1.5vw, 27px);}
 
-.lab_company-para-section{padding-top:1%;}
-.extracurricular_school-para{text-align: left; font-size: 20px;}
+    .extracurricular_PI-para-section{padding-top: 1%;}
+    .extracurricular_PI-para{text-align: left; font-size: clamp(10px, 1.5vw, 20px);}
 
-.extracurricular_PI-para-section{padding-top:1%;}
-.extracurricular_PI-para{text-align: left; font-size: 20px;}
+    .extracurricular_position-para-section{padding-top: 1%;}
+    .extracurricular_position-para{text-align: left; font-size: clamp(10px, 1.5vw, 20px);}
 
-.extracurricular_position-para-section{padding-top:1%;}
-.extracurricular_position-para{text-align: left; font-size: 20px;}
-
-.extracurricular_description-section{padding-top: 3%;}
+    .extracurricular_description-section{padding-top: 3%;}
 
 
-/* .company_buton-container{padding-left: 20%; padding-right: 20%; padding-top: 3%} */
-.extracurricular_buton-section{display: absolute; position: relative; text-align: center; list-style: none; padding-top: 3%; flex: 1;}
-.extracurricular_buton-section button{position: relative; color: rgb(0, 0, 0); background-color: rgb(240, 248, 255); text-align:center; cursor: pointer; padding: 16px 32px; transition-duration: 0.4s; list-style: none; font-size: 16px;}
-.extracurricular_buton-section button a{color: rgb(0, 0, 0); cursor: pointer; font-size: 15px;}
+    /* .company_buton-container{padding-left: 20%; padding-right: 20%; padding-top: 3%} */
+    .extracurricular_buton-section{display: absolute; position: relative; text-align: center; list-style: none; padding-top: 3%; flex: 1;}
+    .extracurricular_buton-section button{position: relative; color: rgb(0, 0, 0); background-color: rgb(240, 248, 255); 
+        text-align:center; cursor: pointer; padding: 1vw 2vw; transition-duration: 0.4s; list-style: none; font-size: clamp(10px, 3.0vw, 14px);}
+    .extracurricular_buton-section button a{color: rgb(0, 0, 0); cursor: pointer;}
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .extracurricular_name-header{text-align: left; font-size: clamp(10px, 2.0vw, 27px);}
+
+    .lab_company-para-section{padding-top: 1%;}
+    .extracurricular_school-para{text-align: left; font-size: clamp(10px, 1.5vw, 27px);}
+
+    .extracurricular_PI-para-section{padding-top: 1%;}
+    .extracurricular_PI-para{text-align: left; font-size: clamp(10px, 1.5vw, 20px);}
+
+    .extracurricular_position-para-section{padding-top: 1%;}
+    .extracurricular_position-para{text-align: left; font-size: clamp(10px, 1.5vw, 20px);}
+
+    .extracurricular_description-section{padding-top: 3%;}
+
+
+    /* .company_buton-container{padding-left: 20%; padding-right: 20%; padding-top: 3%} */
+    .extracurricular_buton-section{display: absolute; position: relative; text-align: center; list-style: none; padding-top: 3%; flex: 1;}
+    .extracurricular_buton-section button{position: relative; color: rgb(0, 0, 0); background-color: rgb(240, 248, 255); 
+        text-align:center; cursor: pointer; padding: 1vw 2vw; transition-duration: 0.4s; list-style: none; font-size: clamp(10px, 4.0vw, 14px);}
+    .extracurricular_buton-section button a{color: rgb(0, 0, 0); cursor: pointer;}
+}
+    
+
+@media (min-width: 1023px) and (max-width: 1439px){
+    .extracurricular_name-header{text-align: left; font-size: clamp(10px, 2.0vw, 27px);}
+
+    .lab_company-para-section{padding-top: 1%;}
+    .extracurricular_school-para{text-align: left; font-size: clamp(10px, 1.5vw, 27px);}
+
+    .extracurricular_PI-para-section{padding-top: 1%;}
+    .extracurricular_PI-para{text-align: left; font-size: clamp(10px, 1.5vw, 20px);}
+
+    .extracurricular_position-para-section{padding-top: 1%;}
+    .extracurricular_position-para{text-align: left; font-size: clamp(10px, 1.5vw, 20px);}
+
+    .extracurricular_description-section{padding-top: 3%;}
+
+    /* .company_buton-container{padding-left: 20%; padding-right: 20%; padding-top: 3%} */
+    .extracurricular_buton-section{display: absolute; position: relative; text-align: center; list-style: none; padding-top: 3%; flex: 1;}
+    .extracurricular_buton-section button{position: relative; color: rgb(0, 0, 0); background-color: rgb(240, 248, 255); 
+        text-align:center; cursor: pointer; padding: 1vw 2vw; transition-duration: 0.4s; list-style: none; font-size: clamp(10px, 4.0vw, 14px);}
+    .extracurricular_buton-section button a{color: rgb(0, 0, 0); cursor: pointer;}
+}
+
+
+@media (min-width: 1440px){
+    .extracurricular_name-header{text-align: left; font-size: 27px;}
+
+    .lab_company-para-section{padding-top:1%;}
+    .extracurricular_school-para{text-align: left; font-size: 20px;}
+
+    .extracurricular_PI-para-section{padding-top:1%;}
+    .extracurricular_PI-para{text-align: left; font-size: 20px;}
+
+    .extracurricular_position-para-section{padding-top:1%;}
+    .extracurricular_position-para{text-align: left; font-size: 20px;}
+
+    .extracurricular_description-section{padding-top: 3%;}
+
+
+    /* .company_buton-container{padding-left: 20%; padding-right: 20%; padding-top: 3%} */
+    .extracurricular_buton-section{display: absolute; position: relative; text-align: center; list-style: none; padding-top: 3%; flex: 1;}
+    .extracurricular_buton-section button{position: relative; color: rgb(0, 0, 0); background-color: rgb(240, 248, 255); text-align:center; 
+        cursor: pointer; padding: 1vw 2vw; transition-duration: 0.4s; list-style: none; font-size: 14px;}
+    .extracurricular_buton-section button a{color: rgb(0, 0, 0); cursor: pointer;}
+}
