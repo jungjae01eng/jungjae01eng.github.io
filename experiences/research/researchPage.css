@@ -3,7 +3,53 @@
 */
 
 
-.universal05-section-header{position: relative; text-align: center; color:rgb(0, 0, 0); font-size: 32px; font-family: 'Arial', sans-serif;}
-.universal05-space{margin: 2% 90%;}
+@media (max-width: 767px){
+    .universal05-section-header{position: relative; text-align: center; color:rgb(0, 0, 0); font-size: 3vw; font-family: 'arial', sans-serif;}
+    .universal05-space{margin: 2% 90%;}
 
-.universal05-project_description-section{padding-top: 3%;}
+    .universal05-project_description-section{padding-top: 5%;}
+
+
+    /* Description of projects */
+    .universal05-project_detail-title-section{padding-top: 5%; padding-left: 7vw; font-size: clamp(10px, 1.5vw, 20px);}
+    .universal05-project_detail_description-section{padding-left: 8vw; padding-top: 1vw; font-size: clamp(10px, 1.5vw, 20px);}
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .universal05-section-header{position: relative; text-align: center; color:rgb(0, 0, 0); font-size: 3vw; font-family: 'arial', sans-serif;}
+    .universal05-space{margin: 2% 90%;}
+
+    .universal05-project_description-section{padding-top: 5%;}
+
+
+    /* Description of projects */
+    .universal05-project_detail-title-section{padding-top: 5%; padding-left: 7vw; font-size: clamp(10px, 1.5vw, 20px);}
+    .universal05-project_detail_description-section{padding-left: 8vw; padding-top: 1vw; font-size: clamp(10px, 1.5vw, 20px);}
+}
+    
+
+@media (min-width: 1023px) and (max-width: 1439px){
+    .universal05-section-header{position: relative; text-align: center; color:rgb(0, 0, 0); font-size: 3vw; font-family: 'arial', sans-serif;}
+    .universal05-space{margin: 2% 90%;}
+
+    .universal05-project_description-section{padding-top: 5%;}
+
+
+    /* Description of projects */
+    .universal05-project_detail-title-section{padding-top: 5%; padding-left: 7vw; font-size: clamp(10px, 1.5vw, 20px);}
+    .universal05-project_detail_description-section{padding-left: 8vw; padding-top: 1vw; font-size: clamp(10px, 1.5vw, 20px);}
+}
+
+
+@media (min-width: 1440px){
+    .universal05-section-header{position: relative; text-align: center; color:rgb(0, 0, 0); font-size: 32px; font-family: 'arial', sans-serif;}
+    .universal05-space{margin: 2% 90%;}
+
+    .universal05-project_description-section{padding-top: 3%;}
+
+
+    /* Description of projects */
+    .universal05-project_detail-title-section{padding-top: 5%; padding-left: 7vw; font-size: 20px;}
+    .universal05-project_detail_description-section{padding-left: 8vw; padding-top: 1vw; font-size: 20px}
+}

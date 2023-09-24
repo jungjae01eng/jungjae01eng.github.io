@@ -3,6 +3,21 @@
 */
 
 
-/* .lab-section{padding-left: 20%; padding-right: 20%;} */
+@media (max-width: 767px){
+    .MR-header{position: relative; text-align: center; color:rgb(0, 0, 0); font-size: clamp(10px, 2.0vw, 27px); font-family: 'arial', sans-serif;}
+}
 
-.MR-header{position: relative; text-align: center; color:rgb(0, 0, 0); font-size: 27px; font-family: 'Arial', sans-serif;}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .MR-header{position: relative; text-align: center; color:rgb(0, 0, 0); font-size: clamp(10px, 2.0vw, 27px); font-family: 'arial', sans-serif;}
+}
+    
+
+@media (min-width: 1023px) and (max-width: 1439px){
+    .MR-header{position: relative; text-align: center; color:rgb(0, 0, 0); font-size: clamp(10px, 2.0vw, 27px); font-family: 'arial', sans-serif;}
+}
+
+
+@media (min-width: 1440px){
+    .MR-header{position: relative; text-align: center; color:rgb(0, 0, 0); font-size: 27px; font-family: 'arial', sans-serif;}
+}
