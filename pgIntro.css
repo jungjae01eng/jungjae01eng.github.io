@@ -4,19 +4,23 @@
 
 
 @media (max-width: 767px){
-    .universal04-intro_pg-section{padding-top: 4%; padding-left: 15vw; padding-right: 15vw;}
+    .universal04-intro_pg-section{padding-top: 4%; padding-left: 10vw; padding-right: 10vw;}
 
     .universal04-intro1-section{text-align: center;}
     .universal04-pg_header1{text-align: center; font-size: clamp(8px, 4.0vw, 35px); font-family: 'arial', sans-serif;}
 
-    .universal04-intro2-section{padding-top: 4%; text-align: center;}
+    .universal04-intro2-section{padding-top: 2%; text-align: center;}
     .universal04-pg_header1_para1{text-align: center; font-size: clamp(8px, 3.0vw, 25px); font-family: 'arial', sans-serif;}
 
     .universal04-intro3-section{padding-top: 6%; text-align: center;}
-    .universal04-pg_header1_para2{text-align: center; padding-top: 1%; font-size: clamp(8px, 2.0vw, 20px); font-family: 'barlow', sans-serif;}
+    .universal04-pg_header1_para2{text-align: left; padding-top: 1%; font-size: clamp(8px, 2.0vw, 20px); font-family: 'barlow', sans-serif;}
 
     .universal04-header1{text-align: left; font-size: 2.0vw; font-family: 'arial', sans-serif;}
     .universal04-paragraph1{text-align: left; padding-top: 1%; font-size: clamp(8px, 1.5vw, 20px); font-family: 'barlow', sans-serif;}
+    
+    .universal04-group_photos-container{margin-top: 3%; margin-bottom: 2%;}
+    .universal04-group_photos-section{padding: 0 20%}
+    .universal04-group_photos-section img{width:100%; height:100%;}
 }
 
 
@@ -26,14 +30,18 @@
     .universal04-intro1-section{text-align: center;}
     .universal04-pg_header1{text-align: center; font-size: clamp(8px, 4.0vw, 35px); font-family: 'arial', sans-serif;}
 
-    .universal04-intro2-section{padding-top: 4%; text-align: center;}
+    .universal04-intro2-section{padding-top: 2%; text-align: center;}
     .universal04-pg_header1_para1{text-align: center; font-size: clamp(8px, 3.0vw, 25px); font-family: 'arial', sans-serif;}
 
     .universal04-intro3-section{padding-top: 6%; text-align: center;}
-    .universal04-pg_header1_para2{text-align: center; padding-top: 1%; font-size: clamp(8px, 2.0vw, 20px); font-family: 'barlow', sans-serif;}
+    .universal04-pg_header1_para2{text-align: left; padding-top: 1%; font-size: clamp(8px, 2.0vw, 20px); font-family: 'barlow', sans-serif;}
 
     .universal04-header1{text-align: left; font-size: 2.0vw; font-family: 'arial', sans-serif;}
     .universal04-paragraph1{text-align: left; padding-top: 1%; font-size: clamp(8px, 1.5vw, 20px); font-family: 'barlow', sans-serif;}
+
+    .universal04-group_photos-container{margin-top: 3%; margin-bottom: 2%;}
+    .universal04-group_photos-section{padding: 0 20%}
+    .universal04-group_photos-section img{width:100%; height:100%;}
 }
     
 
@@ -43,14 +51,18 @@
     .universal04-intro1-section{text-align: center;}
     .universal04-pg_header1{text-align: center; font-size: clamp(8px, 4.0vw, 35px); font-family: 'arial', sans-serif;}
 
-    .universal04-intro2-section{padding-top: 4%; text-align: center;}
+    .universal04-intro2-section{padding-top: 2%; text-align: center;}
     .universal04-pg_header1_para1{text-align: center; font-size: clamp(8px, 3.0vw, 25px); font-family: 'arial', sans-serif;}
 
     .universal04-intro3-section{padding-top: 6%; text-align: center;}
-    .universal04-pg_header1_para2{text-align: center; padding-top: 1%; font-size: clamp(8px, 2.0vw, 20px); font-family: 'barlow', sans-serif;}
+    .universal04-pg_header1_para2{text-align: left; padding-top: 1%; font-size: clamp(8px, 2.0vw, 20px); font-family: 'barlow', sans-serif;}
 
     .universal04-header1{text-align: left; font-size: 2.0vw; font-family: 'arial', sans-serif;}
     .universal04-paragraph1{text-align: left; padding-top: 1%; font-size: clamp(8px, 1.5vw, 20px); font-family: 'barlow', sans-serif;}
+    
+    .universal04-group_photos-container{margin-top: 3%; margin-bottom: 2%;}
+    .universal04-group_photos-section{padding: 0 20%}
+    .universal04-group_photos-section img{width:100%; height:100%;}
 }
 
 
@@ -60,12 +72,16 @@
     .universal04-intro1-section{text-align: center;}
     .universal04-pg_header1{text-align: center; font-size: 35px; font-family: 'arial', sans-serif;}
 
-    .universal04-intro2-section{padding-top: 5px; text-align: center;}
+    .universal04-intro2-section{padding-top: 2%; text-align: center;}
     .universal04-pg_header1_para1{text-align: center; font-size: 25px; font-family: 'arial', sans-serif;}
 
-    .universal04-intro3-section{padding-top: 5px; text-align: center;}
-    .universal04-pg_header1_para2{text-align: center; padding-top: 1%; font-size: 20px; font-family: 'barlow', sans-serif;}
+    .universal04-intro3-section{padding-top: 6%; text-align: center;}
+    .universal04-pg_header1_para2{text-align: left; padding-top: 1%; font-size: 20px; font-family: 'barlow', sans-serif;}
 
     .universal04-header1{text-align: left; font-size: 30px; font-family: 'arial', sans-serif;}
     .universal04-paragraph1{text-align: left; padding-top: 1%; font-size: 20px; font-family: 'barlow', sans-serif;}
+
+    .universal04-group_photos-container{margin-top: 3%; margin-bottom: 2%;}
+    .universal04-group_photos-section{padding: 0 20%}
+    .universal04-group_photos-section img{width:100%; height:100%;}
 }
