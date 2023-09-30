@@ -3,8 +3,36 @@
 */
 
 
-@media (min-width: 790px){
-    /* .globalNav_intro_Container{background: rgb(0, 0, 0); width: 100%;} */
+@media (max-width: 899px){
+    .globalNav_intro_Container{background: linear-gradient(rgb(0, 0, 0), rgb(0, 86, 179), rgb(156, 204, 255)); width: 100%;}
+    .globalNav_intro_Container a{color: rgb(0, 0, 0); cursor: pointer; text-decoration: none;}
+    .globalNav_Name_Section{padding-top: 20px; padding-bottom: 5px; color:rgb(255, 255, 255); text-align: center; font-family: Arial, sans-serif; font-size: 18px; text-decoration: none;}
+    .globalNav_Body_Section{padding-top: .1%; padding-bottom: 20px; color:rgb(255, 255, 255); text-align: center; font-family: Arial, sans-serif; font-size: 13px; text-decoration: none;}
+    
+    
+    .globalNav_Container{background: rgb(246, 246, 246); width: 100%;}
+    .globalNav_section{padding-top: 10px; padding-bottom: 10px; text-align: center; font-family: Arial, sans-serif;}
+    
+    
+    .universal02-nav-section nav{display: flex; align-items: center; justify-content: space-between; padding-top: 1px; padding-bottom: 1.5%;}
+    
+    .universal02-nav_ul{display: inline-block; position: relative; text-align: center; list-style: none; flex: 1;}
+    .universal02-nav_ul li{display: inline-block; position: relative; list-style: none;}
+    .universal02-nav_ul li a{padding: 15px; color: rgb(0, 0, 0); cursor: pointer; text-decoration: none; font-size: 14px;}
+    
+    
+    .dropdown {position: relative; display: inline-block;}
+    .dropdown-content {display: none; position: absolute; background-color: rgb(255, 255, 255); 
+        box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.575); z-index: 1; width: 100%}
+    .dropdown-content a {padding: 50px 16px; text-decoration: none; display: block;}
+    .dropdown:hover .dropdown-content {display: block}
+
+
+    .globalNav_Name_Section h1 a{color: rgb(255, 255, 255); cursor: pointer; text-decoration: none; padding: 30px;}
+}
+
+
+@media (min-width: 900px){
     .globalNav_intro_Container{background: linear-gradient(rgb(0, 0, 0), rgb(0, 86, 179), rgb(156, 204, 255)); width: 100%;}
     .globalNav_intro_Container a{color: rgb(0, 0, 0); cursor: pointer; text-decoration: none;}
     .globalNav_Name_Section{padding-top: 20px; padding-bottom: 5px; color:rgb(255, 255, 255); text-align: center; font-family: Arial, sans-serif; font-size: 18px; text-decoration: none;}
