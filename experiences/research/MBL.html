@@ -11,32 +11,55 @@
         <title>Jungjae's Portfolio</title>
         <link rel="stylesheet" href="../../sources.css">
         <link rel="stylesheet" href="MBL.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <header class="universal02-main_header">
-            <div class="universal02-nav-container">
-                <section class="universal02-nav_name-section">
-                    <h1>JUNGJAE LEE</h1>
+        <header>
+            <div class="globalNav_intro_Container">
+                <section class="globalNav_Name_Section">
+                    <h1><a href="../../index.html">JUNGJAE LEE</a></h1>
                 </section>
-                <section class="universal02-nav_body-section">
+                <section class="globalNav_Body_Section">
                     <p>Boston University College of Engineering '27</p>
                 </section>
+            </div>
             
-                <hr class="universal02-nav-hr">
-
-                <section class="universal02-nav-section">
+            <div class="globalNav_Container">
+                <section class="globalNav_section">
                     <nav>
                         <ul class="universal02-nav_ul">
-                            <li><a href="../../index.html">About Me</a></li>
-                            <li><a href="../research/researchExperiences.html">Research Experiences</a></li>
-                            <li><a href="../extracurricular/extracurriculars.html">Leadership Experiences</a></li>
+                            <li>
+                                <a href="../../about.html">About Me</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="researchExperiences.html">Research Experiences</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="researchExperiences.html">Explore All</a></li>
+                                    <li><a href="SRBL.html">Seoul National University Soft Robotics & Bionics Lab</a></li>
+                                    <li><a href="MBL.html">Boston University Morphable Bioroborics Lab</a></li>
+                                    <li><a href="KL.html">Boston University Kolachalama Lab</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="../extracurricular/extracurriculars.html">Leadership Experiences</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="../extracurricular/extracurriculars.html">Explore All</a></li>
+                                    <li><a href="../extracurricular/zero.html">Seoul National University Zero</a></li>
+                                    <li><a href="../extracurricular/MR.html">Boston University Mars Rover</a></li>
+                                    <li><a href="../extracurricular/TM.html">Boston University Terrier Motorsport</a></li>
+                                </ul>
+                            </li>
                             <li><a href="../../personalProjects.html">Personal Projects</a></li>
                             <li><a href="../../resume.html">Resume</a></li>
                             <li><a href="../../code.html">Codes</a></li>
+                        </ul>
+                        <ul class="globalNav_Social_Icon_Section_ul">
+                            <a href="https://www.linkedin.com/in/jungjae-engineering.com" class="fa fa-linkedin" alt="Link to LinkedIn"></a>
+                            <a href="https://github.com/jungjae01eng" class="fa fa-github" alt="Link to LinkedIn"></a>
                         </ul>
                     </nav>
                 </section>
