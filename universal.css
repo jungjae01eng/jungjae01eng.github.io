@@ -62,9 +62,9 @@
     .universal01-ul_BP2{display: inline-block; position: relative; text-align: left; list-style-type: circle; flex: 1; padding-left: 7%;}
     .universal01-ul_BP3{display: inline-block; position: relative; text-align: left; list-style-type: initial; padding-left: 7%;}
 
-    .universal01-li_list1{position: relative; font-size: clamp(10px, 1.5vw, 20px); font-family: 'barlow', sans-serif; padding-top: 1vw; padding-left: 1vw}
-    .universal01-li_list2{position: relative; font-size: clamp(10px, 1.5vw, 20px); font-family: 'barlow', sans-serif; padding-top: .5vw; padding-left: 1vw}
-    .universal01-li_list3{position: relative; font-size: clamp(10px, 1.5vw, 20px); font-family: 'barlow', sans-serif; padding-top: .5vw; padding-left: 1vw}
+    .universal01-li_list1{position: relative; font-size: clamp(10px, 1.5vw, 20px); font-family: 'barlow', sans-serif;  margin: 0; padding-top: 1vw; padding-left: 1vw}
+    .universal01-li_list2{position: relative; font-size: clamp(10px, 1.5vw, 20px); font-family: 'barlow', sans-serif;  margin: 0; padding-top: .5vw; padding-left: 1vw}
+    .universal01-li_list3{position: relative; font-size: clamp(10px, 1.5vw, 20px); font-family: 'barlow', sans-serif;  margin: 0; padding-top: .5vw; padding-left: 1vw}
 
     .universal01-a-links{color: rgb(0, 0, 0); text-decoration: none; cursor: pointer;}
 
@@ -73,20 +73,20 @@
 
 
 @media(min-width: 1440px){
-    .universal01-new_section{padding: 0% 20%}
+    .universal01-new_section{margin: none; padding: 0% 20%;}
 
     .universal01-header{font-size: 30px; font-family: 'arial', sans-serif;}
     .universal01-para1{font-size: 20px; font-family: 'barlow', sans-serif;}
     
-    .universal01-space{margin: 3% 20%;}
+    .universal01-space{margin: 3% 20%; padding: none}
     
-    .universal01-ul_BP1{display: inline-block; position: relative; text-align: left; list-style-type: initial; flex: 1; padding-left: 5%;}
+    .universal01-ul_BP1{display: inline-block; position: relative; text-align: left; list-style-type: initial; margin: 0; flex: 1; padding-left: 5%;}
     .universal01-ul_BP2{display: inline-block; position: relative; text-align: left; list-style-type: circle; flex: 1; padding-left: 7%;}
     .universal01-ul_BP3{display: inline-block; position: relative; text-align: left; list-style-type: initial; padding-left: 4%;}
 
-    .universal01-li_list1{position: relative; font-size: 20px; font-family: 'barlow', sans-serif; padding-top: 1%;}
-    .universal01-li_list2{position: relative; font-size: 20px; font-family: 'barlow', sans-serif; padding-top: 1%;}
-    .universal01-li_list3{position: relative; font-size: 20px; font-family: 'barlow', sans-serif;}
+    .universal01-li_list1{position: relative; font-size: 20px; font-family: 'barlow', sans-serif; margin: none; padding: none;}
+    .universal01-li_list2{position: relative; font-size: 20px; font-family: 'barlow', sans-serif; margin: none; padding: none;}
+    .universal01-li_list3{position: relative; font-size: 20px; font-family: 'barlow', sans-serif; margin: none; padding: none;}
     
     .universal01-a-links{color: rgb(0, 0, 0); text-decoration: none; cursor: pointer;}
 
