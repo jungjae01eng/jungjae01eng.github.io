@@ -5,19 +5,39 @@
 
 @media (max-width: 767px){
     .TM-header{position: relative; text-align: center; color:rgb(0, 0, 0); font-size: clamp(10px, 2.0vw, 27px); font-family: 'arial', sans-serif;}
+    
+    .photos-container{display: flex; justify-content: space-evenly; margin: 0 10vw;}
+    .photos-row-container{display: flex; flex: 1; flex-direction: column; float: left; margin-top: 3%;
+        text-align: center; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 31.33%; padding-top: 5%; padding-bottom: 5%;}
 }
 
 
 @media (min-width: 768px) and (max-width: 1023px){
     .TM-header{position: relative; text-align: center; color:rgb(0, 0, 0); font-size: clamp(10px, 2.0vw, 27px); font-family: 'arial', sans-serif;}
+    
+    .photos-container{display: flex; justify-content: space-evenly; margin: 0 15vw;}
+    .photos-row-container{display: flex; flex: 1; flex-direction: column; float: left; margin-top: 3%;
+        text-align: center; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 31.33%; padding-top: 5%; padding-bottom: 5%;}
 }
     
 
 @media (min-width: 1023px) and (max-width: 1439px){
     .TM-header{position: relative; text-align: center; color:rgb(0, 0, 0); font-size: clamp(10px, 2.0vw, 27px); font-family: 'arial', sans-serif;}
+
+    .photos-container{display: flex; justify-content: space-evenly; margin: 0 15vw;}
+    .photos-row-container{display: flex; flex: 1; flex-direction: column; float: left; margin-top: 3%;
+        text-align: center; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 31.33%; padding-top: 5%; padding-bottom: 5%;}
 }
 
 
 @media (min-width: 1440px){
     .TM-header{position: relative; text-align: center; color:rgb(0, 0, 0); font-size: 27px; font-family: 'arial', sans-serif;}
+    
+    .photos-container{display: flex; justify-content: space-evenly; margin: 0 20%;}
+    .photos-row-container{display: flex; flex: 1; flex-direction: column; float: left; margin-top: 3%;
+        text-align: center; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 31.33%; padding-top: 5%; padding-bottom: 5%;}
 }

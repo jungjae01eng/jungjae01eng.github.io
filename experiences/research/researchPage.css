@@ -1,5 +1,6 @@
 /*
     Jungjae Lee, Personal Portfolio
+    Deleted - Moved to universal2.css
 */
 
 
@@ -9,18 +10,14 @@
 
     .universal05-project_description-section{padding-top: 5%;}
 
-
     /* Description of projects */
     .universal05-project_detail-title-section{padding-top: 5%; padding-left: 7vw; font-size: clamp(10px, 1.5vw, 20px);}
     .universal05-project_detail_description-section{padding-left: 8vw; padding-top: 1vw; font-size: clamp(10px, 1.5vw, 20px);}
-
     
     .universal05-project_photo-section{margin-top: 5%; padding-left: 7vw;}
     .universal05-photo_3col_1-section{display: flex; justify-content: space-between; margin-top: 3%; text-align: center; font-size: 20px;}
     .universal05-photo_3col-1_photo-section{flex: 1; width: 48%; padding: 0 1%;}
-
     .universal05-photo_2col-item img {width: 40%; height: auto;}
-
 
     .universal05-project_video-section{margin-top: 5%; padding-left: 7vw;}
     .universal05-video_3col_1-section{display: flex; justify-content: space-between; margin-top: 3%; text-align: center; font-size: 20px;}
@@ -36,18 +33,14 @@
 
     .universal05-project_description-section{padding-top: 5%;}
 
-
     /* Description of projects */
     .universal05-project_detail-title-section{padding-top: 5%; padding-left: 7vw; font-size: clamp(10px, 1.5vw, 20px);}
     .universal05-project_detail_description-section{padding-left: 8vw; padding-top: 1vw; font-size: clamp(10px, 1.5vw, 20px);}
 
-
     .universal05-project_photo-section{margin-top: 5%; padding-left: 7vw;}
     .universal05-photo_3col_1-section{display: flex; justify-content: space-between; margin-top: 3%; text-align: center; font-size: 20px;}
     .universal05-photo_3col-1_photo-section{flex: 1; width: 48%; padding: 0 1%;}
-
     .universal05-photo_2col-item img {width: 40%; height: auto;}
-
 
     .universal05-project_video-section{margin-top: 5%; padding-left: 7vw;}
     .universal05-video_3col_1-section{display: flex; justify-content: space-between; margin-top: 3%; text-align: center; font-size: 20px;}
@@ -63,18 +56,15 @@
 
     .universal05-project_description-section{padding-top: 5%;}
 
-
     /* Description of projects */
     .universal05-project_detail-title-section{padding-top: 5%; padding-left: 7vw; font-size: clamp(10px, 1.5vw, 20px);}
     .universal05-project_detail_description-section{padding-left: 8vw; padding-top: 1vw; font-size: clamp(10px, 1.5vw, 20px);}
-
 
     .universal05-project_photo-section{margin-top: 5%; padding-left: 7vw;}
     .universal05-photo_3col_1-section{display: flex; justify-content: space-between; margin-top: 3%; text-align: center; font-size: 20px;}
     .universal05-photo_3col-1_photo-section{flex: 1; width: 48%; padding: 0 1%;}
 
     .universal05-photo_2col-item img {width: 40%; height: auto;}
-
 
     .universal05-project_video-section{margin-top: 5%; padding-left: 7vw;}
     .universal05-video_3col_1-section{display: flex; justify-content: space-between; margin-top: 3%; text-align: center; font-size: 20px;}
@@ -90,18 +80,14 @@
 
     .universal05-project_description-section{padding-top: 3%;}
 
-
     /* Description of projects */
     .universal05-project_detail-title-section{padding-top: 5%; padding-left: 7vw; font-size: 20px;}
     .universal05-project_detail_description-section{padding-left: 8vw; padding-top: 1vw; font-size: 20px}
 
-
     .universal05-project_photo-section{margin-top: 5%; padding-left: 7vw;}
     .universal05-photo_3col_1-section{display: flex; justify-content: space-between; margin-top: 3%; text-align: center; font-size: 20px;}
     .universal05-photo_3col-1_photo-section{flex: 1; width: 48%; padding: 0 1%;}
-
     .universal05-photo_2col-item img {width: 40%; height: auto;}
-
 
     .universal05-project_video-section{margin-top: 5%; padding-left: 7vw;}
     .universal05-video_3col_1-section{display: flex; justify-content: space-between; margin-top: 3%; text-align: center; font-size: 20px;}
