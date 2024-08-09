@@ -2,8 +2,19 @@
     Jungjae Lee, Personal Portfolio
 */
 
+/*
+    Each section has its own CSS file, but these are the universal CSS rules
+    shared across most of the website.
+*/
 
-@import "universal.css";
-@import "nav.css";
-@import "pgIntro.css";
+@import "universal.css";    /* secion, header, para, ul, li, a links, footer */
+@import "universal2.css";   /* pages setup on Experiences sections */
+@import "nav.css";          /* nav, dropdown */   
 @import "experiences/research/researchPage.css";
+
+
+/*
+universal01: Basic section, header, paragraph, etc.
+universal02: navigation bar
+universal04: introduction section of each page
+universal05: Experiences page
