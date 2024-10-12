@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="description" content="Gallery Section">
+    <title>Gallery | Jungjae's Portfolio</title>
+    <link rel="stylesheet" href="sources.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {background-color: #f7fafc; color: #2d3748; font-family: Arial, sans-serif; scroll-behavior: smooth;}
+        header {background: linear-gradient(rgb(0, 0, 0), rgb(0, 86, 179), rgb(156, 204, 255)); color: white; padding: 24px; text-align: center; position: relative;}
+        h1 {font-size: 2.2rem; font-weight: bold;}
+        h2 {font-size: 1.9rem; font-weight: 600; margin-bottom: 16px;}
+        .section {margin-bottom: 5rem;}
+
+        .project-grid {
+            display: flex;
+            justify-content: space-between;
+            margin: 16px -8px;
+        }
+        .column {
+            flex: 1;
+            padding: 0 8px;
+        }
+        .column img {
+            margin-bottom: 16px;
+            border-radius: 8px;
+            transition: transform 0.2s;
+            width: 100%; /* Ensure images fit within their column */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .column img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {background-color: #3182ce; color: white; padding: 24px; text-align: center;}
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>JUNGJAE LEE</h1>
+        <p>Gallery</p>
+    </header>
+
+    <main class="main_container">
+        <section id="gallery" class="section1">
+            <h2>Gallery</h2>
+            <div class="project-grid">
+                <div class="column">
+                    <img src="images/photo1.jpg" alt="Description 1">
+                    <img src="images/photo2.jpg" alt="Description 2">
+                    <img src="images/photo3.jpg" alt="Description 3">
+                    <img src="images/photo4.jpg" alt="Description 4">
+                    <img src="images/photo5.jpg" alt="Description 5">
+                </div>
+                <div class="column">
+                    <img src="images/photo6.jpg" alt="Description 6">
+                    <img src="images/photo7.jpg" alt="Description 7">
+                    <img src="images/photo8.jpg" alt="Description 8">
+                    <img src="images/photo9.jpg" alt="Description 9">
+                    <img src="images/photo10.jpg" alt="Description 10">
+                </div>
+                <div class="column">
+                    <img src="images/photo11.jpg" alt="Description 11">
+                    <img src="images/photo12.jpg" alt="Description 12">
+                    <img src="images/photo13.jpg" alt="Description 13">
+                    <img src="images/photo14.jpg" alt="Description 14">
+                    <img src="images/photo15.jpg" alt="Description 15">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Jungjae Lee. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="description" content="Jungjae's Engineering">
+    <title>Jungjae's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {background-color: #f7fafcee; color: #2d3748; font-family: Arial, sans-serif; scroll-behavior: smooth;}
+        .header1 {background: linear-gradient(rgb(0, 0, 0), rgb(0, 86, 179), rgb(156, 204, 255)); color: white; padding: 3px; text-align: center; position: relative;}
+        .header2 {background: rgb(239, 239, 239); width: 100%; padding: 8px 0; font-family: Arial, sans-serif;}
+        
+        h1 {font-size: 2.3rem; font-weight: bold;}
+        h2 {font-size: 2.0rem; font-weight: 600; margin-bottom: 16px;}
+        h3 {font-size: 1.5rem; margin-top: 0px;}
+        h4 {font-size: 1.4rem; padding-top: 10px;}
+        p {font-size: 1.1rem;}  
+        .p_project_title {font-size: 1.1rem; text-align: center;}
+
+        .section1 {margin-bottom: 7rem;}
+
+        .flex {display: flex; flex-wrap: wrap;}
+        .column {flex: 1;}
+
+
+        nav {display: flex; justify-content: center; align-items: center; width: 100%;}
+        nav a {color: white; margin: 0 8px; text-decoration: none; transition: text-decoration 0.2s;}
+        nav a:hover {text-decoration: underline;}
+        .nav-links {display: inline-block; flex-wrap: wrap; align-items: center; position: relative;}
+        .nav-links a {padding: 15px; color: rgb(0, 0, 0); text-decoration: none; transition: text-decoration 0.2s;}
+        .nav-links.hidden {display: none;}
+        
+
+        .hamburger {display: none; flex-direction: column; cursor: pointer;}
+        .bar {height: 3px; width: 25px; background-color: white; margin: 4px 0; transition: 0.4s;}
+
+
+        .main_container {max-width: 1200px; margin: auto; padding: 24px;}
+        section {margin-bottom: 48px;}
+        .card {border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; background-color: white; 
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); transition: transform 0.2s; overflow: auto;}
+        .card:hover {transform: translateY(-2px);}
+        
+
+        .button {background-color: #3182ce; color: white; padding: 8px 16px; border: none; border-radius: 4px; 
+            cursor: pointer; font-size: 15px; display: inline-block; text-decoration: none;}
+        .button:hover {background-color: #2b6cb0;}
+
+
+        .project-summary {margin-bottom: 16px; padding: 16px; background-color: #e2e8f0; border-radius: 8px;}
+        
+        
+        .sub-project {border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; background-color: #eff1f4; 
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); display: flex; align-items: center; margin: 16px 0;}
+        .sub-project img {width: 200px; height: auto; border-radius: 8px; margin-right: 16px;}
+        
+        footer {background-color: #3182ce; color: white; padding: 24px; text-align: center;}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header1">
+            <h1>JUNGJAE LEE</h1>
+            <p>Software Engineer | Medical Robotics Researcher</p>
+        </div>
+        <div class="header2">
+            <nav>
+                <div class="hamburger" id="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="nav-links" id="nav-links hidden">
+                    <a href="index.html #introduction">About Me</a>
+                    <a href="index.html #education">Education</a>
+                    <a href="index.html #research">Research</a>
+                    <a href="index.html #publications">Publications</a>
+                    <a href="index.html #leadership">Leadership</a>
+                    <a href="index.html #projects">Projects</a>
+                    <a href="index.html #gallery">Gallery</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main_container">
+        <section id="research-team" class="section1">
+            <h2>Morphable Biorobotics Laboratory</h2>
+            <h3>Boston University</h3>
+            <p>
+                We focuses on robotics, and how robotic technologies can impact society. 
+                We are particularly interested in how robotics can improve our lives and create new 
+                opportunities in fields like medicine, surgery, rehabilitation, and exploration.
+            </p>
+        </section>
+
+        <section id="publications" class="section1">
+            <h2>Publications</h2>
+            <div class="card" style="margin-bottom: 16px;">
+                <h3>A Soft Robotic, Modular Laparoscopic Grasper for Atraumatic Retraction of the Small Intestine</h3>
+                <p>L. Kinnicutt, L. T. Gaeta, J. Rogatinsky, J. Lee, A. Cameron, A. Naik, D. Hess, and T. Ranzani.</p>
+                <p>Device, Manuscript Accepted in August 2024, In Press.</p>
+            </div>
+            <div class="card" style="margin-bottom: 16px;">
+                <h3>A Soft Laparoscopic Grasper for Retraction of the Small Intestine (Conference)</h3>
+                <p>L. Kinnicutt, J. Lee, J. Oden, L. T. Gaeta, S. K. Carroll, A. Rathi, Z. H. Lim, M. Lee, C. Orakwue,
+                    K. J. McDonald, D. Hess, and T. Ranzani.</p>
+                <p>Hamlyn Symposium on Medical Robotics, London, UK, June 2023.</p>
+                <button class="button" onclick="togglePDF2()">Paper</button>
+                <div id="pdf-container2" style="display: none; margin-top: 16px; width: 100%;">
+                    <iframe src="papers/mbl_laparoscopy_paper.pdf" style="width: 100%; height: 500px; border: none;"></iframe>
+                </div>
+            </div>
+            <div class="card" style="margin-bottom: 16px;">
+                <h3>Minimally Invasive Soft Robotic Prototypes Provide Variable Occlusion in a Simplified Aortic Flow Model (Conference)</h3>
+                <p>L. Kinnicutt, A. Pathak, T. Bohac, A. Peng, C. Taglietti, C. Lee, R. Rauf, J. Lee, LZ. Heng,
+                    J. Rogatinsky, K. McDonald, J. Siracuse, and T. Ranzani.</p>
+                <p>American Heart Association Resuscitation Science Symposium, Chicago, US, November 2022.</p>
+                <button class="button" onclick="togglePDF1()">Presentation</button>
+                <div id="pdf-container1" style="display: none; margin-top: 16px; width: 100%;">
+                    <iframe src="papers/mbl_vascular_poster.pdf" style="width: 100%; height: 500px; border: none;"></iframe>
+                </div>
+            </div>
+        </section>        
+
+        <section id="projects" class="section1">
+            <h2>Projects</h2>
+
+            <div class="project-summary">
+                <h3>Laparoscopy Project</h3>
+                <p><strong>Project Led by: </strong>Lorenzo Kinnicutt, M.S.</p>
+                <p><strong>Time Commitment: </strong>January 2022 - May 2023</p>
+                <p><strong>Skills: </strong>Prototyping, Python, MATLAB, CAD (Solidworks)</p>
+
+                <div class="sub-project">
+                    <img src="images/research/mbl/laparoscopy_test.jpg" alt="Project 1 Image">
+                    <div>
+                        <h4>Grasp Testing</h4>
+                        <ul style="list-style-type: disc; padding-left: 50px; margin: 0; max-width: 90%;">
+                            <li style="margin: 8px 0; font-size: 1.1rem;">
+                                ...
+                            </li>
+                            <li style="margin: 8px 0; font-size: 1.1rem;">
+                                ...
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sub-project">
+                    <img src="images/research/mbl/laparoscopy_mslm.jpg" alt="Project 1 Image">
+                    <div>
+                        <h4>Miniaturized Scissor Lift Mechanism (MSLM)</h4>
+                        <ul style="list-style-type: disc; padding-left: 50px; margin: 0; max-width: 90%;">
+                            <li style="margin: 8px 0; font-size: 1.1rem;">
+                                ...
+                            </li>
+                            <li style="margin: 8px 0; font-size: 1.1rem;">
+                                ...
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sub-project">
+                    <img src="images/research/mbl/laparoscopy_sensor.jpg" alt="Project 1 Image">
+                    <div>
+                        <h4>Soft Force Sensors</h4>
+                        <ul style="list-style-type: disc; padding-left: 50px; margin: 0; max-width: 90%;">
+                            <li style="margin: 8px 0; font-size: 1.1rem;">
+                                ...
+                            </li>
+                            <li style="margin: 8px 0; font-size: 1.1rem;">
+                                ...
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="sub-project">
+                    <img src="images/research/mbl/laparoscopy_actuator.jpg" alt="Project 1 Image">
+                    <div>
+                        <h4>Miniaturized Fiber-Reinforced Soft Actuator (FRSA)</h4>
+                        <ul style="list-style-type: disc; padding-left: 50px; margin: 0; max-width: 90%;">
+                            <li style="margin: 8px 0; font-size: 1.1rem;">
+                                ...
+                            </li>
+                            <li style="margin: 8px 0; font-size: 1.1rem;">
+                                ...
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-summary">
+                <h3>Cardiovascular Project</h3>
+                <p><strong>Project Led by: </strong>Lorenzo Kinnicutt, M.S.</p>
+                <p><strong>Time Commitment: </strong>May 2021 - August 2021</p>
+                <p><strong>Skills: </strong>EDA (EagleCAD)</p>
+
+                <div class="sub-project">
+                    <img src="images/research/mbl/vascular_project.jpg" alt="Project 1 Image">
+                    <div>
+                        <h4>In-vitro Setup</h4>
+                        <ul style="list-style-type: disc; padding-left: 50px; margin: 0; max-width: 90%;">
+                            <li style="margin: 8px 0; font-size: 1.1rem;">
+                                ...
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sub-project">
+                    <img src="images/research/mbl/vascular_pcb.jpg" alt="Project 1 Image">
+                    <div>
+                        <h4>Control Board PCB</h4>
+                        <ul style="list-style-type: disc; padding-left: 50px; margin: 0; max-width: 90%;">
+                            <li style="margin: 8px 0; font-size: 1.1rem;">
+                                Designed PCB using EagleCAD to control valves and pumps in an in-vitro setup that mimics cardiovascular system, enabling team 
+                                to conduct testing on endovascular device.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-summary">
+                <h3>Heart Project</h3>
+                <p><strong>Project Led by: </strong>Jacob Rogatinsky, Ph.D. Candidate</p>
+                <p><strong>Time Commitment: </strong>May 2021 - August 2021</p>
+                <p><strong>Skills: </strong>Python, MATLAB</p>
+
+                <div class="sub-project">
+                    <img src="images/research/mbl/aurora_Tracking.jpg" alt="Project 1 Image">
+                    <div>
+                        <h4>Aurora electromagnetic Position Tracking</h4>
+                        <ul style="list-style-type: disc; padding-left: 50px; margin: 0; max-width: 90%;">
+                            <li style="margin: 8px 0; font-size: 1.1rem;">
+                                Integrated a custom Python code with an open-source library to manage data acquisition from an electromagnetic position 
+                                tracking system and visualize workspace of a surgical soft robotic end effector.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-summary">
+                <h3>Softwearables Project</h3>
+                <p><strong>Project Led by: </strong>Leah T. Gaeta, Ph.D. Candidate</p>
+                <p><strong>Time Commitment: </strong>May 2021 - August 2021</p>
+                <p><strong>Skills: </strong>Prototyping</p>
+
+                <div class="sub-project">
+                    <img src="images/research/mbl/patrick1.jpg" alt="Project 1 Image">
+                    <div>
+                        <h4>Patrick Design</h4>
+                        <ul style="list-style-type: disc; padding-left: 50px; margin: 0; max-width: 90%;">
+                            <li style="margin: 8px 0; font-size: 1.1rem;">
+                                Developed soft wearable device prototype with exoflex to test durability and performance of device.
+                            </li>
+                            <li style="margin: 8px 0; font-size: 1.1rem;">
+                                Collaborated with Ph.D. students to find most appropriate torsion calculation of prototype and check if 
+                                material interfaces with intended measures.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sub-project">
+                    <img src="images/research/mbl/patrick_sensor.jpg" alt="Project 1 Image">
+                    <div>
+                        <h4>Optical Sensor</h4>
+                        <ul style="list-style-type: disc; padding-left: 50px; margin: 0; max-width: 90%;">
+                            <li style="margin: 8px 0; font-size: 1.1rem;">
+                                Implemented optical sensors prototype for soft wearable devices to indicate leg or arm movement using laser 
+                                and analyze data using microcontroller and MATLAB.
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2021-2024 Jungjae Lee. Boston University College of Engineering</p>
+        <div>
+            <a href="https://linkedin.com/in/yourprofile" style="color: white; text-decoration: none; margin: 0 8px;">LinkedIn</a>
+            <a href="https://github.com/yourprofile" style="color: white; text-decoration: none; margin: 0 8px;">GitHub</a>
+        </div>
+    </footer>
+
+    
+    <script>
+        function toggleImage() {
+            const imageContainer = document.getElementById('image-container');
+            if (imageContainer.style.display === 'none') {
+                imageContainer.style.display = 'block';
+            } else {
+                imageContainer.style.display = 'none';
+            }
+        }
+        function togglePDF2() {
+            const pdfContainer = document.getElementById('pdf-container2');
+            if (pdfContainer.style.display === 'none') {
+                pdfContainer.style.display = 'block';
+            } else {
+                pdfContainer.style.display = 'none';
+            }
+        }
+
+        function togglePDF1() {
+            const pdfContainer = document.getElementById('pdf-container1');
+            if (pdfContainer.style.display === 'none') {
+                pdfContainer.style.display = 'block';
+            } else {
+                pdfContainer.style.display = 'none';
+            }
+        }
+
+    </script>
+</body>
+</html>

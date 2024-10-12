@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="description" content="Jungjae's Engineering">
+    <title>Jungjae's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {background-color: #f7fafcee; color: #2d3748; font-family: Arial, sans-serif; scroll-behavior: smooth;}
+        .header1 {background: linear-gradient(rgb(0, 0, 0), rgb(0, 86, 179), rgb(156, 204, 255)); color: white; padding: 3px; text-align: center; position: relative;}
+        .header2 {background: rgb(239, 239, 239); width: 100%; padding: 8px 0; font-family: Arial, sans-serif;}
+        
+        h1 {font-size: 2.3rem; font-weight: bold;}
+        h2 {font-size: 2.0rem; font-weight: 600; margin-bottom: 16px;}
+        h3 {font-size: 1.5rem; margin-top: 0px;}
+        h4 {font-size: 1.4rem; padding-top: 10px;}
+        p {font-size: 1.1rem;}  
+        .p_project_title {font-size: 1.1rem; text-align: center;}
+
+        .section1 {margin-bottom: 7rem;}
+
+        .flex {display: flex; flex-wrap: wrap;}
+        .column {flex: 1;}
+
+
+        nav {display: flex; justify-content: center; align-items: center; width: 100%;}
+        nav a {color: white; margin: 0 8px; text-decoration: none; transition: text-decoration 0.2s;}
+        nav a:hover {text-decoration: underline;}
+        .nav-links {display: inline-block; flex-wrap: wrap; align-items: center; position: relative;}
+        .nav-links a {padding: 15px; color: rgb(0, 0, 0); text-decoration: none; transition: text-decoration 0.2s;}
+        .nav-links.hidden {display: none;}
+        
+
+        .hamburger {display: none; flex-direction: column; cursor: pointer;}
+        .bar {height: 3px; width: 25px; background-color: white; margin: 4px 0; transition: 0.4s;}
+
+
+        .main_container {max-width: 1200px; margin: auto; padding: 24px;}
+        section {margin-bottom: 48px;}
+        .card {border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; background-color: white; 
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); transition: transform 0.2s; overflow: auto;}
+        .card:hover {transform: translateY(-2px);}
+        
+
+        .button {background-color: #3182ce; color: white; padding: 8px 16px; border: none; border-radius: 4px; 
+            cursor: pointer; font-size: 15px; display: inline-block; text-decoration: none;}
+        .button:hover {background-color: #2b6cb0;}
+
+
+        .project-summary {margin-bottom: 16px; padding: 16px; background-color: #e2e8f0; border-radius: 8px;}
+        
+        
+        .sub-project {border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; background-color: #eff1f4; 
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); display: flex; align-items: center; margin: 16px 0;}
+        .sub-project img {width: 200px; height: auto; border-radius: 8px; margin-right: 16px;}
+        
+        footer {background-color: #3182ce; color: white; padding: 24px; text-align: center;}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header1">
+            <h1>JUNGJAE LEE</h1>
+            <p>Software Engineer | Medical Robotics Researcher</p>
+        </div>
+        <div class="header2">
+            <nav>
+                <div class="hamburger" id="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="nav-links" id="nav-links hidden">
+                    <a href="index.html #introduction">About Me</a>
+                    <a href="index.html #education">Education</a>
+                    <a href="index.html #research">Research</a>
+                    <a href="index.html #publications">Publications</a>
+                    <a href="index.html #leadership">Leadership</a>
+                    <a href="index.html #projects">Projects</a>
+                    <a href="index.html #gallery">Gallery</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main_container">
+        <section id="research-team" class="section1">
+            <h2>Kolachalama Laboratory</h2>
+            <h3>Boston University</h3>
+            <p>
+                Our research focuses on creating software frameworks that can assist dementia screening in various real-world settings.<br><br>
+                <strong>Neurodegeneration</strong> - How can we develop software frameworks that can assist dementia screening in various real-world settings?<br>
+                <strong>pathology</strong> - How can we build clinical-grade software tools to complement the pathologist workflow?
+            </p>
+        </section>
+
+        <section id="projects" class="section1">
+            <h2>Projects</h2>
+
+            <div class="project-summary">
+                <h3>BioSMART Project</h3>
+                <p><strong>Project Led by: </strong>Meysam Ahangaran, Postdoctoral Research Fellow</p>
+                <p><strong>Time Commitment: </strong>March 2023 - May 2023</p>
+                <p><strong>Skills: </strong>Python</p>
+
+                <div class="sub-project">
+                    <img src="images/research/srbl/blank.jpg" alt="Project 1 Image">
+                    <div>
+                        <h4>MedSAM: Segment Anything in Medical Images</h4>
+                        <ul style="list-style-type: disc; padding-left: 50px; margin: 0; max-width: 90%;">
+                            <li style="margin: 8px 0; font-size: 1.1rem;">
+                                Coded a Python implementation to create a Segment Anything Model for medical images, using a method similar to Meta AI's SAM.
+                            </li>
+                            <li style="margin: 8px 0; font-size: 1.1rem;">
+                                Developed an API connection between front-end and back-end using Python to enable retrieval of image input files and help 
+                                implement Kidney Biopsy Image Segmentation algorithm created by Dr.Ahangaran
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-summary">
+                <h3>Knowledge Graph</h3>
+                <p><strong>Project Led by: </strong>Meysam Ahangaran, Postdoctoral Research Fellow</p>
+                <p><strong>Time Commitment: </strong>March 2023 - May 2023</p>
+                <p><strong>Skills: </strong>Python</p>
+
+                <div class="sub-project">
+                    <img src="images/research/srbl/blank.jpg" alt="Project 1 Image">
+                    <div>
+                        <h4>Knowledge Graph</h4>
+                        <ul style="list-style-type: disc; padding-left: 50px; margin: 0; max-width: 90%;">
+                            <li style="margin: 8px 0; font-size: 1.1rem;">
+                                Implemented software to integrate front-end and back-end servers, enhancing efficiency of machine learning models, 
+                                and crafting corresponding Neurodegenerative Disease graphs for each position utilizing Python
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2021-2024 Jungjae Lee. Boston University College of Engineering</p>
+        <div>
+            <a href="https://linkedin.com/in/yourprofile" style="color: white; text-decoration: none; margin: 0 8px;">LinkedIn</a>
+            <a href="https://github.com/yourprofile" style="color: white; text-decoration: none; margin: 0 8px;">GitHub</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleImage() {
+            const imageContainer = document.getElementById('image-container');
+            if (imageContainer.style.display === 'none') {
+                imageContainer.style.display = 'block';
+            } else {
+                imageContainer.style.display = 'none';
+            }
+        }
+        function togglePDF2() {
+            const pdfContainer = document.getElementById('pdf-container2');
+            if (pdfContainer.style.display === 'none') {
+                pdfContainer.style.display = 'block';
+            } else {
+                pdfContainer.style.display = 'none';
+            }
+        }
+
+        function togglePDF1() {
+            const pdfContainer = document.getElementById('pdf-container1');
+            if (pdfContainer.style.display === 'none') {
+                pdfContainer.style.display = 'block';
+            } else {
+                pdfContainer.style.display = 'none';
+            }
+        }
+
+    </script>
+</body>
+</html>
