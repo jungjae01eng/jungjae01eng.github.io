@@ -1,106 +1,27 @@
+<!--
+    Jungjae Lee, Personal Portfolio
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="HTML, CSS">
+    <meta name="keywords" content="Boston University, research, Software Engineering, Medical Robotics, Soft Robotics">
     <meta name="description" content="Jungjae's Engineering">
-    <title>Jungjae's Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {background-color: #f7fafcee; color: #2d3748; font-family: Arial, sans-serif; scroll-behavior: smooth;}
-        .header1 {background: linear-gradient(rgb(0, 0, 0), rgb(0, 86, 179), rgb(156, 204, 255)); color: white; padding: 3px; text-align: center; position: relative;}
-        .header2 {background: rgb(239, 239, 239); width: 100%; padding: 8px 0; font-family: Arial, sans-serif;}
-        
-        h1 {font-size: 2.3rem; font-weight: bold;}
-        h2 {font-size: 2.0rem; font-weight: 600; margin-bottom: 16px;}
-        h3 {font-size: 1.5rem; margin-top: 0px;}
-        h4 {font-size: 1.4rem; padding-top: 10px;}
-        p {font-size: 1.1rem;}
-        .p_project_title {font-size: 1.1rem; text-align: center;}
-
-        .section1 {margin-bottom: 7rem;}
-
-        .flex {display: flex; flex-wrap: wrap; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));}
-        .column {flex: 1;}
-
-
-        nav {display: flex; justify-content: center; align-items: center; width: 100%;}
-        nav a {color: white; margin: 0 8px; text-decoration: none; transition: text-decoration 0.2s;}
-        nav a:hover {text-decoration: underline;}
-        .nav-links {display: inline-block; flex-wrap: wrap; align-items: center; position: relative;}
-        .nav-links a {padding: 15px; color: rgb(0, 0, 0); text-decoration: none; transition: text-decoration 0.2s;}
-        .nav-links.hidden {display: none;}
-
-        
-        .hamburger {display: none; flex-direction: column; cursor: pointer;}
-        .bar {height: 3px; width: 25px; background-color: white; margin: 4px 0; transition: 0.4s;}
-
-
-        .main_container {max-width: 1200px; margin: auto; padding: 24px;}
-        section {margin-bottom: 48px;}
-        .card {border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; background-color: white; 
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); transition: transform 0.2s; overflow: auto;}
-        .card:hover {transform: translateY(-2px);}
-        
-        
-        .button {background-color: #3182ce; color: white; padding: 8px 16px; border: none; border-radius: 4px; 
-            cursor: pointer; font-size: 15px; display: inline-block; text-decoration: none;}
-        .button:hover {background-color: #2b6cb0;}
-
-        img {width: 100%; height: auto; border-radius: 10px;}
-        footer {background-color: #3182ce; color: white; padding: 24px; text-align: center;}
-        
-        .project-grid {display: grid; flex-wrap: wrap; justify-content: space-between; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px;}
-        
-        .gallery-section {padding: 16px; border-radius: 8px; margin-bottom: 32px;}
-        .gallery-grid {display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px;}
-        .gallery-card {border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; background-color: white; 
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); transition: transform 0.2s; overflow: auto;}
-        .gallery-card img {width: 100%; height: auto; border-radius: 10px; margin-bottom: 16px;}
-
-        .srbl-gallery {background-color: #ecf2fc;}
-        .mbl-gallery {background-color: #f5ecfc;}
-        .zero-gallery {background-color: #ecf2fc;}
-        .mars-rover-gallery {background-color: #f5ecfc;}
-        .terrier-motorsport-gallery {background-color: #ecf2fc;}
-        
-        .gallery-grid .gallery-card:hover{transform: translateY(-2px);}
-        
-        @media (max-width: 768px) {
-            .flex {flex-direction: column;}
-            .flex-row {flex-direction: column;}
-            .column {width: 100%; margin-bottom: 16px;}
-            
-            nav {display: flex; justify-content: flex-end; align-items: center; width: 100%;}
-            .hamburger {display: flex; flex-direction: column; cursor: pointer;}
-            .nav-links { transition: max-height 0.3s ease-out; overflow: hidden; max-height: 0;}
-            .nav-links.active {display: flex;}
-            .gallery-card {
-                flex: 1 1 calc(50% - 16px); /* Two items per row on smaller screens */
-            }
-        }
-
-        @media (max-width: 480px) {
-            .gallery-card {
-                flex: 1 1 100%; /* One item per row on very small screens */
-            }
-        }
-
-
-    </style>
+    <title>JUNGJAE | Engineering Portfolio</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 
 <body>
     <header>
-        <div class="header1">
+        <div class="header1_div">
             <h1>JUNGJAE LEE</h1>
-            <p>Software Engineer | Medical Robotics Researcher</p>
+            <p class="header1_p1">Boston University College of Engineering'27</p>
         </div>
-        <div class="header2">
+        <div class="header2_div">
             <nav>
                 <div class="hamburger" id="hamburger">
                     <div class="bar"></div>
@@ -120,528 +41,712 @@
         </div>
     </header>
 
+
     <main class="main_container">
-        <section id="introduction" class="section1">
+        <section id="introduction" class="introduction_section">
             <h2>About Me</h2>
             <div class="card">
-                <div class="flex flex-row">
-                    <div class="column" style="flex: 4; margin-right: 5%;">
+                <div class="flex">
+                    <div class="column_1">
                         <p>
-                            I am a rising junior at Boston University majoring in Computer Engineering with a concentration in Machine Learning.<br><br>
-                            
-                            Time is finite and irreplaceable; I seize every opportunity that comes my way, for each moment is a chance to grow, lead, and rise. 
-                            Since my freshman year, I have had the privilege of conducting research in several laboratories during my academic journey, driven by 
-                            curiosity and a desire to learn. <br><br>
-
-                            My journey has been fueled by curiosity and a desire to learn, leading me to explore various domains such as <strong>Robotics</strong>, 
-                            <strong>Machine Learning</strong>, <strong>Self Driving vehicles</strong>, and <strong>Artificial Intelligence</strong>.<br><br>
-
-                            I believe in the power of collaboration and am eager to contribute to cutting-edge projects that drive change and make a difference.<br><br>
-
-                            Please feel free to reach out at <a href="mailto:jacob25@bu.edu">jacob25@bu.edu</a>
+                            I am a rising junior at Boston University, majoring in Computer Engineering with a 
+                            concentration in Machine Learning.<br><br>
+                            Time is finite and irreplaceable; I seize every opportunity that comes my way because 
+                            each moment is a chance to grow, lead, and advance. Since my freshman year, I have had 
+                            the privilege of conducting research in several laboratories throughout my academic 
+                            journey, driven by curiosity and a desire to learn.<br><br>
+                            My path has been fueled by this curiosity, leading me to explore various fields such as 
+                            <strong>Robotics</strong>, <strong>Machine Learning</strong>, 
+                            and <strong>Self-Driving Vehicles.</strong><br><br>
+                            I believe in the power of collaboration and am eager to contribute to cutting-edge projects 
+                            that drive change and make a difference.
+                            Please feel free to reach out at <a href="mailto:jacob25@bu.edu">jacob25@bu.edu</a>.
                         </p>
                     </div>
-                    <div class="column" style="flex: 1;">
+                    <div class="column_2">
                         <img src="images/jungjae-photo.jpg" alt="Jungjae Lee">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="education" class="section1">
+
+        <section id="education" class="education_section">
             <h2>Education</h2>
-            <div class="card" style="margin-bottom: 16px;">
-                <div style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
-                    <h3 style="margin: 0;">Boston University College of Engineering</h3>
-                    <span style="margin-left: auto;">Boston, MA, USA</span>
+            <div class="card education_card">
+                <div class="education_div_institution">
+                    <h3 class="education_div_institution_h3">Boston University College of Engineering</h3>
+                    <span class="education_div_institution_span">Boston, MA, USA</span>
                 </div>
-                <div style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
-                    <p style="margin: 0;">B.S. in Computer Engineering</p>
-                    <span style="margin-left: auto;"><i>Expected May 2027</i></span>
+                <div class="education_div_institution">
+                    <p class="education_div_institution_p">B.S. in Computer Engineering</p>
+                    <span class="education_div_institution_span"><i>Expected May 2027</i></span>
                 </div>
                 <p>Relevant Coursework: Machine Learning, Algorithms and Data Structures, Software Engineering</p>
             </div>
             <div class="card" style="margin-bottom: 16px;">
-                <div style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
-                    <h3 style="margin: 0;">edX</h3>
-                    <span style="margin-left: auto;">Online</span>
+                <div class="education_div_institution">
+                    <h3 class="education_div_institution_h3">edX</h3>
+                    <span class="education_div_institution_span">Online</span>
                 </div>
-                <div style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
-                    <p style="margin: 0;">Coursework: 6.86x Machine Learning (Massachusetts Institute of Technology)</p>
-                    <span style="margin-left: auto;"><i>Expected Fall 2024</i></span>
-                </div>
-                <div style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
-                    <p style="margin: 0;">Coursework: CS50AI Artificial Intelligence (Harvard University)</p>
-                    <span style="margin-left: auto;"><i>Summer 2024</i></span>
+                <!-- <div class="education_div_institution">
+                    <p class="education_div_institution_p">Coursework: 6.86x Machine Learning (Massachusetts Institute of Technology)</p>
+                    <span class="education_div_institution_span"><i>Expected Fall 2024</i></span>
+                </div> -->
+                <div class="education_div_institution">
+                    <p class="education_div_institution_p">Coursework: CS50AI Artificial Intelligence (Harvard University)</p>
+                    <span class="education_div_institution_span"><i>Expected Fall 2024</i></span>
                 </div>
             </div>
             <div class="card" style="margin-bottom: 16px;">
-                <div style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
-                    <h3 style="margin: 0;">Coursera</h3>
-                    <span style="margin-left: auto;">Online</span>
+                <div class="education_div_institution">
+                    <h3 class="education_div_institution_h3">Coursera</h3>
+                    <span class="education_div_institution_span">Online</span>
                 </div>
-                <div style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
-                    <p style="margin: 0;">Coursework: Modern Robotics of Mechanics, Planning, and Control Specialization (Northwestern University)</p>
-                    <span style="margin-left: auto;"><i>Expected Fall 2024</i></span>
+                <div class="education_div_institution">
+                    <p class="education_div_institution_p">Coursework: Modern Robotics of Mechanics, Planning, and Control Specialization (Northwestern University)</p>
+                    <span class="education_div_institution_span"><i>Expected Fall 2024</i></span>
                 </div>
-                <div style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
-                    <p style="margin: 0;">Coursework: Essential Math Specialization (University of Colorado Boulder)</p>
-                    <span style="margin-left: auto;"><i>Summer 2023</i></span>
+                <div class="education_div_institution">
+                    <p class="education_div_institution_p">Coursework: Essential Math Specialization (University of Colorado Boulder)</p>
+                    <span class="education_div_institution_span"><i>Summer 2023</i></span>
                 </div>
             </div>
         </section>
 
-        <section id="research" class="section1">
+
+        <section id="research" class="research_section">
             <h2>Research Experience</h2>
-            <div class="flex">
-                <div class="column" style="padding-right: 8px;">
-                    <div class="card" style="margin-bottom: 24px;">
+            <div class="research_grid">
+                <div class="card research_card">
+                    <div class="research_card_row1">
                         <h3>
                             Seoul National University<br>
                             Soft Robotics & Bionics Lab
                         </h3>
-                        <p style="margin: 0; color: #3d33ab"><strong>Visiting Robotic Controls Researcher</strong></p>
+                        <p style="margin-top: 1rem; color: #3d33ab"><strong>Visiting Robotic Controls Researcher</strong></p>
                         <p><i>May 2023 - November 2023</i></p>
                         <p>#Robotics #Simulation #sim2real</p><br>
 
-                        <p><strong>Advisor:</strong> Professor Yong-Lae Park</p>
-                        <p>Our research goal is to analyze the design and dynamics of biological systems and transform 
+                        <p><strong>Advisor:</strong> Prof. Yong-Lae Park</p>
+                        <p>Analyze the design and dynamics of biological systems and transform 
                             them into robotic/mechatronic systems for human life.</p>
+                    </div>
+                    <div class="research_card_row2">
                         <button class="button" onclick="window.location.href='srbl.html'">Learn More</button>
                     </div>
                 </div>
-                <div class="column" style="padding-right: 8px;">
-                    <div class="card" style="margin-bottom: 24px;">
+                <div class="card research_card">
+                    <div class="research_card_row1">
                         <h3>
                             Boston University<br>
                             Morphable Biorobotics Lab
                         </h3>
-                        <p style="margin: 0; color: #3d33ab"><strong>Biorobotics Researcher</strong></p>
+                        <p style="margin-top: 1rem; color: #3d33ab"><strong>Biorobotics Undergraduate Researcher</strong></p>
                         <p><i>January 2022 - May 2023</i></p>
                         <p>#Medical Robotics</p><br>
 
-                        <p><strong>Advisor:</strong> Professor Tommaso Ranzani</p>
-                        <p>We focuses on how robotics can improve our lives and create new opportunities in fields like medicine, 
-                            surgery, rehabilitation, and exploration.</p>
+                        <p><strong>Advisor:</strong> Prof. Tommaso Ranzani</p>
+                        <p>Focuses on how robotics can improve our lives and create new opportunities in fields like 
+                            medicine, surgery, and rehabilitation.</p>
+                    </div>
+                    <div class="research_card_row2">
                         <button class="button" onclick="window.location.href='mbl.html'">Learn More</button>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="card" style="margin-bottom: 24px;">
+                <div class="card research_card">
+                    <div class="research_card_row1">
                         <h3>
                             Boston University<br>
                             Kolachalama Lab
                         </h3>
-                        <p style="margin: 0; color: #3d33ab"><strong>Computational Biomedicine Researcher</strong></p>
+                        <p style="margin-top: 1rem; color: #3d33ab"><strong>Computational Biomedicine Undergraduate Researcher</strong></p>
                         <p><i>March 2023 - May 2023</i></p>
-                        <p>#Dementia #Alzheimer</p><br>
-
-                        <p><strong>Advisor:</strong> Professor Vijaya B. Kolachalama</p>
-                        <p>Our research focuses on creating software frameworks that can assist dementia screening in various real-world settings.</p>
+                        <p>#Biomedicine #Alzheimer</p><br>
+    
+                        <p><strong>Advisor:</strong> Prof. Vijaya Kolachalama</p>
+                        <p>Focuses on creating software frameworks that can assist dementia screening in various real-world settings.</p>    
+                    </div>
+                    <div class="research_card_row2">
                         <button class="button" onclick="window.location.href='kl.html'">Learn More</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="publications" class="section1">
+
+        <section id="publications" class="publication_section"> 
             <h2>Publications</h2>
-            <div class="flex">
-                <div class="column" style="margin-right: 10px;">
-                    <h3>Journals (2 total: 1 in press, 1 in progress)</h3>
-                    <div class="flex">
-                        <div class="card" style="margin-bottom: 16px; width: 100%; margin-right: 8px;">
-                            <p>
-                                T. Hong, <strong>J. Lee</strong>, and Y. Park.<br><br><br>
-                                <strong>Origami-inspired soft pneumatic actuator model on SOFA simulation</strong><br>
-                                Manuscript In Progress.
-                            </p><br>
-                            <a class="button" href='' target="_blank">Link</a>
-                        </div>
-                        <div class="card" style="margin-bottom: 16px; width: 100%; margin-right: 8px;">
-                            <p>
-                                L. Kinnicutt, L. T. Gaeta, J. Rogatinsky, <strong>J. Lee</strong>, A. Cameron, A. Naik, D. Hess, and T. Ranzani.<br><br><br>
-                                <strong>A Soft Robotic, Modular Laparoscopic Grasper for Atraumatic Retraction of the Small Intestine</strong><br>
-                                Device, Manuscript Accepted in August 2024, In Press.
-                            </p><br>
-                            <a class="button" href='' target="_blank">Link</a>
-                        </div>
+            <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Journals (2 total: 1 in press, 1 in progress)</h3>
+            <div class="publication_grid">
+                <div class="card publication_card">
+                    <div class="publication_card_row1">
+                        <p>
+                            T. Hong, <strong>J. Lee</strong>, and Y. Park.<br><br>
+                            <strong>Origami-inspired soft pneumatic actuator model on SOFA simulation</strong><br><br>
+                            Manuscript In Progress.
+                        </p>
+                    </div>
+                    <div classs="publication_card_row2">
+                        <!-- <a class="button" href='' target="_blank">Link</a> -->
                     </div>
                 </div>
-                
-                <div class="column" style="margin-left: 10px;">
-                    <h3>Conferences (2 total: 2 published/presented)</h3>
-                    <div class="flex">
-                        <div class="card" style="margin-bottom: 16px; width: 100%;">
-                            <p>
-                                L. Kinnicutt, <strong>J. Lee</strong>, J. Oden, L. T. Gaeta, S. K. Carroll, A. Rathi, Z. H. Lim, M. Lee, C. Orakwue,
-                                K. J. McDonald, D. Hess, and T. Ranzani.<br><br>
-                                <strong>A Soft Laparoscopic Grasper for Retraction of the Small Intestine</strong><br><br>
-                                Hamlyn Symposium on Medical Robotics, London, UK, June 2023.
-                            </p><br>
-                            <a class="button" href='https://www.researchgate.net/publication/371866615_A_Soft_Laparoscopic_Grasper_for_Retraction_of_the_Small_Intestine' target="_blank">Link</a>
-                        </div>
-                        <div class="card" style="margin-bottom: 16px; width: 100%;">
-                            <p>
-                                L. Kinnicutt, A. Pathak, T. Bohac, A. Peng, C. Taglietti, C. Lee, R. Rauf, <strong>J. Lee</strong>, LZ. Heng,
-                                J. Rogatinsky, K. McDonald, J. Siracuse, and T. Ranzani.<br><br>
-                                <strong>Minimally Invasive Soft Robotic Prototypes Provide Variable Occlusion in a Simplified Aortic Flow Model</strong><br>
-                                American Heart Association Resuscitation Science Symposium, Chicago, US, November 2022.
-                            </p>
-                            <a class="button" href='' target="_blank">Link</a>
-                        </div>
+                <div class="card publication_card">
+                    <div class="publication_card_row1">
+                        <p>
+                            L. Kinnicutt, L. T. Gaeta, J. Rogatinsky, <strong>J. Lee</strong>, A. Cameron, A. Naik, D. Hess, and T. Ranzani.<br><br>
+                            <strong>A Soft Robotic, Modular Laparoscopic Grasper for Atraumatic Retraction of the Small Intestine</strong><br><br>
+                            Device, Manuscript Accepted in August 2024, In Press.
+                        </p>
+                    </div>
+                    <div class="publication_card_row2">
+                        <!-- <a class="button" href='' target="_blank">Link</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Conferences (2 total: 2 published/presented)</h3>
+            <div class="publication_grid"> 
+                <div class="card publication_card">
+                    <div class="publication_card_row1">
+                        <p>
+                            L. Kinnicutt, <strong>J. Lee</strong>, J. Oden, L. T. Gaeta, S. K. Carroll, A. Rathi, Z. H. Lim, M. Lee, C. Orakwue,
+                            K. J. McDonald, D. Hess, and T. Ranzani.<br><br>
+                            <strong>A Soft Laparoscopic Grasper for Retraction of the Small Intestine</strong><br><br>
+                            Hamlyn Symposium on Medical Robotics, London, UK, June 2023.
+                        </p>
+                    </div>
+                    <div class="publication_card_row2">
+                        <a class="button" href='https://www.researchgate.net/publication/371866615_A_Soft_Laparoscopic_Grasper_for_Retraction_of_the_Small_Intestine' target="_blank">Link</a>
+                    </div>
+                </div>
+                <div class="card publication_card">
+                    <div class="publication_card_row1">
+                        <p>
+                            L. Kinnicutt, A. Pathak, T. Bohac, A. Peng, C. Taglietti, C. Lee, R. Rauf, <strong>J. Lee</strong>, LZ. Heng,
+                            J. Rogatinsky, K. McDonald, J. Siracuse, and T. Ranzani.<br><br>
+                            <strong>Minimally Invasive Soft Robotic Prototypes Provide Variable Occlusion in a Simplified Aortic Flow Model</strong><br><br>
+                            American Heart Association Resuscitation Science Symposium, Chicago, US, November 2022.
+                        </p>
+                    </div>
+                    <div class="publication_card_row2">
+                        <!-- <a class="button" href='' target="_blank">Link</a> -->
                     </div>
                 </div>
             </div>
         </section>
 
+
         <section id="leadership" class="section1">
             <h2>Leadership & General Experience</h2>
-            <div class="card" style="margin-bottom: 16px;">
-                <div style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
-                    <h3 style="margin: 0;"><strong>Republic of Korea Army</strong></h3>
-                    <span style="margin-left: auto;">Gyeonggi-do, Korea</span>
+            <div class="card leadership_card">
+                <div class="leadership_card_company">
+                    <h3 class="leadership_card_company_h3"><strong>Republic of Korea Army</strong></h3>
+                    <span class="leadership_card_company_span">Gyeonggi-do, Korea</span>
                 </div>
-                <h3 style="margin-top: -16px;">1st Corps</h3>
+                <h3 class="leadership_card_company_h3">1st Corps</h3>
                 
-                <div style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
-                    <p style="margin: 0; color: #3d33ab"><strong>Army</strong></p>
-                    <span style="margin-left: auto;">November 2023 - Present</span>
+                <div class="leadership_card_company">
+                    <p class="leadership_card_company_p"><strong>Army</strong></p>
+                    <span class="leadership_card_company_span">November 2023 - Present</span>
                 </div>
 
-                <ul style="list-style-type: disc; padding-left: 50px; margin: 0; max-width: 90%;">
-                    <li style="margin: 8px 0; font-size: 1.1rem;">
+                <ul class="leadership_card_company_ul">
+                    <li class="leadership_card_company_li">
                         Unable to disclose any specific work-related information in accordance with Korean law, 
                         as my occupation involves Secret Intelligence level 2 security clearance.
                     </li>
-                    <li style="margin: 8px 0; font-size: 1.1rem;">
+                    <li class="leadership_card_company_li">
                         <strong>Shareable Information:</strong> Collect and report various intelligence to support overall army operations.
                     </li>
                 </ul>
             </div>
-            <div class="card" style="margin-bottom: 16px;">
-                <div style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
-                    <h3 style="margin: 0;"><strong>Seoul National University</strong></h3>
-                    <span style="margin-left: auto;">Gwanak District, Korea</span>
-                </div>
-                <h3 style="margin-top: -16px;">Zero, Autonomous Vehicle Team</h3>
 
-                <div style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
-                    <p style="margin: 0; color: #3d33ab"><strong>Control System Team Member</strong></p>
-                    <span style="margin-left: auto;">September 2023 - November 2023</span>
+            
+            <div class="card leadership_card">
+                <div class="leadership_card_company">
+                    <h3 class="leadership_card_company_h3"><strong>Seoul National University</strong></h3>
+                    <span class="leadership_card_company_span">Gwanak District, Korea</span>
+                </div>
+                <h3 class="leadership_card_company_h3">Zero, Autonomous Vehicle Team</h3>
+                
+                <div class="leadership_card_company">
+                    <p class="leadership_card_company_p"><strong>Control System Team Member</strong></p>
+                    <span class="leadership_card_company_span">September 2023 - November 2023</span>
                 </div>
 
-                <ul style="list-style-type: disc; padding-left: 50px; margin: 0; max-width: 90%;">
-                    <li style="margin: 8px 0; font-size: 1.1rem;">
+                <ul class="leadership_card_company_ul">
+                    <li class="leadership_card_company_li">
                         Explored various methods for localization and mapping using path planning techniques, 
                         including Simultaneous Localization and Mapping (SLAM) and Rapidly-exploring Random Trees Star (RRT*), 
                         to reduce navigation and mapping errors.
                     </li>
-                    <li style="margin: 8px 0; font-size: 1.1rem;">
+                    <li class="leadership_card_company_li">
                         <strong>Projects: </strong> QGIS Clothoid Path | FMUC GUI Interface
                     </li>
                 </ul>
             </div>
 
-            <div class="card" style="margin-bottom: 16px;">
-                <div style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
-                    <h3 style="margin: 0;"><strong>Massachusetts Institute of Technology</strong></h3>
-                    <span style="margin-left: auto;">Cambridge, MA, USA</span>
-                </div>
-                <h3 style="margin-top: -16px;">MITES Program</h3>
 
-                <div style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
-                    <p style="margin: 0; color: #3d33ab"><strong>Teaching Assistant Shadowing</strong></p>
-                    <span style="margin-left: auto;">November 2022 - December 2022</span>
+            <div class="card leadership_card">
+                <div class="leadership_card_company">
+                    <h3 class="leadership_card_company_h3"><strong>Massachusetts Institute of Technology</strong></h3>
+                    <span class="leadership_card_company_span">Cambridge, MA, USA</span>
+                </div>
+                <h3 class="leadership_card_company_h3">MITES Program</h3>
+                
+                <div class="leadership_card_company">
+                    <p class="leadership_card_company_p"><strong>Teaching Assistant Shadowing</strong></p>
+                    <span class="leadership_card_company_span">November 2022 - December 2022</span>
                 </div>
 
-                <ul style="list-style-type: disc; padding-left: 50px; margin: 0; max-width: 90%;">
-                    <li style="margin: 8px 0; font-size: 1.1rem;">
+                <ul class="leadership_card_company_ul">
+                    <li class="leadership_card_company_li">
                         Learned how to teach and engage students by assisting them with their projects, 
                         providing guidance, and offering small ideas to help them develop their great concepts.
                     </li>
-                    <li style="margin: 8px 0; font-size: 1.1rem;">
+                    <li class="leadership_card_company_li">
                         Attended the Final Symposium to assist with event organization, including setting up project presentations 
-                        and helping students prepare for their presentations.
-                    </li>
+                        and helping students prepare for their presentations.                    </li>
                 </ul>
             </div>
 
-            <div class="card" style="margin-bottom: 16px;">
-                <div style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
-                    <h3 style="margin: 0;"><strong>Boston University</strong></h3>
-                    <span style="margin-left: auto;">Boston, MA, USA</span>
-                </div>
-                <h3 style="margin-top: -16px;">Mars Rover, Robotics Team</h3>
 
-                <div style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
-                    <p style="margin: 0; color: #3d33ab"><strong>Vice President, Executive Board Member</strong></p>
-                    <span style="margin-left: auto;">February 2022 - April 2023</span>
+            <div class="card leadership_card">
+                <div class="leadership_card_company">
+                    <h3 class="leadership_card_company_h3"><strong>Boston University</strong></h3>
+                    <span class="leadership_card_company_span">Boston, MA, USA</span>
                 </div>
-                <ul style="list-style-type: disc; padding-left: 50px; padding-bottom: 20px; margin: 0; max-width: 90%;">
-                    <li style="margin: 8px 0; font-size: 1.1rem;">
+                <h3 class="leadership_card_company_h3">Mars Rover, Robotics Team</h3>
+                
+                <div class="leadership_card_company">
+                    <p class="leadership_card_company_p"><strong>Vice President, Executive Board Member</strong></p>
+                    <span class="leadership_card_company_span">February 2022 - April 2023</span>
+                </div>
+
+                <ul class="leadership_card_company_ul">
+                    <li class="leadership_card_company_li">
                         Secured a dedicated workspace for the team after several months of discussions with engineering director, 
                         chairperson, and deans, enabling more effective collaboration on projects.
                     </li>
-                    <li style="margin: 8px 0; font-size: 1.1rem;">
+                    <li class="leadership_card_company_li">
                         Recruited five professors as advisors and mentors for the team, and maintain regular communication with them to update on project progress.
                     </li>
-                    <li style="margin: 8px 0; font-size: 1.1rem;">
+                    <li class="leadership_card_company_li">
                         Collaborated with sub-team leaders to discuss project progress, ensuring plans remain on track, while 
                         mentoring the team with tools that enhance engagement and foster a stronger community.
                     </li>
-                    <li style="margin: 8px 0; font-size: 1.1rem;">
+                    <li class="leadership_card_company_li">
                         Conducted bi-monthly General Body Meetings to update team members on projects, and establish relationships 
                         with engineering directors, chairpersons, and deans to garner support and enhance collaboration.
                     </li>
-                    <li style="margin: 8px 0; font-size: 1.1rem;">
+                    <li class="leadership_card_company_li">
                         Achieved a successful launch of social media platforms, including a LinkedIn page, gaining over 110 
                         followers through strategic engagement, resulting in significant support from sponsors and donors.
                     </li>
                 </ul>
 
-                <div style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
-                    <p style="margin: 0; color: #3d33ab"><strong>Robotic Arm Hardware Team Member</strong></p>
-                    <span style="margin-left: auto;">September 2021 - August 2022</span>
+
+                <div class="leadership_card_company">
+                    <p class="leadership_card_company_p"><strong>Robotic Arm Hardware Team Member</strong></p>
+                    <span class="leadership_card_company_span">September 2021 - August 2022</span>
                 </div>
-                <ul style="list-style-type: disc; padding-left: 50px; padding-bottom: 20px; margin: 0; max-width: 90%;">
-                    <li style="margin: 8px 0; font-size: 1.1rem;">
-                        <strong>Projects: </strong> Robotics End Effector   
+
+                <ul class="leadership_card_company_ul">
+                    <li class="leadership_card_company_li">
+                        <strong>Projects: </strong> Robotics End Effector
                     </li>
                 </ul>
             </div>
 
-            <div class="card" style="margin-bottom: 16px;">
-                <div style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
-                    <h3 style="margin: 0;"><strong>Boston University</strong></h3>
-                    <span style="margin-left: auto;">Boston, MA, USA</span>
-                </div>
-                <h3 style="margin-top: -16px;">Terrier Motorsport, Formula SAE Team</h3>
 
-                <div style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
-                    <p style="margin: 0; color: #3d33ab"><strong>Safety Officer, Executive Board Member</strong></p>
-                    <span style="margin-left: auto;">January 2022 - August 2022</span>
+            <div class="card leadership_card">
+                <div class="leadership_card_company">
+                    <h3 class="leadership_card_company_h3"><strong>Boston University</strong></h3>
+                    <span class="leadership_card_company_span">Boston, MA, USA</span>
                 </div>
-                <ul style="list-style-type: disc; padding-left: 50px; padding-bottom: 20px; margin: 0; max-width: 90%;">
-                    <li style="margin: 8px 0; font-size: 1.1rem;">
+                <h3 class="leadership_card_company_h3">Terrier Motorsport, Formula SAE Team</h3>
+                
+                <div class="leadership_card_company">
+                    <p class="leadership_card_company_p"><strong>Safety Officer, Executive Board Member</strong></p>
+                    <span class="leadership_card_company_span">January 2022 - August 2022</span>
+                </div>
+
+                <ul class="leadership_card_company_ul">
+                    <li class="leadership_card_company_li">
                         Supervised the safety of over 80 team members, discussed improvements with sub-team leaders, 
                         and checked vehicle components to ensure safety before submitting documentation for the competition.
-
                     </li>
-                    <li style="margin: 8px 0; font-size: 1.1rem;">
+                    <li class="leadership_card_company_li">
                         Proactively engaged with numerous companies and universities to secure sponsorship and support, 
                         successfully obtaining $23,000 in funding in 2022.
                     </li>
                 </ul>
 
-                <div style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
-                    <p style="margin: 0; color: #3d33ab"><strong>Electrical Team Member</strong></p>
-                    <span style="margin-left: auto;">September 2021 - August 2022</span>
+
+                <div class="leadership_card_company">
+                    <p class="leadership_card_company_p"><strong>Electrical Team Member</strong></p>
+                    <span class="leadership_card_company_span">September 2021 - August 2022</span>
                 </div>
-                <ul style="list-style-type: disc; padding-left: 50px; padding-bottom: 20px; margin: 0; max-width: 90%;">
-                    <li style="margin: 8px 0; font-size: 1.1rem;">
+
+                <ul class="leadership_card_company_ul">
+                    <li class="leadership_card_company_li">
                         <strong>Projects: </strong> Tractive System Active Lamp (TSAL) | Failure Mode and Effects Analysis (FMEA)
                     </li>
                 </ul>
             </div>
         </section>
 
+
         <section id="projects" class="section1">
             <h2>Engineering Projects</h2>
-            <div class="project-grid">
-                <div class="card">
-                    <h3>Engineering Portfolio</h3>
-                    <p>Personal Project</p>
-                    <p><i>September 2023 - Present</i></p>
-                    <p>#HTML #CSS #Javascript</p><br>
-                    <img src="images/project/project-Engineering_Portfolio.jpg" alt="Portfolio">
-                    <p>
+            <div class="project_grid">
+                <div class="card project_card">
+                    <div class="project_card_row1">
+                        <h3>Portfolio Website</h3>
+                        <p>Personal Project</p>
+                        <p><i>Sep. 2023 - Present</i></p>
+                        <p>#HTML #CSS #Javascript</p><br>
+                    </div>
+                    <div class="project_card_row2">
+                        <img src="images/project/project-Engineering_Portfolio.jpg" alt="Portfolio">
+                    </div>
+                    <div class="project_card_row3">
+                        <p>
                         Developed and designed the engineering portfolio using HTML, CSS, and JavaScript. Plan to update it as frequently as possible.
-                    </p>
-                    <button class="button" onclick="window.location.href='index.html'">Website</button>
+                        </p>
+                    </div>
+                    <div class="project_card_row4">
+                        <button class="button" onclick="window.location.href='index.html'">Website</button>
+                    </div>                    
                 </div>
-                <div class="card">
-                    <h3>Tactical Combat Casualty Care</h3>
-                    <p>Republic of Korea Army</p>
-                    <p><i>March 2024 - August 2024</i></p>
-                    <p>#CAD (Onshape) #Design</p><br>
-                    <img src="images/project/project-TCCC.jpg" alt="TCCC">
-                    <p>
-                        Led the redesign and manufacturing of a prototype for Republic of Korea Army combat shirts with integrated tourniquet 
-                        attachments, significantly reducing the tourniquet application time to 5 seconds in time-sensitive combat situations.
-                    </p>
-                    <a class="button" href='https://youtu.be/FjpZ4Uo5590' target="_blank">Video</a>
+
+
+                <div class="card project_card">
+                    <div class="project_card_row1">
+                        <h3>Tactical Combat Casualty Care</h3>
+                        <p>Republic of Korea Army</p>
+                        <p><i>Mar. 2024 - Aug. 2024</i></p>
+                        <p>#CAD</p><br>
+                    </div>
+                    <div class="project_card_row2">
+                        <img src="images/project/project-TCCC.jpg" alt="TCCC">
+                    </div>
+                    <div class="project_card_row3">
+                        <p>
+                            Led the redesign and manufacturing of a prototype for Republic of Korea Army combat shirts with integrated tourniquet 
+                            attachments, significantly reducing the tourniquet application time to 5 seconds in time-sensitive combat situations.
+                        </p>
+                    </div>
+                    <div class="project_card_row4">
+                        <a class="button" href='https://youtu.be/FjpZ4Uo5590' target="_blank">Video</a>
+                    </div>                    
                 </div>
-                <div class="card">
-                    <h3>QGIS Clothoid Path</h3>
-                    <p>SNU Zero</p>
-                    <p><i>September 2023 - November 2023</i></p>
-                    <p>#MATLAB #QGIS #Clothoid Path</p><br>
-                    <img src="images/project/project-QGIS_Clothoid_Path.jpg" alt="QGIS Clothoid Path">
-                    <p>
-                        Authored a handbook on utilizing Quantum Geographic Information System (QGIS) and MATLAB to effectively set map checkpoints, 
-                        aimed at educating the team and enabling them to implement these concepts to achieve competition objectives.
-                    </p>
-                    <a class="button" href='https://github.com/jungjae01eng/ZERO-QGIS_ClothoidPath/blob/master/Zero_QGIS.pdf' target="_blank">Paper</a>
+
+
+                <div class="card project_card">
+                    <div class="project_card_row1">
+                        <h3>QGIS Clothoid Path</h3>
+                        <p>SNU Zero</p>
+                        <p><i>Sep. 2023 - Nov. 2023</i></p>
+                        <p>#MATLAB</p><br>
+                    </div>
+                    <div class="project_card_row2">
+                        <img src="images/project/project-QGIS_Clothoid_Path.jpg" alt="QGIS Clothoid Path">
+                    </div>
+                    <div class="project_card_row3">
+                        <p>
+                            Authored a handbook on utilizing Quantum Geographic Information System (QGIS) and MATLAB to effectively set map checkpoints, 
+                            aimed at educating the team and enabling them to implement these concepts to achieve competition objectives.
+                        </p>
+                    </div>
+                    <div class="project_card_row4">
+                        <a class="button" href='https://github.com/jungjae01eng/ZERO-QGIS_ClothoidPath/blob/master/Zero_QGIS.pdf' target="_blank">Paper</a>
+                    </div>                    
                 </div>
-                <div class="card">
-                    <h3>FMUC GUI Interface</h3>
-                    <p>SNU Zero</p>
-                    <p><i>September 2023 - November 2023</i></p>
-                    <p>#GUI #Python</p><br>
-                    <img src="images/project/project-FMUC_GUI_Interface.jpg" alt="FMUC GUI Interface">
-                    <p>
-                        Developed a Graphical User Interface (GUI) to remotely manage the vehicle's navigation and 
-                        monitor its real-time location from a centralized control room.
-                    </p>
-                    <a class="button" href='https://github.com/jungjae01eng/ZERO-QGIS_ClothoidPath/blob/master/Zero_QGIS.pdf' target="_blank">Paper</a>
-                </div>  
-                <div class="card">
-                    <h3>Desk Lamp</h3>
-                    <p>BU ENG EK 210: Engineering Design</p>
-                    <p><i>September 2022 - December 2022</i></p>
-                    <p>#CAD (Solidworks) #Arduino #Soldering</p><br>
-                    <img src="images/project/project-Desk_Lamp.jpg" alt="Desk Lamp">
-                    <p>
-                        Prototyped custom desk lamp prototype for individuals with ADHD and Autism to regulate sleep 
-                        patterns by adjusting the light spectrum according to the time of day.
-                    </p>
-                    <a class="button" href='https://docs.google.com/presentation/d/1BXslzm9hQ2UGxjr_N0Mx3avHFRZnhsDyolYfk0bAcNs/edit?usp=sharing' target="_blank">Presentation</a>
-                    <a class="button" href='https://github.com/jungjae01eng/BostonU-EK210-DeskLamp/blob/eeff4433fddfd92e5bafa932e961f32ed6263c70/Desk%20Lamp%20Report.pdf' target="_blank">Final Report</a>
+
+
+                <div class="card project_card">
+                    <div class="project_card_row1">
+                        <h3>FMUC GUI Interface</h3>
+                        <p>SNU Zero</p>
+                        <p><i>Sep. 2023 - Nov. 2023</i></p>
+                        <p>#GUI #Python</p><br>
+                    </div>
+                    <div class="project_card_row2">
+                        <img src="images/project/project-FMUC_GUI_Interface.jpg" alt="FMUC GUI Interface">
+                    </div>
+                    <div class="project_card_row3">
+                        <p>
+                            Developed a Graphical User Interface (GUI) to remotely manage the vehicle's navigation and 
+                            monitor its real-time location from a centralized control room.
+                        </p>
+                    </div>
+                    <div class="project_card_row4">
+                        <a class="button" href='https://github.com/jungjae01eng/ZERO-QGIS_ClothoidPath/blob/master/Zero_QGIS.pdf' target="_blank">Paper</a>
+                    </div>                    
                 </div>
-                <div class="card">
-                    <h3>A UI for Visualizing Average Image Data</h3>
-                    <p>BU ENG EC 327: Software Engineering</p>
-                    <p><i>October 2022 - December 2022</i></p>
-                    <p>#C++ #Python #MATLAB #Machine Learning</p><br>
-                    <img src="images/project/project-Avg_Image_Data.jpg" alt="A UI for Visualizing Average Image Data">
-                    <p>
-                        Designed user interface that allows users to input two labeled directories containing large amounts of image data 
-                        and utilized machine learning algorithms to visualize the average of the two datasets.
-                    </p>
-                    <a class="button" href='https://drive.google.com/file/d/1qpJYMl3s4fFjupr67ij5zKyfcIylPfVu/view?usp=sharing' target="_blank">Video</a>
-                    <a class="button" href='https://github.com/jungjae01eng/BostonU-EC327-ImageDataVisualization' target="_blank">GitHub</a>
+
+
+                <div class="card project_card">
+                    <div class="project_card_row1">
+                        <h3>Desk Lamp</h3>
+                        <p>BU ENG EK 210: Engineering Design</p>
+                        <p><i>Sep. 2022 - Dec. 2022</i></p>
+                        <p>#Arduino #Soldering #CAD</p><br>
+                    </div>
+                    <div class="project_card_row2">
+                        <img src="images/project/project-Desk_Lamp.jpg" alt="Desk Lamp">
+                    </div>
+                    <div class="project_card_row3">
+                        <p>
+                            Prototyped custom desk lamp prototype for individuals with ADHD and Autism to regulate sleep 
+                            patterns by adjusting the light spectrum according to the time of day.
+                        </p>
+                    </div>
+                    <div class="project_card_row4">
+                        <a class="button" href='https://docs.google.com/presentation/d/1BXslzm9hQ2UGxjr_N0Mx3avHFRZnhsDyolYfk0bAcNs/edit?usp=sharing' target="_blank">Presentation</a>
+                        <a class="button" href='https://github.com/jungjae01eng/BostonU-EK210-DeskLamp/blob/eeff4433fddfd92e5bafa932e961f32ed6263c70/Desk%20Lamp%20Report.pdf' target="_blank">Final Report</a>
+                    </div>                    
                 </div>
-                <div class="card">
-                    <h3>Real-Time Adventures in a 2D Realm</h3>
-                    <p>BU ENG EC 327: Software Engineering</p>
-                    <p><i>September 2022 - December 2022</i></p>
-                    <p>#C++ #Python #MATLAB</p><br>
-                    <img src="images/project/project-Pokemon_Game.jpg" alt="Real-Time Adventures in a 2D Realm">
-                    <p>
-                        Developed complex simulation of Pokemon battles in two-dimensional world with intelligent objects 
-                        that move and interact in real time while implementing intuitive command system to enable users to control object behavior.
-                    </p>
-                    <a class="button" href='https://github.com/jungjae01eng/BostonU-EK327-PokemonGame' target="_blank">GitHub</a>
+
+
+                <div class="card project_card">
+                    <div class="project_card_row1">
+                        <h3>A UI for Visualizing Average Image Data</h3>
+                        <p>BU ENG EC 327: Software Engineering</p>
+                        <p><i>Oct. 2022 - Dec. 2022</i></p>
+                        <p>#CPP #Python #MATLAB #ML</p><br>
+                    </div>
+                    <div class="project_card_row2">
+                        <img src="images/project/project-Avg_Image_Data.jpg" alt="A UI for Visualizing Average Image Data">
+                    </div>
+                    <div class="project_card_row3">
+                        <p>
+                            Designed user interface that allows users to input two labeled directories containing large amounts of image data 
+                            and utilized machine learning algorithms to visualize the average of the two datasets.
+                        </p>
+                    </div>
+                    <div class="project_card_row4">
+                        <a class="button" href='https://drive.google.com/file/d/1qpJYMl3s4fFjupr67ij5zKyfcIylPfVu/view?usp=sharing' target="_blank">Video</a>
+                        <a class="button" href='https://github.com/jungjae01eng/BostonU-EC327-ImageDataVisualization' target="_blank">GitHub</a>
+                    </div>                    
                 </div>
-                <div class="card">
-                    <h3>Failure Mode and Effects Analysis (FMEA)</h3>
-                    <p>BU Terrier Motorsport</p>
-                    <p><i>January 2022 - May 2022</i></p>
-                    <p>#Analysis</p><br>
-                    <img src="images/project/project-No_Photo.jpg" alt="Project 2 Image">
-                    <p>
-                        Performed Failure Mode and Effects Analysis to identify where failures can occur and how frequently 
-                        it could happen to maintain highest quality vehicle safety standards and prepare for worst situation.
-                    </p>
+
+
+                <div class="card project_card">
+                    <div class="project_card_row1">
+                        <h3>Real-Time Adventures in a 2D Realm</h3>
+                        <p>BU ENG EC 327: Software Engineering</p>
+                        <p><i>Sep. 2022 - Dec. 2022</i></p>
+                        <p>#CPP #Python #MATLAB</p><br>
+                    </div>
+                    <div class="project_card_row2">
+                        <img src="images/project/project-Pokemon_Game.jpg" alt="Real-Time Adventures in a 2D Realm">
+                    </div>
+                    <div class="project_card_row3">
+                        <p>
+                            Developed complex simulation of Pokemon battles in two-dimensional world with intelligent objects 
+                            that move and interact in real time while implementing intuitive command system to enable users to control object behavior.
+                        </p>
+                    </div>
+                    <div class="project_card_row4">
+                        <a class="button" href='https://github.com/jungjae01eng/BostonU-EK327-PokemonGame' target="_blank">GitHub</a>
+                    </div>                    
                 </div>
-                <div class="card">
-                    <h3>Robootics End Effector</h3>
-                    <p>BU Mars Rover</p>
-                    <p><i>January 2022 - May 2022</i></p>
-                    <p>#CAD (Solidworks)</p><br>
-                    <img src="images/project/project-robotics_arm.jpg" alt="Robotics End Effector">
-                    <p>
-                        Led the Robotics End Effector project by designing the first and second prototypes using SolidWorks, 
-                        focusing on functionality and durability to ensure compatibility with other components and systems.
-                    </p>
+
+
+                <div class="card project_card">
+                    <div class="project_card_row1">
+                        <h3>Magnetic Momentum</h3>
+                        <p>Personal Project</p>
+                        <p><i>May. 2022 - Aug. 2022</i></p>
+                        <p>#Magnetic #3D Printing</p><br>
+                    </div>
+                    <div class="project_card_row2">
+                        <img src="images/project/project2_1.jpg" alt="??">
+                    </div>
+                    <div class="project_card_row3">
+                        <p>
+                            Needs Update
+                        </p>
+                    </div>
+                    <div class="project_card_row4">
+                        <!-- <a class="button" href='' target="_blank"></a> -->
+                    </div>                    
                 </div>
-                <div class="card">
-                    <h3>Gavel Pen</h3>
-                    <p>Personal Project</p>
-                    <p><i>January 2022 - May 2022</i></p>
-                    <p>#Manual Lathes</p><br>
-                    <img src="images/project/project-Gavel_Pen.jpg" alt="Gavel Pen">
-                    <p>
-                        Designed a unique gavel using manual lathes, incorporating a functional pen holder within the handle.
-                    </p>
+
+
+                <div class="card project_card">
+                    <div class="project_card_row1">
+                        <h3>Failure Mode and Effects Analysis (FMEA)</h3>
+                        <p>BU Terrier Motorsport</p>
+                        <p><i>Jan. 2022 - May. 2022</i></p>
+                        <p>#Analysis</p><br>
+                    </div>
+                    <div class="project_card_row2">
+                        <img src="images/project/project-No_Photo.jpg" alt="Project 2 Image">
+                    </div>
+                    <div class="project_card_row3">
+                        <p>
+                            Performed Failure Mode and Effects Analysis to identify where failures can occur and how frequently 
+                            it could happen to maintain highest quality vehicle safety standards and prepare for worst situation.
+                        </p>
+                    </div>
+                    <div class="project_card_row4">
+                        <!-- <a class="button" href='' target="_blank">Link</a> -->
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Name Plate</h3>
-                    <p>Personal Project</p>
-                    <p><i>January 2022 - May 2022</i></p>
-                    <p>#CNC Milling</p><br>
-                    <img src="images/project/project-Name_Plate.jpg" alt="Name Plate">
-                    <p>
-                        Crafted a personalized engraved plate featuring my initials, leveraging CNC milling techniques for hands-on learning.
-                    </p>
+
+
+                <div class="card project_card">
+                    <div class="project_card_row1">
+                        <h3>Robootics End Effector</h3>
+                        <p>BU Mars Rover</p>
+                        <p><i>Jan. 2022 - May. 2022</i></p>
+                        <p>#CAD</p><br>
+                    </div>
+                    <div class="project_card_row2">
+                        <img src="images/project/project-robotics_arm.jpg" alt="Robotics End Effector">
+                    </div>
+                    <div class="project_card_row3">
+                        <p>
+                            Led the Robotics End Effector project by designing the first and second prototypes using SolidWorks, 
+                            focusing on functionality and durability to ensure compatibility with other components and systems.
+                            </p>
+                    </div>
+                    <div class="project_card_row4">
+                        <!-- <a class="button" href='' target="_blank">Link</a> -->
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Room Temperature Monitor</h3>
-                    <p>BU ENG EK 131: Engineering Hands On</p>
-                    <p><i>January 2022 - May 2022</i></p>
-                    <p>#MATLAB #Arduino #Arduino #3D Printing<br>
-                        #Soldering #Circuit Design #CAD (Onshape)</p><br>
-                    <img src="images/project/project-Room_Temperature_Monitor.jpg" alt="Project 2 Image">
-                    <p>
-                        Developed room temperature monitor with LCD screen to monitor temperature and alarm to notify 
-                        users when temperature goes out of desired range using Arduino, Thermistor, and Piezo capsule.
-                    </p>
-                    <a class="button" href='https://github.com/jungjae01eng/BostonU-EK131-RoomTempMonitor/blob/master/Arduino.ino' target="_blank">Arduino Code</a>
-                    <a class="button" href='https://github.com/jungjae01eng/BostonU-EK131-RoomTempMonitor/blob/master/Monitor_Design_Report.pdf' target="_blank">Final Report</a>
+
+
+                <div class="card project_card">
+                    <div class="project_card_row1">
+                        <h3>Gavel Pen & Name Plate</h3>
+                        <p>Personal Project</p>
+                        <p><i>Jan. 2022 - May. 2022</i></p>
+                        <p>#Lathes #Milling</p><br>
+                    </div>
+                    <div class="project_card_row2">
+                        <img src="images/project/project-Gavel_Pen_Name_Plate.jpg" alt="Gavel Pen & Name Plate">
+                    </div>
+                    <div class="project_card_row3">
+                        <p>
+                            Designed a unique gavel using manual lathes, incorporating a functional pen holder within the handle.
+                            Crafted a personalized engraved plate featuring my initials, leveraging CNC milling techniques for hands-on learning.
+                        </p>
+                    </div>
+                    <div class="project_card_row4">
+                        <!-- <a class="button" href='' target="_blank">Link</a> -->
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Tractive System Active Lamp (TSAL)</h3>
-                    <p>BU Terrier Motorsport</p>
-                    <p><i>September 2021 - January 2022</i></p>
-                    <p>#PCB (KiCad) #Circuit Design #Soldering</p><br>
-                    <img src="images/project/project-TSAL.jpg" alt="TSAL Project">
-                    <p>
-                        Engineering a Printed Circuit Board (PCB) using KiCad to feature a red flashing lamp operating at 
-                        a frequency of 3 Hz, designed to be mounted above the driver to indicate voltage power.<br>
-                        Related work on the Competition Report can be found on page 24.
-                    </p>
-                    <a class="button" href='https://github.com/jungjae01eng/TM-TSAL_System/blob/main/TSAL%20System.pdf' target="_blank">Final Report</a>
-                    <a class="button" href='https://docs.google.com/document/d/1MoZfU1hfXyS7ZoeUlv_51n64_MBDvMeHghrC-t6IEa0/edit' target="_blank">Competition Report</a>
+
+
+                <div class="card project_card">
+                    <div class="project_card_row1">
+                        <h3>Room Temperature Monitor</h3>
+                        <p>BU ENG EK 131: Engineering Hands On</p>
+                        <p><i>Jan. 2022 - May. 2022</i></p>
+                        <p>#MATLAB #Arduino #3D Printing #Soldering #Circuit Design #CAD</p><br>
+                    </div>
+                    <div class="project_card_row2">
+                        <img src="images/project/project-Room_Temperature_Monitor.jpg" alt="Project 2 Image">
+                    </div>
+                    <div class="project_card_row3">
+                        <p>
+                            Developed room temperature monitor with LCD screen to monitor temperature and alarm to notify 
+                            users when temperature goes out of desired range using Arduino, Thermistor, and Piezo capsule.
+                        </p>
+                    </div>
+                    <div class="project_card_row4">
+                        <a class="button" href='https://github.com/jungjae01eng/BostonU-EK131-RoomTempMonitor/blob/master/Arduino.ino' target="_blank">Arduino Code</a>
+                        <a class="button" href='https://github.com/jungjae01eng/BostonU-EK131-RoomTempMonitor/blob/master/Monitor_Design_Report.pdf' target="_blank">Final Report</a>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Analysis of the Health of Low-Income Families</h3>
-                    <p>BU ENG EK 125: Programming for Engineers</p>
-                    <p><i>November 2021 - December 2021</i></p>
-                    <p>#MATLAB #Machine Learning #Data Analysis</p><br>
-                    <img src="images/project/project-Solution_for_Health.jpg" alt="Project 2 Image">
-                    <p>
-                        Monitored correlation between low-income families’ healthcare and cause of death to find specific causes 
-                        of fatalities correlates with the ability to seek treatment using MATLAB and Machine Learning.
-                    </p>
-                    <a class="button" href='https://docs.google.com/document/d/1_n9gceYiubJf97mL8kV1vI1nZyCBsz72DHls9GYW_1c/edit?usp=sharing' target="_blank">Final Report</a>
+
+
+                <div class="card project_card">
+                    <div class="project_card_row1">
+                        <h3>Tractive System Active Lamp (TSAL)</h3>
+                        <p>BU Terrier Motorsport</p>
+                        <p><i>Sep. 2021 - Jan. 2022</i></p>
+                        <p>#PCB #Circuit Design #Soldering</p><br>
+                    </div>
+                    <div class="project_card_row2">
+                        <img src="images/project/project-TSAL.jpg" alt="TSAL Project">
+                    </div>
+                    <div class="project_card_row3">
+                        <p>
+                            Engineering a Printed Circuit Board (PCB) using KiCad to feature a red flashing lamp operating at 
+                            a frequency of 3 Hz, designed to be mounted above the driver to indicate voltage power.<br>
+                            Related work on the Competition Report can be found on page 24.
+                        </p>
+                    </div>
+                    <div class="project_card_row4">
+                        <a class="button" href='https://github.com/jungjae01eng/TM-TSAL_System/blob/main/TSAL%20System.pdf' target="_blank">Final Report</a>
+                        <a class="button" href='https://docs.google.com/document/d/1MoZfU1hfXyS7ZoeUlv_51n64_MBDvMeHghrC-t6IEa0/edit' target="_blank">Competition Report</a>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Analysis of the Force Exerted by an Elevator</h3>
-                    <p>BU ENG EK 125: Programming for Engineers</p>
-                    <p><i>October 2021 - November 2021</i></p>
-                    <p>#MATLAB #Data Analysis</p><br>
-                    <img src="images/project/project-Testing_Force_Exerted_By_Elevator.jpg" alt="Testing Force-exerted by Elevator">
-                    <p>
-                        Collected acceleration data of three different elevators at Boston University Warren Tower to 
-                        compute maximum and minimum forces exerted by elevators to determine consistency and correlation 
-                        of acceleration and gravity with MATLAB.
-                    </p>
-                    <a class="button" href='https://docs.google.com/document/d/1Th-Lg_VTd58958W6QPklpQryJUs6eTrcC9E6Ib9kSmk/edit?usp=sharing' target="_blank">Final Report</a>
+
+
+                <div class="card project_card">
+                    <div class="project_card_row1">
+                        <h3>Analysis of the Health of Low-Income Families</h3>
+                        <p>BU ENG EK 125: Programming for Engineers</p>
+                        <p><i>Nov. 2021 - Dec. 2021</i></p>
+                        <p>#MATLAB #ML #Data Analysis</p><br>
+                    </div>
+                    <div class="project_card_row2">
+                        <img src="images/project/project-Solution_for_Health.jpg" alt="Project 2 Image">
+                    </div>
+                    <div class="project_card_row3">
+                        <p>
+                            Monitored correlation between low-income families’ healthcare and cause of death to find specific causes 
+                            of fatalities correlates with the ability to seek treatment using MATLAB and Machine Learning.
+                        </p>
+                    </div>
+                    <div class="project_card_row4">
+                        <a class="button" href='https://docs.google.com/document/d/1_n9gceYiubJf97mL8kV1vI1nZyCBsz72DHls9GYW_1c/edit?usp=sharing' target="_blank">Final Report</a>
+                    </div>
+                </div>
+
+
+                <div class="card project_card">
+                    <div class="project_card_row1">
+                        <h3>Analysis of the Force Exerted by an Elevator</h3>
+                        <p>BU ENG EK 125: Programming for Engineers</p>
+                        <p><i>Oct. 2021 - Nov. 2021</i></p>
+                        <p>#MATLAB #Data Analysis</p><br>
+                    </div>
+                    <div class="project_card_row2">
+                        <img src="images/project/project-Testing_Force_Exerted_By_Elevator.jpg" alt="Testing Force-exerted by Elevator">
+                    </div>
+                    <div class="project_card_row3">
+                        <p>
+                            Collected acceleration data of three different elevators at Boston University Warren Tower to 
+                            compute maximum and minimum forces exerted by elevators to determine consistency and correlation 
+                            of acceleration and gravity with MATLAB.
+                        </p>
+                    </div>
+                    <div class="project_card_row4">
+                        <a class="button" href='https://docs.google.com/document/d/1Th-Lg_VTd58958W6QPklpQryJUs6eTrcC9E6Ib9kSmk/edit?usp=sharing' target="_blank">Final Report</a>
+                    </div>
                 </div>
             </div>
         </section>
 
+
         <section  id="gallery" class="section1">
             <h2>Gallery</h2>
-            <div class="gallery-section srbl-gallery">
-                <h3 style="text-align: center;">Seoul National University Soft Robotics & Bionics Laboratory</h3>
+            <div class="gallery_section gallery_srbl">
+                <h3 class="gallery_card_h3">Seoul National University Soft Robotics & Bionics Laboratory</h3>
                 <div style="margin-bottom:10px; width: 100%; height: auto;">
                     <img src="images/research/srbl/srbl-group_photo.jpg" alt="Team">
                 </div>
-                <h4>2023 Soft Robot Symposium</h4>
-                <p style="margin-top: -15px;">@Soft Robotics Research Center</p>
-                <div class="gallery-grid">
+                <h4 class="gallery_card_h4">2023 Soft Robot Symposium</h4>
+                <p class="gallery_card_p">@Soft Robotics Research Center</p>
+                <div class="gallery_grid">
                     <div>
                         <img src="images/research/srbl/gallery_photo2.jpg" alt="Portfolio">
                     </div>
@@ -654,12 +759,12 @@
                 </div>
             </div>
 
-            <div class="gallery-section mbl-gallery">
-                <h3 style="text-align: center;">Boston University Morphable Biorobotics Laboratory</h3>
+            <div class="gallery_section gallery_mbl">
+                <h3 class="gallery_card_h3">Boston University Morphable Biorobotics Laboratory</h3>
                 <div style="margin-bottom:10px; width: 100%; height: auto;">
                     <img src="images/research/mbl/mbl-group_photo.jpg" alt="Team">
                 </div>
-                <div class="gallery-grid">
+                <div class="gallery_grid">
                     <div>
                         <img src="images/research/mbl/gallery_photo1.jpg" alt="Portfolio">
                     </div>
@@ -675,14 +780,14 @@
                 </div>
             </div>
 
-            <div class="gallery-section zero-gallery">
-                <h3 style="text-align: center;">Seoul National University Zero Team</h3>
+            <div class="gallery_section gallery_zero">
+                <h3 class="gallery_card_h3">Seoul National University Zero Team</h3>
                 <div style="margin-bottom:10px; width: 100%; height: auto;">
                     <img src="images/extracurricular/zero/zero-group_photo1.jpg" alt="Team">
                 </div>
-                <h4>2023 International EV Competition</h4>
-                <p style="margin-top: -15px;">@Korea Automobile Testing & Research Institute</p>
-                <div class="gallery-grid">
+                <h4 class="gallery_card_h4">2023 International EV Competition</h4>
+                <p class="gallery_card_p">@Korea Automobile Testing & Research Institute</p>
+                <div class="gallery_grid">
                     <div>
                         <img src="images/extracurricular/zero/zero-photo1_1.jpg" alt="Portfolio">
                     </div>
@@ -708,9 +813,9 @@
                         <img src="images/extracurricular/zero/zero-photo1_8.jpg" alt="Portfolio">
                     </div>
                 </div>
-                <h4>2023 Advanced Autonomous Driving Software Competition</h4>
-                <p style="margin-top: -15px;">@Future Mobility Technology Center</p>
-                <div class="gallery-grid">
+                <h4 class="gallery_card_h4">2023 Advanced Autonomous Driving Software Competition</h4>
+                <p class="gallery_card_p">@Future Mobility Technology Center</p>
+                <div class="gallery_grid">
                     <div>
                         <img src="images/extracurricular/zero/zero-photo2_2.jpg" alt="Portfolio">
                     </div>
@@ -727,14 +832,14 @@
             </div>
 
 
-            <div class="gallery-section mars-rover-gallery">
-                <h3 style="text-align: center;">Boston University Mars Rover Team</h3>
+            <div class="gallery_section gallery_mars_rover">
+                <h3 class="gallery_card_h3">Boston University Mars Rover Team</h3>
                 <div style="margin-bottom:10px; width: 100%; height: auto;">
                     <img src="images/extracurricular/mr/mr-group_photo.jpg" alt="Team">
                 </div>
 
-                <h4>Team Meeting</h4>
-                <div class="gallery-grid">
+                <h4 class="gallery_card_h4" style="margin-bottom: 15px;">Team Meeting</h4>
+                <div class="gallery_grid">
                     <div>
                         <img src="images/extracurricular/mr/mr-photo1_1.jpg" alt="Portfolio">
                     </div>
@@ -746,9 +851,9 @@
                     </div>
                 </div>
 
-                <h4>Collaboration with other Teams</h4>
-                <p style="margin-top: -15px;">Northeastern University (NU Rover) & University of Toronto (Robotics for Space Exploration)</p>
-                <div class="gallery-grid">
+                <h4 class="gallery_card_h4">Collaboration with other Teams</h4>
+                <p class="gallery_card_p">Northeastern University (NU Rover) & University of Toronto (Robotics for Space Exploration)</p>
+                <div class="gallery_grid">
                     <div>
                         <img src="images/extracurricular/mr/mr-photo2_1.jpg" alt="Portfolio">
                     </div>
@@ -761,14 +866,14 @@
                 </div>
             </div>
         
-            <div class="gallery-section terrier-motorsport-gallery">
-                <h3 style="text-align: center;">Boston University Terrier Motorsport Team</h3>
+            <div class="gallery_section gallery_terrier_motorsport">
+                <h3 class="gallery_card_h3">Boston University Terrier Motorsport Team</h3>
                 <div style="margin-bottom: 10px; width: 100%; height: auto;">
                     <img src="images/extracurricular/tm/tm-group_photo.jpg" alt="Team">
                 </div>
 
-                <h4>Electrical Team</h4>
-                <div class="gallery-grid">
+                <h4 class="gallery_card_h4" style="margin-bottom: 15px;">Electrical Team</h4>
+                <div class="gallery_grid">
                     <div>
                         <img src="images/extracurricular/tm/tm-photo1.JPG" alt="Electrical Team">
                     </div>
@@ -778,10 +883,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2021-2024 Jungjae Lee. Boston University College of Engineering</p>
+        <p style="color: white">&copy; 2021-2024 Jungjae Lee. Boston University College of Engineering</p>
         <div>
-            <a href="https://linkedin.com/in/yourprofile" style="color: white; text-decoration: none; margin: 0 8px;">LinkedIn</a>
-            <a href="https://github.com/yourprofile" style="color: white; text-decoration: none; margin: 0 8px;">GitHub</a>
+            <a href="https://linkedin.com/in/jungjae-engineering" style="color: white; text-decoration: none; margin: 0 8px;">LinkedIn</a>
+            <a href="https://github.com/jungjae01eng" style="color: white; text-decoration: none; margin: 0 8px;">GitHub</a>
         </div>
     </footer>
 
