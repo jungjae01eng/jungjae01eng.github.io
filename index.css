@@ -163,7 +163,7 @@ nav {display: flex; justify-content: center; align-items: center; position: rela
 /* Project */
 .project_section {padding: 16px; border-radius: 8px; margin-bottom: 32px;}
 .project_grid {display: grid; flex-wrap: wrap; justify-content: space-between; 
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 16px;}
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px;}
 .project_card {display: flex; flex-direction: column; justify-content: space-between;}
 
 .project_card_row1 {flex: 1;}
