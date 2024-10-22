@@ -85,7 +85,7 @@ nav {display: flex; justify-content: center; align-items: center; position: rela
     .introduction_grid {display: flex; flex-wrap: wrap-reverse; flex-direction: column;}
     .introduction_card_column1 {margin-right: 0;}
     .introduction_card_column2 {display: flex; justify-content: center; align-items: center; order: -1;}
-    .introduction_card_column2 img {width: 70%; height: auto;}
+    .introduction_card_column2 img {width: 40%; height: auto;}
 }
 
 
@@ -199,8 +199,9 @@ nav {display: flex; justify-content: center; align-items: center; position: rela
 
 /* Apply to ALL */
 .button {background-color: #3182ce; color: white; padding: 8px 8px; border: none; border-radius: 4px; 
-    cursor: pointer; font-size: 15px; display: inline-block; text-decoration: none;}
+    cursor: pointer; font-family: Arial, sans-serif; font-size: 15px; display: inline-block; text-decoration: none;}
 .button:hover {background-color: #2b6cb0;}
+
 
 
 
