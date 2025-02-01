@@ -5,7 +5,7 @@
 ---
 
  ## Hello!
-  My name is Jungjae, and I am a sophomore majoring in Computer Engineering at Boston University.  
+  My name is Jungjae, and I am a rising junior majoring in Computer Engineering at Boston University.  
   
   Currently, I am on a gap year, engaged in research at Seoul National University, where my primary focus lies in conducting simulations for soft robotics.  
   (Will enlist in the Korean mandatory military service in January 2024)  

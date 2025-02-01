@@ -1,118 +1,104 @@
-<!--
-    Jungjae Lee, Personal Portfolio
--->
-
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="Boston University, research, Software Engineering, Medical Robotics, Soft Robotics">
-        <meta name="description" content="Jungjae's Engineering">
-        <title>JUNGJAE | Engineering Portfolio</title>
-        <link rel="stylesheet" href="index.css">
+        <title>Jungjae Lee | Engineering Portfolio</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     </head>
-
-
     <body>
         <header>
-            <div class="header1_div">
-                <h1>Jungjae Lee</h1>
-                <p class="header1_p1">Boston University College of Engineering '27</p>
-                <nav>
-                    <div class="hamburger" id="hamburger">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="nav_links" id="nav_links">
-                        <a href="index.html#introduction">About Me</a>
-                        <a href="index.html#education">Education</a>
-                        <a href="index.html#research">Research</a>
-                        <a href="index.html#publications">Publications</a>
-                        <a href="index.html#leadership">Leadership</a>
-                        <a href="index.html#projects">Projects</a>
-                        <a href="index.html#gallery">Gallery</a>
-                    </div>
-                </nav>
-            </div>
+            <h1><a href=index.html>Jungjae Lee</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#work_experience">Experiences</a></li>
+                    <li><a href="index.html#publications">Publications</a></li>
+                    <li><a href="index.html#leadership_experience">Leadership</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                </ul>
+            </nav>
+            <button id="nav_menu_toggle_button" aria-label="Toggle menu">☰</button>
         </header>
+        <main>
+            <aside>
+                <img src="assets/Profile.jpg" class="profile_image" alt="Profile image", width=90px, height="auto">
+                <h2>Jungjae Lee</h2>
+                <p style="margin-top: -15px;">Computer Engineering @Boston University</p>
+                <ul class="contact_info">
+                    <li><span class="icon">🌏</span> Boston USA; Seoul KR</li>
+                    <li><span class="icon">🏛️</span> Boston University</li>
+                    <li><span class="icon">✉️</span> <a class="contact_info_a" href="mailto:jacob25@bu.edu">jacob25@bu.edu</a></li>
+                    <li><span class="icon">🌐</span> <a class="contact_info_a" href="https://www.linkedin.com/in/jungjae-engineering/">LinkedIn</a></li>
+                    <li><span class="icon">🎓</span> <a class="contact_info_a" href="https://scholar.google.com/citations?hl=en&user=NYXSU_MAAAAJ">Google Scholar</a></li>
+                    <li><span class="icon">🐙</span> <a class="contact_info_a" href="https://github.com/jungjae01eng">Github</a></li>
+                </ul>
+            </aside>
 
-
-        <main class="main_container">
-            <section id="research-team" class="section1">
-                <h2>Kolachalama Laboratory</h2>
-                <h3>Boston University</h3>
-                <div class="card company_summary_card">
+            <section id="content">
+                <div class="company_intro">
+                    <strong>Kolachalama Laboratory</strong><br>
+                    Dept. of Medicine: Computational Biomedicine<br>
+                    Boston University
+                </div>
+                <div class="container company_summary_card">
                     <p>
                         Our research focuses on creating software frameworks that can assist dementia screening in various real-world settings.<br><br>
                         <strong>Neurodegeneration</strong> - How can we develop software frameworks that can assist dementia screening in various real-world settings?<br>
                         <strong>pathology</strong> - How can we build clinical-grade software tools to complement the pathologist workflow?
                     </p>
                 </div>
-            </section>
 
-            <section id="projects" class="section1">
-                <h2>Projects</h2>
-                <div class="card project_summary">
-                    <h3>BioSMART Project</h3>
-                    <p><strong>Project Led by: </strong>Meysam Ahangaran, Postdoctoral Research Fellow</p>
-                    <p><strong>Time Commitment: </strong>March 2023 - May 2023</p>
-                    <p><strong>Skills: </strong>Python</p>
-
-                    <div class="sub_project">
-                        <!-- <img src="images/research/srbl/blank.jpg" alt="No Photo Available yet"> -->
-                        <div>
-                            <h4>MedSAM: Segment Anything in Medical Images</h4>
-                            <ul style="list-style-type: disc; padding-left: 50px; margin: 0; max-width: 90%;">
-                                <li style="margin: 8px 0; font-size: 1.3rem;">
-                                    Developed MedSAM to segment medical images for identifying and delineating regions of interest, 
-                                    enhancing a custom AI system created by the team to assess the likelihood of dementia.
-                                </li>
-                                <li style="margin: 8px 0; font-size: 1.3rem;">
-                                    Developed an API connection between front-end and back-end using Python to enable retrieval of image input files and help 
-                                    implement Kidney Biopsy Image Segmentation algorithm created by Dr.Ahangaran.
-                                </li>
-                            </ul>
+                <div class="company_project_container">
+                    <h2>Projects</h2>
+                    <div class="project project_summary">
+                        <div class="project_title">BioSMART Project</div>
+                        <div class="company_project_details">
+                            <strong>Project Led by: </strong>Meysam Ahangaran, Postdoctoral Research Fellow<br>
+                            <strong>Time Commitment: </strong>March 2023 - May 2023<br>
+                            <strong>Skills: </strong>Python
+                        </div>
+                        <div class="sub_project">
+                            <img src="assets/research/srbl/blank.jpg" alt="No Photo Available yet">
+                            <div>
+                                <div class="sub_project_title">MedSAM: Segment Anything in Medical Images</div>
+                                <ul style="list-style-type: disc; padding-left: 50px; max-width: 90%;">
+                                    <li>
+                                        Developed MedSAM to segment medical images for identifying and delineating regions of interest, 
+                                        enhancing a custom AI system created by the team to assess the likelihood of dementia.
+                                    </li>
+                                    <li>
+                                        Developed an API connection between front-end and back-end using Python to enable retrieval of image input files and help 
+                                        implement Kidney Biopsy Image Segmentation algorithm created by Dr.Ahangaran.
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-
-                <div class="card project_summary">
-                    <h3>Knowledge Graph</h3>
-                    <p><strong>Project Led by: </strong>Meysam Ahangaran, Postdoctoral Research Fellow</p>
-                    <p><strong>Time Commitment: </strong>March 2023 - May 2023</p>
-                    <p><strong>Skills: </strong>Python</p>
-
-                    <div class="sub_project">
-                        <!-- <img src="images/research/srbl/blank.jpg" alt="No Photo Available yet"> -->
-                        <div>
-                            <h4>Knowledge Graph</h4>
-                            <ul style="list-style-type: disc; padding-left: 50px; margin: 0; max-width: 90%;">
-                                <li style="margin: 8px 0; font-size: 1.3rem;">
-                                    Deployed multiple knowledge graphs related to neurodegenerative diseases, including dementia subtypes, 
-                                    using Python to explore connections and uncover potential relationships among each type.
-                                </li>
-                            </ul>
+                    <div class="project project_summary">
+                        <div class="project_title">Knowledge Graph</div>
+                        <div class="company_project_details">
+                            <strong>Project Led by: </strong>Meysam Ahangaran, Postdoctoral Research Fellow<br>
+                            <strong>Time Commitment: </strong>March 2023 - May 2023<br>
+                            <strong>Skills: </strong>Python</p>
+                        </div>
+                        <div class="sub_project">
+                            <img src="assets/research/srbl/blank.jpg" alt="No Photo Available yet">
+                            <div>
+                                <div class="sub_project_title">Knowledge Graph</div>
+                                <ul style="list-style-type: disc; padding-left: 50px; max-width: 90%;">
+                                    <li>
+                                        Deployed multiple knowledge graphs related to neurodegenerative diseases, including dementia subtypes, 
+                                        using Python to explore connections and uncover potential relationships among each type.
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-
-        
-        <footer>
-            <p style="color: white">&copy; 2023-2024 Jungjae Lee. Boston University College of Engineering</p>
-            <div>
-                <a href="https://linkedin.com/in/jungjae-engineering" target="_blank" style="color: white; text-decoration: none; margin: 0 8px;">LinkedIn</a>
-                <a href="https://github.com/jungjae01eng" target="_blank" style="color: white; text-decoration: none; margin: 0 8px;">GitHub</a>
-                <a href="https://scholar.google.com/citations?hl=ko&user=NYXSU_MAAAAJ" target="_blank" style="color: white; text-decoration: none; margin: 0 8px;">Google Scholar</a>
-            </div>
-        </footer>
-
-
-        <script src="index.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>

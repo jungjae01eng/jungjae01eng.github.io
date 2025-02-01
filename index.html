@@ -1,977 +1,912 @@
-<!--
-    Jungjae Lee, Personal Portfolio
--->
-
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="Boston University, research, Software Engineering, Medical Robotics, Soft Robotics">
-        <meta name="description" content="Jungjae's Engineering">
-        <title>JUNGJAE | Engineering Portfolio</title>
-        <link rel="stylesheet" href="index.css">
+        <title>Jungjae Lee | Engineering Portfolio</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     </head>
-
-
     <body>
         <header>
-            <div class="header1_div">
-                <h1 class="header1_h1">Jungjae Lee</h1>
-                <p class="header1_p1">Boston University College of Engineering '27</p>
-                <nav>
-                    <div class="hamburger" id="hamburger">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="nav_links" id="nav_links">
-                        <a href="#introduction">About Me</a>
-                        <a href="#education">Education</a>
-                        <a href="#research">Research</a>
-                        <a href="#publications">Publications</a>
-                        <a href="#leadership">Leadership</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#gallery">Gallery</a>
-                    </div>
-                </nav>
-            </div>
+            <h1><a href=index.html>Jungjae Lee</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#work_experience">Experiences</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#leadership_experience">Leadership</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </nav>
+            <button id="nav_menu_toggle_button" aria-label="Toggle menu">☰</button>
         </header>
 
+        <main>
+            <aside>
+                <img src="assets/Profile.jpg" class="profile_image" alt="Profile image", width=90px, height="auto">
+                <h2>Jungjae Lee</h2>
+                <p style="margin-top: -15px;">Computer Engineering @Boston University</p>
+                <ul class="contact_info">
+                    <li><span class="icon">🌏</span> Boston USA; Seoul KR</li>
+                    <li><span class="icon">🏛️</span> Boston University</li>
+                    <li><span class="icon">✉️</span> <a class="contact_info_a" href="mailto:jacob25@bu.edu">jacob25@bu.edu</a></li>
+                    <li><span class="icon">🌐</span> <a class="contact_info_a" href="https://www.linkedin.com/in/jungjae-engineering/">LinkedIn</a></li>
+                    <li><span class="icon">🎓</span> <a class="contact_info_a" href="https://scholar.google.com/citations?hl=en&user=NYXSU_MAAAAJ">Google Scholar</a></li>
+                    <li><span class="icon">🐙</span> <a class="contact_info_a" href="https://github.com/jungjae01eng">Github</a></li>
+                </ul>
+            </aside>
 
-        <main class="main_container">
-            <section id="introduction" class="introduction_section">
-                <h2>About Me</h2>
-                <div class="card">
-                    <div class="introduction_grid">
-                        <div class="introduction_card_column1">
-                            <p>
-                                I am a rising junior at Boston University, majoring in Computer Engineering.<br><br>
+            <section id="content">
+                <div id="about">
+                    <h2>About Me!</h2>
+                    <div class="container main_AboutMe_par">
+                        <p>
+                            I am a rising junior at Boston University, majoring in Computer Engineering.<br>
+                            My research interests lie in <strong>Robotics</strong> and <strong>Machine Learning</strong>.<br>
+                            Below, I have briefly shared my key journey and future aspirations~<br><br>
+                            
+                            <strong>1. Robotics + Medical Tech</strong><br>
+                            In my freshman year, I joined the Morphable Biorobotics Lab, where I was introduced to surgical robotics research, 
+                            sparking my interest in medical technology. 
+                            Although the work was primarily in Mechanical and Electrical Engineering, I feel it helped me build 
+                            a solid foundation in robotics.<br><br>
 
-                                Time is finite and irreplaceable; I seize every opportunity because each moment is a chance to 
-                                <strong>grow</strong>, <strong>lead</strong>, and <strong>advance</strong>. My greatest strength is pursuing opportunities, 
-                                regardless of the odds of success, and never giving up, no matter how challenging the problems may be.<br><br>
-                                
-                                Since my freshman year, I’ve been fortunate to conduct research in various labs, driven by curiosity and a desire to learn.<br><br>
-
-                                My path has been fueled by this curiosity, leading me to explore various fields such as 
-                                <strong>Robotics</strong>, <strong>Machine Learning</strong>, 
-                                and <strong>Autonomous Vehicle</strong>.<br><br>
-
-                                I believe in the power of collaboration and am eager to contribute to innovative projects that drive change and make a meaningful impact.<br><br>
-                                Please feel free to reach out at <a href="mailto:jacob25@bu.edu">jacob25@bu.edu</a>.
-                            </p>
-                        </div>
-                        <div class="introduction_card_column2">
-                            <img src="images/jungjae-photo.JPG" alt="Photo of the Jungjae Lee">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section id="education" class="education_section">
-                <h2>Education</h2>
-                <div class="card education_card">
-                    <div class="education_div_institution">
-                        <h3 class="education_div_institution_h3">Boston University College of Engineering</h3>
-                        <span class="education_div_institution_span">Boston, MA, USA</span>
-                    </div>
-                    <div class="education_div_institution">
-                        <p class="education_div_institution_p1">B.S. in Computer Engineering</p>
-                        <span class="education_div_institution_span"><i>Expected May 2027</i></span>
-                    </div>
-                    <p class="education_div_institution_p2">Relevant Coursework: Machine Learning, Algorithms and Data Structures, Software Engineering</p>
-                </div>
-
-                <div class="card" style="margin-bottom: 16px;">
-                    <div class="education_div_institution">
-                        <h3 class="education_div_institution_h3">edX</h3>
-                        <span class="education_div_institution_span">Online</span>
-                    </div>
-                    <!-- <div class="education_div_institution">
-                        <p class="education_div_institution_p2">Coursework: 6.86x Machine Learning (Massachusetts Institute of Technology)</p>
-                        <span class="education_div_institution_span"><i>Expected Fall 2024</i></span>
-                    </div> -->
-                    <div class="education_div_institution">
-                        <p class="education_div_institution_p2">Coursework: CS50AI Artificial Intelligence (Harvard University)</p>
-                        <span class="education_div_institution_span"><i>Expected Fall 2024</i></span>
+                            <strong>2. Medical Tech + Software</strong><br>
+                            In my sophomore year, I joined the Kolachalama Lab to expand my knowledge of software engineering in the medical field. 
+                            There, I worked on a dementia analysis project, primarily using Python for data analysis and software development. 
+                            It was an amazing experience and learned a lot; however, I realized that I enjoy working on robotics the most.<br><br>
+                            
+                            <strong>3. Robotics + Software</strong><br>
+                            After my sophomore year, I sought to integrate both robotics and software engineering. 
+                            This led me to join the Soft Robotics & Bionics Lab, where I worked as a software engineer, focusing on robotics simulations.
+                            Soon, I realized this was the field I wanted to continue in. 
+                            However, it also made me question—what if I could combine my passion for robotics with my ongoing interest in the medical field? 
+                            That’s when I began envisioning a future in medical robotics, where I could work on software that directly contributes 
+                            to medical advancements.<br><br>
+                            
+                            <strong>4. Next Step: Robotics + Software + Medical Tech</strong><br>
+                            Now, I aspire to work at the intersection of software engineering and medical robotics, combining my passion for robotics, 
+                            software, and the medical field into one cohesive pursuit.
+                        </p>
                     </div>
                 </div>
 
-                <div class="card" style="margin-bottom: 16px;">
-                    <div class="education_div_institution">
-                        <h3 class="education_div_institution_h3">Coursera</h3>
-                        <span class="education_div_institution_span">Online</span>
-                    </div>
-                    <!-- <div class="education_div_institution">
-                        <p class="education_div_institution_p2">Coursework: Modern Robotics of Mechanics, Planning, and Control Specialization (Northwestern University)</p>
-                        <span class="education_div_institution_span"><i>Expected Fall 2024</i></span>
-                    </div> -->
-                    <div class="education_div_institution">
-                        <p class="education_div_institution_p2">Coursework: Essential Math Specialization (University of Colorado Boulder)</p>
-                        <span class="education_div_institution_span"><i>Summer 2023</i></span>
-                    </div>
-                </div>
-            </section>
-
-
-            <section id="research" class="research_section">
-                <h2>Research Experience</h2>
-                <div class="research_grid">
-                    <div class="card research_card">
-                        <div class="research_card_row1">
-                            <h3>
-                                Seoul National University<br>
-                                Soft Robotics & Bionics Lab
-                            </h3>
-                            <p style="margin-top: 1rem; color: #3d33ab"><strong>Visiting Robotics Control Researcher</strong></p>
-                            <p><i>May. 2023 - Nov. 2023</i></p>
-                            <p>#Robotics #Simulation #sim2real</p><br>
-
-                            <p><strong>Advisor:</strong> Prof. Yong-Lae Park</p>
-                            <p>Analyze the design and dynamics of biological systems and transform 
-                                them into robotic/mechatronic systems for human life.</p>
+                <div id="education">
+                    <h2>Education</h2>
+                    <div class="container">
+                        <div>
+                            <div class="logo">
+                                <img src="assets/logo/BU_logo.png" alt="Boston University Logo", width="60px", height="auto"/>
+                            </div>
                         </div>
-                        <div class="research_card_row2">
-                            <button class="button" onclick="window.location.href='srbl.html'">Learn More</button>
-                        </div>
-                    </div>
-
-                    <div class="card research_card">
-                        <div class="research_card_row1">
-                            <h3>
-                                Boston University<br>
-                                Morphable Biorobotics Lab
-                            </h3>
-                            <p style="margin-top: 1rem; color: #3d33ab"><strong>Biorobotics Undergraduate Researcher</strong></p>
-                            <p><i>Jan. 2022 - May. 2023</i></p>
-                            <p>#Medical Robotics</p><br>
-
-                            <p><strong>Advisor:</strong> Prof. Tommaso Ranzani</p>
-                            <p>Focuses on how robotics can improve our lives and create new opportunities in fields like 
-                                medicine, surgery, and rehabilitation.</p>
-                        </div>
-                        <div class="research_card_row2">
-                            <button class="button" onclick="window.location.href='mbl.html'">Learn More</button>
-                        </div>
-                    </div>
-
-                    <div class="card research_card">
-                        <div class="research_card_row1">
-                            <h3>
-                                Boston University<br>
-                                Kolachalama Lab
-                            </h3>
-                            <p style="margin-top: 1rem; color: #3d33ab"><strong>Computational Biomedicine Undergraduate Researcher</strong></p>
-                            <p><i>Mar. 2023 - May. 2023</i></p>
-                            <p>#Biomedicine #Alzheimer</p><br>
-        
-                            <p><strong>Advisor:</strong> Prof. Vijaya Kolachalama</p>
-                            <p>Focuses on creating software frameworks that can assist dementia screening in various real-world settings.</p>    
-                        </div>
-                        <div class="research_card_row2">
-                            <button class="button" onclick="window.location.href='kl.html'">Learn More</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section id="publications" class="publication_section"> 
-                <h2>Publications</h2>
-                <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Journals (2 total: 1 in press, 1 in progress)</h3>
-                <div class="publication_grid">
-                    <div class="card publication_card">
-                        <div class="publication_card_row1">
-                            <p>
-                                T. Hong, <strong>J. Lee</strong>, and Y. Park.<br><br>
-                                <strong>Origami-inspired soft pneumatic actuator model on SOFA simulation</strong><br><br>
-                                Manuscript In Progress.
-                            </p>
-                        </div>
-                        <div classs="publication_card_row2">
-                            <!-- <a class="button" href='' target="_blank">Link</a> -->
-                        </div>
-                    </div>
-                    <div class="card publication_card">
-                        <div class="publication_card_row1">
-                            <p>
-                                L. Kinnicutt, L. T. Gaeta, J. Rogatinsky, <strong>J. Lee</strong>, A. Cameron, A. Naik, D. Hess, and T. Ranzani.<br><br>
-                                <strong>A Soft Robotic, Modular Laparoscopic Grasper for Atraumatic Retraction of the Small Intestine</strong><br><br>
-                                Device, Volume 2, Issue 10, October 2024, 100560, ISSN 2666-9986.
-                            </p>
-                        </div>
-                        <div class="publication_card_row2">
-                            <a class="button" href='https://www.sciencedirect.com/science/article/pii/S2666998624004824' target="_blank">ScienceDirect</a>
-                            <a class="button" href='https://www.researchgate.net/publication/385045164_A_soft_robotic_modular_laparoscopic_grasper_for_atraumatic_retraction_of_the_small_intestine' target="_blank">ResearchGate</a>
+                        <div class="company_description">
+                            <div class="company_name">Boston University</div>
+                            <div class="company_location">📍 Boston, MA, USA</div>
+                            <div class="degree">B.S. Computer Engineering</div>
+                            <div class="year">Expected May 2027</div>
                         </div>
                     </div>
                 </div>
 
-                <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Conferences (2 total: 2 published/presented)</h3>
-                <div class="publication_grid"> 
-                    <div class="card publication_card">
-                        <div class="publication_card_row1">
-                            <p>
-                                L. Kinnicutt, <strong>J. Lee</strong>, J. Oden, L. T. Gaeta, S. K. Carroll, A. Rathi, Z. H. Lim, M. Lee, C. Orakwue,
-                                K. J. McDonald, D. Hess, and T. Ranzani.<br><br>
-                                <strong>A Soft Laparoscopic Grasper for Retraction of the Small Intestine</strong><br><br>
-                                Hamlyn Symposium on Medical Robotics, London, UK, June 2023.
-                            </p>
+
+                <div id="work_experience">
+                    <h2>Experience</h2>
+                    <div class="container">
+                        <div>
+                            <div class="logo">
+                                <img src="assets/logo/ROKA_logo.png" alt="Boston University Logo", width="60px", height="auto"/>
+                            </div>
                         </div>
-                        <div class="publication_card_row2">
-                            <a class="button" href='https://www.researchgate.net/publication/371866615_A_Soft_Laparoscopic_Grasper_for_Retraction_of_the_Small_Intestine' target="_blank">ResearchGate</a>
+                        <div class="company_description">
+                            <div class="company_name">Republic of Korea Army (ROKA): 1st Corps HQ</div>
+                            <div class="company_location">📍 Gyeonggi-do, Korea</div>
+                            <div class="title">Military Intelligence Officer | Software Engineer</div>
+                            <div class="year">November 2023 - Present</div>
+                            <div class="job_description">
+                                <ul class="job_description_ul">
+                                    <li>
+                                        Unable to disclose any specific work-related information regarding <i>Military Intelligence position</i> due to Korean law, 
+                                        as my position requires a Secret Intelligence Level II security clearance.
+                                    </li>
+                                    <li>
+                                        Develop algorithm in Python to automate system for organizing and gathering information efficiently, 
+                                        enabling rapid reporting of results.
+                                    </li>
+                                    <li>
+                                        Awarded <strong>1st place</strong> in the <strong>Top Excellence Intelligence Agent Award</strong> in the second quarter of 2024.
+                                    </li>
+                                    <li>
+                                        Achieved <strong>4th place</strong> in the <strong>Battalion-Level Individual Training Evaluation</strong> in the fourth quarter of 2024.                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="card publication_card">
-                        <div class="publication_card_row1">
-                            <p>
-                                L. Kinnicutt, A. Pathak, T. Bohac, A. Peng, C. Taglietti, C. Lee, R. Rauf, <strong>J. Lee</strong>, LZ. Heng,
-                                J. Rogatinsky, K. McDonald, J. Siracuse, and T. Ranzani.<br><br>
-                                <strong>Minimally Invasive Soft Robotic Prototypes Provide Variable Occlusion in a Simplified Aortic Flow Model</strong><br><br>
-                                American Heart Association Resuscitation Science Symposium, Chicago, US, November 2022.
-                            </p>
+
+                    <div class="container">
+                        <div>
+                            <div class="logo">
+                                <img src="assets/logo/SNU_logo.png" alt="Seoul National University Logo", width="60px", height="auto"/>
+                            </div>
                         </div>
-                        <div class="publication_card_row2">
-                            <!-- <a class="button" href='' target="_blank">Link</a> -->
+                        <div class="company_description">
+                            <div class="company_name">Seoul National University (SNU): Soft Robotics & Bionics Lab</div>
+                            <div class="company_location">📍 Gwanak District, Seoul, Korea</div>
+                            <div class="title">Visiting Robotics Control Researcher</div>
+                            <div class="year">May 2023 - November 2023</div>
+                            <div class="job_description">
+                                <ul class="job_description_ul">
+                                    <li>
+                                        Analyzed the design and dynamics of biological systems and transform 
+                                        them into robotic/mechatronic systems for human life.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <button class="work_experience_button" onclick="window.location.href='srbl.html'">Learn More!</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
 
-
-            <section id="leadership" class="section1">
-                <h2>Leadership & General Experience</h2>
-                <div class="card leadership_card">
-                    <div class="leadership_card_company">
-                        <h3 class="leadership_card_company_h3"><strong>Republic of Korea Army</strong></h3>
-                        <span class="leadership_card_company_span">Gyeonggi-do, Korea</span>
-                    </div>
-
-                    <h3 class="leadership_card_company_h3 leadership_card_company_h3_team">1st Corps</h3>
-                    
-                    <div class="leadership_card_company">
-                        <p class="leadership_card_company_p1"><strong>Military Intelligence</strong></p>
-                        <span class="leadership_card_company_span"><i>Nov. 2023 - Present</i></span>
-                    </div>
-
-                    <ul class="leadership_card_company_ul">
-                        <li class="leadership_card_company_li">
-                            Unable to disclose any specific work-related information in accordance with Korean law, 
-                            as my occupation involves Secret Intelligence level 2 security clearance.
-                        </li>
-                        <li class="leadership_card_company_li">
-                            During my time at 1st Corps, the unit was awarded the <strong>Korea Presidential Unit Citation</strong> in October 2024.
-                        </li>
-                        <li class="leadership_card_company_li">
-                            I was awarded the <strong>Top Excellence Intelligence Agent Award</strong> twice, in the second and third quarters of 2024.
-                        </li>
-                    </ul>
-                </div>
-
-                
-                <div class="card leadership_card">
-                    <div class="leadership_card_company">
-                        <h3 class="leadership_card_company_h3"><strong>Seoul National University</strong></h3>
-                        <span class="leadership_card_company_span">Gwanak District, Korea</span>
-                    </div>
-                    <h3 class="leadership_card_company_h3 leadership_card_company_h3_team">Zero, Autonomous Vehicle Team</h3>
-                    
-                    <div class="leadership_card_company">
-                        <p class="leadership_card_company_p1"><strong>Control System Team Member</strong></p>
-                        <span class="leadership_card_company_span"><i>Sep. 2023 - Nov. 2023</i></span>
-                    </div>
-
-                    <ul class="leadership_card_company_ul">
-                        <li class="leadership_card_company_li">
-                            Explored various methods for localization and mapping using path planning techniques, 
-                            including Simultaneous Localization and Mapping (SLAM) and Rapidly-exploring Random Trees Star (RRT*), 
-                            to reduce navigation and mapping errors.
-                        </li>
-                        <li class="leadership_card_company_li">
-                            At the <strong>2023 International EV Competition</strong>, the team was awarded <strong>third place</strong>.
-                        </li>
-                        <li class="leadership_card_company_li">
-                            <strong>Projects: </strong> QGIS Clothoid Path | FMUC GUI Interface
-                        </li>
-                    </ul>
-                </div>
-
-
-                <div class="card leadership_card">
-                    <div class="leadership_card_company">
-                        <h3 class="leadership_card_company_h3"><strong>Massachusetts Institute of Technology</strong></h3>
-                        <span class="leadership_card_company_span">Cambridge, MA, USA</span>
-                    </div>
-                    <h3 class="leadership_card_company_h3 leadership_card_company_h3_team">MITES Program</h3>
-                    
-                    <div class="leadership_card_company">
-                        <p class="leadership_card_company_p1"><strong>Teaching Assistant Shadowing</strong></p>
-                        <span class="leadership_card_company_span"><i>Nov. 2022 - Dec. 2022</i></span>
-                    </div>
-
-                    <ul class="leadership_card_company_ul">
-                        <li class="leadership_card_company_li">
-                            Learned how to teach and engage students by assisting them with their projects, 
-                            providing guidance, and offering small ideas to help them develop their great concepts.
-                        </li>
-                        <li class="leadership_card_company_li">
-                            Attended the Final Symposium to assist with event organization, including setting up project presentations 
-                            and helping students prepare for their presentations.
-                        </li>
-                    </ul>
-                </div>
-
-
-                <div class="card leadership_card">
-                    <div class="leadership_card_company">
-                        <h3 class="leadership_card_company_h3"><strong>Boston University</strong></h3>
-                        <span class="leadership_card_company_span">Boston, MA, USA</span>
-                    </div>
-                    <h3 class="leadership_card_company_h3 leadership_card_company_h3_team">Mars Rover, Robotics Team</h3>
-                    
-                    <div class="leadership_card_company">
-                        <p class="leadership_card_company_p1"><strong>Vice President, Executive Board Member</strong></p>
-                        <span class="leadership_card_company_span"><i>Feb. 2022 - Apr. 2023</i></span>
-                    </div>
-
-                    <ul class="leadership_card_company_ul">
-                        <li class="leadership_card_company_li">
-                            Secured a dedicated workspace for the team after several months of discussions with engineering director, 
-                            chairperson, and deans, enabling more effective collaboration on projects.
-                        </li>
-                        <li class="leadership_card_company_li">
-                            Recruited five professors as advisors and mentors for the team, and maintain regular communication with them to update on project progress.
-                        </li>
-                        <li class="leadership_card_company_li">
-                            Collaborated with sub-team leaders to discuss project progress, ensuring plans remain on track, while 
-                            mentoring the team with tools that enhance engagement and foster a stronger community.
-                        </li>
-                        <li class="leadership_card_company_li">
-                            Conducted bi-monthly General Body Meetings to update team members on projects, and establish relationships 
-                            with engineering directors, chairpersons, and deans to garner support and enhance collaboration.
-                        </li>
-                        <li class="leadership_card_company_li">
-                            Achieved a successful launch of social media platforms, including a LinkedIn page, gaining over 110 
-                            followers through strategic engagement, resulting in significant support from sponsors and donors.
-                        </li>
-                    </ul>
-
-
-                    <div class="leadership_card_company">
-                        <p class="leadership_card_company_p1"><strong>Robotic Arm Hardware Team Member</strong></p>
-                        <span class="leadership_card_company_span"><i>Sep. 2021 - Aug. 2022</i></span>
-                    </div>
-
-                    <ul class="leadership_card_company_ul">
-                        <li class="leadership_card_company_li">
-                            <strong>Projects: </strong> Robotics End Effector
-                        </li>
-                    </ul>
-                </div>
-
-
-                <div class="card leadership_card">
-                    <div class="leadership_card_company">
-                        <h3 class="leadership_card_company_h3"><strong>Boston University</strong></h3>
-                        <span class="leadership_card_company_span">Boston, MA, USA</span>
-                    </div>
-                    <h3 class="leadership_card_company_h3 leadership_card_company_h3_team">Terrier Motorsport, Formula SAE Team</h3>
-                    
-                    <div class="leadership_card_company">
-                        <p class="leadership_card_company_p1"><strong>Safety Officer, Executive Board Member</strong></p>
-                        <span class="leadership_card_company_span"><i>Jan. 2022 - Aug. 2022</i></span>
-                    </div>
-
-                    <ul class="leadership_card_company_ul">
-                        <li class="leadership_card_company_li">
-                            Supervised the safety of over 80 team members, discussed improvements with sub-team leaders, 
-                            and checked vehicle components to ensure safety before submitting documentation for the competition.
-                        </li>
-                        <li class="leadership_card_company_li">
-                            Proactively engaged with numerous companies and universities to secure sponsorship and support, 
-                            successfully obtaining $23,000 in funding in 2022.
-                        </li>
-                    </ul>
-
-
-                    <div class="leadership_card_company">
-                        <p class="leadership_card_company_p1"><strong>Electrical Team Member</strong></p>
-                        <span class="leadership_card_company_span"><i>Sep. 2021 - Aug. 2022</i></span>
-                    </div>
-
-                    <ul class="leadership_card_company_ul">
-                        <li class="leadership_card_company_li">
-                            <strong>Projects: </strong> Tractive System Active Lamp (TSAL) | Failure Mode and Effects Analysis (FMEA)
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-
-            <section id="projects" class="section1">
-                <h2>Engineering Projects</h2>
-                <div class="project_grid">
-                    <div class="card project_card">
-                        <div class="project_card_row1">
-                            <h3>Portfolio Website</h3>
-                            <p>Personal Project</p>
-                            <p><i>May. 2023 - Present</i></p>
-                            <p>#HTML #CSS #Javascript</p><br>
+                    <div class="container">
+                        <div>
+                            <div class="logo">
+                                <img src="assets/logo/BU_logo.png" alt="Boston University Logo", width="60px", height="auto"/>
+                            </div>
                         </div>
-                        <div class="project_card_row2">
-                            <img src="images/project/project-Engineering_Portfolio.jpg" alt="Portfolio">
+                        <div class="company_description">
+                            <div class="company_name">Boston University (BU): Kolachalama Lab</div>
+                            <div class="company_location">📍 Boston, MA, USA</div>
+                            <div class="title">Computational Biomedicine Undergraduate Researcher</div>
+                            <div class="year">March 2023 - May 2023</div>
+                            <div class="job_description">
+                                <ul class="job_description_ul">
+                                    <li>
+                                        Focused on creating software frameworks that can assist dementia screening in various real-world settings.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <button class="work_experience_button" onclick="window.location.href='kl.html'">Learn More!</button>
+                            </div>
                         </div>
-                        <div class="project_card_row3">
-                            <p>
-                                Developed and designed the engineering portfolio using HTML, CSS, and JavaScript.<br><br>
-                                Plan to update it as frequently as possible.
-                            </p>
-                        </div>
-                        <div class="project_card_row4">
-                            <button class="button" onclick="window.location.href='index.html'">Website</button>
-                        </div>                    
-                    </div>
-
-
-                    <div class="card project_card">
-                        <div class="project_card_row1">
-                            <h3>Tactical Combat Casualty Care (TCCC)</h3>
-                            <p>Republic of Korea Army</p>
-                            <p><i>Mar. 2024 - Aug. 2024</i></p>
-                            <p>#CAD</p><br>
-                        </div>
-                        <div class="project_card_row2">
-                            <img src="images/project/project-TCCC.jpg" alt="Photo of the TCCC">
-                        </div>
-                        <div class="project_card_row3">
-                            <p>
-                                Led the redesign and manufacturing of a prototype for Republic of Korea Army combat shirts with integrated tourniquet 
-                                attachments, significantly reducing the tourniquet application time to 5 seconds in time-sensitive combat situations.
-                            </p>
-                        </div>
-                        <div class="project_card_row4">
-                            <a class="button" href='https://youtu.be/FjpZ4Uo5590' target="_blank">Video</a>
-                        </div>                    
-                    </div>
-
-
-                    <div class="card project_card">
-                        <div class="project_card_row1">
-                            <h3>QGIS Clothoid Path</h3>
-                            <p>
-                                Seoul National University<br>
-                                Zero, Autonomous Vehicle
-                            </p>
-                            <p><i>Sep. 2023 - Nov. 2023</i></p>
-                            <p>#MATLAB</p><br>
-                        </div>
-                        <div class="project_card_row2">
-                            <img src="images/project/project-QGIS_Clothoid_Path.jpg" alt="QGIS Clothoid Path">
-                        </div>
-                        <div class="project_card_row3">
-                            <p>
-                                Authored a handbook on utilizing Quantum Geographic Information System (QGIS) and MATLAB to effectively set map checkpoints, 
-                                aimed at educating the team and enabling them to implement these concepts to achieve competition objectives.
-                            </p>
-                        </div>
-                        <div class="project_card_row4">
-                            <a class="button" href='https://github.com/jungjae01eng/ZERO-QGIS_ClothoidPath/blob/master/Zero_QGIS.pdf' target="_blank">Paper</a>
-                        </div>                    
-                    </div>
-
-
-                    <div class="card project_card">
-                        <div class="project_card_row1">
-                            <h3>FMUC GUI Interface</h3>
-                            <p>
-                                Seoul National University<br>
-                                Zero, Autonomous Vehicle
-                            </p>
-                            <p><i>Sep. 2023 - Nov. 2023</i></p>
-                            <p>#GUI #Python</p><br>
-                        </div>
-                        <div class="project_card_row2">
-                            <img src="images/project/project-FMUC_GUI_Interface.jpg" alt="FMUC GUI Interface">
-                        </div>
-                        <div class="project_card_row3">
-                            <p>
-                                Developed a Graphical User Interface (GUI) to remotely manage the vehicle's navigation and 
-                                monitor its real-time location from a centralized control room.
-                            </p>
-                        </div>
-                        <div class="project_card_row4">
-                            <a class="button" href='https://github.com/jungjae01eng/ZERO-QGIS_ClothoidPath/blob/master/Zero_QGIS.pdf' target="_blank">Paper</a>
-                        </div>                    
-                    </div>
-
-
-                    <div class="card project_card">
-                        <div class="project_card_row1">
-                            <h3>A UI for Visualizing Average Image Data</h3>
-                            <p>
-                                Boston University<br>
-                                ENG EC 327: Software Engineering
-                            </p>
-                            <p><i>Oct. 2022 - Dec. 2022</i></p>
-                            <p>#CPP #Python #MATLAB #ML</p><br>
-                        </div>
-                        <div class="project_card_row2">
-                            <img src="images/project/project-Avg_Image_Data.jpg" alt="A UI for Visualizing Average Image Data">
-                        </div>
-                        <div class="project_card_row3">
-                            <p>
-                                Designed user interface that allows users to input two labeled directories containing large amounts of image data 
-                                and utilized machine learning algorithms to visualize the average of the two datasets.
-                            </p>
-                        </div>
-                        <div class="project_card_row4">
-                            <a class="button" href='https://drive.google.com/file/d/1qpJYMl3s4fFjupr67ij5zKyfcIylPfVu/view?usp=sharing' target="_blank">Video</a>
-                            <a class="button" href='https://github.com/jungjae01eng/BostonU-EC327-ImageDataVisualization' target="_blank">GitHub</a>
-                        </div>                    
                     </div>
                     
-
-                    <div class="card project_card">
-                        <div class="project_card_row1">
-                            <h3>Desk Lamp</h3>
-                            <p>
-                                Boston University<br>
-                                ENG EK 210: Engineering Design
-                            </p>
-                            <p><i>Sep. 2022 - Dec. 2022</i></p>
-                            <p>#Arduino #Soldering #CAD</p><br>
+                    <div class="container">
+                        <div>
+                            <div class="logo">
+                                <img src="assets/logo/MIT_logo.png" alt="Boston University Logo", width="60px", height="auto"/>
+                            </div>
                         </div>
-                        <div class="project_card_row2">
-                            <img src="images/project/project-Desk_Lamp.jpg" alt="Desk Lamp">
-                        </div>
-                        <div class="project_card_row3">
-                            <p>
-                                Prototyped custom desk lamp prototype for individuals with ADHD and Autism to regulate sleep 
-                                patterns by adjusting the light spectrum according to the time of day.<br><br>
-                                Innovated user-friendly switches and pliable materials to accommodate individuals with limited fine motor skills.
-                            </p>
-                        </div>
-                        <div class="project_card_row4">
-                            <a class="button" href='https://docs.google.com/presentation/d/1BXslzm9hQ2UGxjr_N0Mx3avHFRZnhsDyolYfk0bAcNs/edit?usp=sharing' target="_blank">Presentation</a>
-                            <a class="button" href='https://github.com/jungjae01eng/BostonU-EK210-DeskLamp/blob/eeff4433fddfd92e5bafa932e961f32ed6263c70/Desk%20Lamp%20Report.pdf' target="_blank">Final Report</a>
-                        </div>                    
-                    </div>
-
-
-                    <div class="card project_card">
-                        <div class="project_card_row1">
-                            <h3>Real-Time Adventures in a 2D Realm</h3>
-                            <p>
-                                Boston University<br>
-                                ENG EC 327: Software Engineering
-                            </p>
-                            <p><i>Sep. 2022 - Dec. 2022</i></p>
-                            <p>#CPP #Python #MATLAB</p><br>
-                        </div>
-                        <div class="project_card_row2">
-                            <img src="images/project/project-Pokemon_Game.jpg" alt="Real-Time Adventures in a 2D Realm">
-                        </div>
-                        <div class="project_card_row3">
-                            <p>
-                                Developed a two-dimensional Pokémon game featuring intelligent objects that move and interact in real time.<br><br>
-                                Implemented an intuitive command system that allows users to control the behavior of these objects seamlessly.<br><br>
-                                Designed software that utilizes inheritance, polymorphism, and Model-View-Controller pattern to create object behaviors 
-                                through incorporation of object classes.
-                            </p>
-                        </div>
-                        <div class="project_card_row4">
-                            <a class="button" href='https://github.com/jungjae01eng/BostonU-EK327-PokemonGame' target="_blank">GitHub</a>
-                        </div>                    
-                    </div>
-
-
-                    <div class="card project_card">
-                        <div class="project_card_row1">
-                            <h3>Magnetic Momentum</h3>
-                            <p>Personal Project</p>
-                            <p><i>May. 2022 - Aug. 2022</i></p>
-                            <p>#Magnetic #3D Printing</p><br>
-                        </div>
-                        <div class="project_card_row2">
-                            <img src="images/project/project2_1.jpg" alt="Needs Update">
-                        </div>
-                        <div class="project_card_row3">
-                            <p>
-                                During my time in the Physics 2 lecture, I wanted to explore the possibility of creating energy 
-                                by using magnetic flux to design a helicopter wing.<br><br>
-                                Although I was unable to complete this project, I gained an in-depth understanding of magnetic fields and flux.
-                            </p>
-                        </div>
-                        <div class="project_card_row4">
-                            <!-- <a class="button" href='' target="_blank"></a> -->
-                        </div>                    
-                    </div>
-
-
-                    <div class="card project_card">
-                        <div class="project_card_row1">
-                            <h3>Failure Mode and Effects Analysis (FMEA)</h3>
-                            <p>
-                                Boston University<br>
-                                Terrier Motorsport, Formula SAE
-                            </p>
-                            <p><i>Jan. 2022 - May. 2022</i></p>
-                            <p>#Analysis</p><br>
-                        </div>
-                        <div class="project_card_row2">
-                            <img src="images/project/project-FMEA.jpg" alt="FMEA">
-                        </div>
-                        <div class="project_card_row3">
-                            <p>
-                                Performed Failure Mode and Effects Analysis to identify where failures can occur and how frequently 
-                                it could happen to maintain highest quality vehicle safety standards and prepare for worst situation.
-                            </p>
-                        </div>
-                        <div class="project_card_row4">
-                            <!-- <a class="button" href='' target="_blank">Link</a> -->
+                        <div class="company_description">
+                            <div class="company_name">Massachusetts Institute of Technology (MIT): MITES Program</div>
+                            <div class="company_location">📍 Cambridge, MA, USA</div>
+                            <div class="title">Teaching Assistant Shadowing</div>
+                            <div class="year">November 2022 - December 2022</div>
+                            <div class="job_description">
+                                <ul class="job_description_ul">
+                                    <li>
+                                        Learned how to teach and engage students by assisting them with their projects, 
+                                        providing guidance, and offering small ideas to help them develop their great concepts.
+                                    </li>
+                                    <li>
+                                        Attended the Final Symposium to assist with event organization, including setting up project presentations 
+                                        and helping students prepare for their presentations.
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
+                    <div class="container">
+                        <div>
+                            <div class="logo">
+                                <img src="assets/logo/BU_logo.png" alt="Boston University Logo", width="60px", height="auto"/>
+                            </div>
+                        </div>
+                        <div class="company_description">
+                            <div class="company_name">Boston University (BU): Morphable Biorobotics Lab</div>
+                            <div class="company_location">📍 Boston, MA, USA</div>
+                            <div class="title">Biorobotics Undergraduate Researcher</div>
+                            <div class="year">January 2022 - May 2023</div>
+                            <div class="job_description">
+                                <ul class="job_description_ul">
+                                    <li>
+                                        Focused on how robotics can improve our lives and create new opportunities in fields like
+                                        medicine, surgery, and rehabilitation.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <button class="work_experience_button" onclick="window.location.href='mbl.html'">Learn More!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                    <div class="card project_card">
-                        <div class="project_card_row1">
-                            <h3>Robootics End Effector</h3>
-                            <p>
-                                Boston University<br>
-                                Mars Rover, Robotics
-                            </p>
-                            <p><i>Jan. 2022 - May. 2022</i></p>
-                            <p>#CAD</p><br>
-                        </div>
-                        <div class="project_card_row2">
-                            <img src="images/project/project-robotics_arm.jpg" alt="Robotics End Effector">
-                        </div>
-                        <div class="project_card_row3">
-                            <p>
-                                Led the Robotics End Effector project by designing the first and second prototypes using SolidWorks, 
-                                focusing on functionality and durability to ensure compatibility with other components and systems.
+
+                <div id="publications">
+                    <h2>Publications</h2>
+                    <div class="publication_types">Journals (2 total: 1 in press, 1 in progress)</div>
+                    <div class="publication_grid">
+                        <div class="container publication_card">
+                            <div class="publication_card_row1">
+                                <p>
+                                    T. Hong, <strong>J. Lee</strong>, B. Song and Y. Park.<br><br>
+                                    <strong>Bridging FEM and Physics-Based Simulations for Soft Robot Control</strong><br><br>
+                                    Manuscript In Progress.
                                 </p>
+                            </div>
+                            <div classs="publication_card_row2">
+                                <!-- <a class="button" href='' target="_blank">Link</a> -->
+                            </div>
                         </div>
-                        <div class="project_card_row4">
-                            <!-- <a class="button" href='' target="_blank">Link</a> -->
-                        </div>
-                    </div>
-
-
-                    <div class="card project_card">
-                        <div class="project_card_row1">
-                            <h3>Gavel Pen & Name Plate</h3>
-                            <p>Personal Project</p>
-                            <p><i>Jan. 2022 - May. 2022</i></p>
-                            <p>#Lathes #Milling</p><br>
-                        </div>
-                        <div class="project_card_row2">
-                            <img src="images/project/project-Gavel_Pen_Name_Plate.jpg" alt="Gavel Pen & Name Plate">
-                        </div>
-                        <div class="project_card_row3">
-                            <p>
-                                Designed a unique gavel using manual lathes, incorporating a functional pen holder within the handle.<br><br>
-                                Crafted a personalized engraved plate featuring my initials, leveraging CNC milling techniques for hands-on learning.
-                            </p>
-                        </div>
-                        <div class="project_card_row4">
-                            <!-- <a class="button" href='' target="_blank">Link</a> -->
+                        <div class="container publication_card">
+                            <div class="publication_card_row1">
+                                <p>
+                                    L. Kinnicutt, L. T. Gaeta, J. Rogatinsky, <strong>J. Lee</strong>, A. Cameron, A. Naik, D. Hess, and T. Ranzani.<br><br>
+                                    <strong>A Soft Robotic, Modular Laparoscopic Grasper for Atraumatic Retraction of the Small Intestine</strong><br><br>
+                                    Device, Volume 2, Issue 10, October 2024, 100560, ISSN 2666-9986.
+                                </p>
+                            </div>
+                            <div class="publication_card_row2">
+                                <a class="publication_button" href='https://www.sciencedirect.com/science/article/pii/S2666998624004824' target="_blank">ScienceDirect</a>
+                                <a class="publication_button" href='https://www.researchgate.net/publication/385045164_A_soft_robotic_modular_laparoscopic_grasper_for_atraumatic_retraction_of_the_small_intestine' target="_blank">ResearchGate</a>
+                            </div>
                         </div>
                     </div>
 
-
-                    <div class="card project_card">
-                        <div class="project_card_row1">
-                            <h3>Room Temperature Monitor</h3>
-                            <p>
-                                Boston University<br>
-                                ENG EK 131: Engineering Hands On
-                            </p>
-                            <p><i>Jan. 2022 - May. 2022</i></p>
-                            <p>#MATLAB #Arduino #3D Printing #Soldering #Circuit Design #CAD</p><br>
+                    <div class="publication_types">Conferences (2 total: 2 published/presented)</div>
+                    <div class="publication_grid"> 
+                        <div class="container publication_card">
+                            <div class="publication_card_row1">
+                                <p>
+                                    L. Kinnicutt, <strong>J. Lee</strong>, J. Oden, L. T. Gaeta, S. K. Carroll, A. Rathi, Z. H. Lim, M. Lee, C. Orakwue,
+                                    K. J. McDonald, D. Hess, and T. Ranzani.<br><br>
+                                    <strong>A Soft Laparoscopic Grasper for Retraction of the Small Intestine</strong><br><br>
+                                    Hamlyn Symposium on Medical Robotics, London, UK, June 2023.
+                                </p>
+                            </div>
+                            <div class="publication_card_row2">
+                                <a class="publication_button" href='https://www.researchgate.net/publication/371866615_A_Soft_Laparoscopic_Grasper_for_Retraction_of_the_Small_Intestine' target="_blank">ResearchGate</a>
+                            </div>
                         </div>
-                        <div class="project_card_row2">
-                            <img src="images/project/project-Room_Temperature_Monitor.jpg" alt="Room Temperature Monitor">
-                        </div>
-                        <div class="project_card_row3">
-                            <p>
-                                Developed room temperature monitor with LCD screen to monitor temperature and alarm to notify 
-                                users when temperature goes out of desired range using Arduino, Thermistor, and Piezo capsule.<br><br>
-                                Constructed battery box using CAD and 3D printer to prevent battery from falling out of device.
-                            </p>
-                        </div>
-                        <div class="project_card_row4">
-                            <a class="button" href='https://github.com/jungjae01eng/BostonU-EK131-RoomTempMonitor/blob/master/Arduino.ino' target="_blank">Arduino Code</a>
-                            <a class="button" href='https://github.com/jungjae01eng/BostonU-EK131-RoomTempMonitor/blob/master/Monitor_Design_Report.pdf' target="_blank">Final Report</a>
-                        </div>
-                    </div>
-
-
-                    <div class="card project_card">
-                        <div class="project_card_row1">
-                            <h3>Tractive System Active Lamp (TSAL)</h3>
-                            <p>
-                                Boston University<br>
-                                Terrier Motorsport, Formula SAE
-                            </p>
-                            <p><i>Sep. 2021 - Jan. 2022</i></p>
-                            <p>#PCB #Circuit Design #Soldering</p><br>
-                        </div>
-                        <div class="project_card_row2">
-                            <img src="images/project/project-TSAL.jpg" alt="TSAL Project">
-                        </div>
-                        <div class="project_card_row3">
-                            <p>
-                                Engineering a Printed Circuit Board (PCB) using KiCad to feature a red flashing lamp operating at 
-                                a frequency of 3 Hz, designed to be mounted above the driver to indicate voltage power.<br><br>
-                                Related work on the Competition Report can be found on page 24.
-                            </p>
-                        </div>
-                        <div class="project_card_row4">
-                            <a class="button" href='https://github.com/jungjae01eng/TM-TSAL_System/blob/main/TSAL%20System.pdf' target="_blank">Final Report</a>
-                            <a class="button" href='https://docs.google.com/document/d/1MoZfU1hfXyS7ZoeUlv_51n64_MBDvMeHghrC-t6IEa0/edit' target="_blank">Competition Report</a>
-                        </div>
-                    </div>
-
-
-                    <div class="card project_card">
-                        <div class="project_card_row1">
-                            <h3>Analysis of the Health of Low-Income Families</h3>
-                            <p>
-                                Boston University<br>
-                                ENG EK 125: Programming
-                            </p>
-                            <p><i>Nov. 2021 - Dec. 2021</i></p>
-                            <p>#MATLAB #ML #Data Analysis</p><br>
-                        </div>
-                        <div class="project_card_row2">
-                            <img src="images/project/project-Solution_for_Health.jpg" alt="Analysis of the Health of Low-Income Families">
-                        </div>
-                        <div class="project_card_row3">
-                            <p>
-                                Monitored correlation between low-income families’ healthcare and cause of death to find specific causes 
-                                of fatalities correlates with the ability to seek treatment using MATLAB and Machine Learning.
-                            </p>
-                        </div>
-                        <div class="project_card_row4">
-                            <a class="button" href='https://docs.google.com/document/d/1_n9gceYiubJf97mL8kV1vI1nZyCBsz72DHls9GYW_1c/edit?usp=sharing' target="_blank">Final Report</a>
-                        </div>
-                    </div>
-
-
-                    <div class="card project_card">
-                        <div class="project_card_row1">
-                            <h3>Analysis of the Force Exerted by an Elevator</h3>
-                            <p>
-                                Boston University<br>
-                                ENG EK 125: Programming
-                            </p>
-                            <p><i>Oct. 2021 - Nov. 2021</i></p>
-                            <p>#MATLAB #Data Analysis</p><br>
-                        </div>
-                        <div class="project_card_row2">
-                            <img src="images/project/project-Testing_Force_Exerted_By_Elevator.jpg" alt="Testing Force-exerted by Elevator">
-                        </div>
-                        <div class="project_card_row3">
-                            <p>
-                                Collected acceleration data of three different elevators at Boston University Warren Tower to 
-                                compute maximum and minimum forces exerted by elevators to determine consistency and correlation 
-                                of acceleration and gravity with MATLAB.
-                            </p>
-                        </div>
-                        <div class="project_card_row4">
-                            <a class="button" href='https://docs.google.com/document/d/1Th-Lg_VTd58958W6QPklpQryJUs6eTrcC9E6Ib9kSmk/edit?usp=sharing' target="_blank">Final Report</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section  id="gallery" class="section1">
-                <h2>Gallery</h2>
-
-                <div class="gallery_section gallery_srbl">
-                    <h3 class="gallery_card_h3">Seoul National University Soft Robotics & Bionics Laboratory</h3>
-                    <div style="margin-bottom:10px; width: 100%; height: auto;">
-                        <img src="images/research/srbl/srbl-group_photo.jpg" alt="Team Photo">
-                    </div>
-                    <h4 class="gallery_card_h4">2023 Soft Robot Symposium</h4>
-                    <p class="gallery_card_p">@Soft Robotics Research Center</p>
-                    <div class="gallery_grid">
-                        <div>
-                            <img src="images/research/srbl/gallery_photo2.jpg" alt="gallery">
-                        </div>
-                        <!-- <div>
-                            <img src="images/research/srbl/gallery_photo3.jpg" alt="gallery">
-                        </div> -->
-                        <div>
-                            <img src="images/research/srbl/gallery_photo4.jpg" alt="gallery">
+                        <div class="container publication_card">
+                            <div class="publication_card_row1">
+                                <p>
+                                    L. Kinnicutt, A. Pathak, T. Bohac, A. Peng, C. Taglietti, C. Lee, R. Rauf, <strong>J. Lee</strong>, LZ. Heng,
+                                    J. Rogatinsky, K. McDonald, J. Siracuse, and T. Ranzani.<br><br>
+                                    <strong>Minimally Invasive Soft Robotic Prototypes Provide Variable Occlusion in a Simplified Aortic Flow Model</strong><br><br>
+                                    American Heart Association Resuscitation Science Symposium, Chicago, US, November 2022.
+                                </p>
+                            </div>
+                            <div class="publication_card_row2">
+                                <!-- <a class="button" href='' target="_blank">Link</a> -->
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="gallery_section gallery_mbl">
-                    <h3 class="gallery_card_h3">Boston University Morphable Biorobotics Laboratory</h3>
-                    <div style="margin-bottom:10px; width: 100%; height: auto;">
-                        <img src="images/research/mbl/mbl-group_photo.jpg" alt="Team Photo">
+                <div id="leadership_experience">
+                    <h2>Leadership Experience</h2>
+                    <div class="container">
+                        <div>
+                            <div class="logo">
+                                <img src="assets/logo/SNU_logo.png" alt="Boston University Logo", width="60px", height="auto"/>
+                            </div>
+                        </div>
+                        <div class="company_description">
+                            <div class="company_name">Seoul National University (SNU): ZERO, Autonomous Vehicle Team</div>
+                            <div class="company_location">📍 Gwanak District, Seoul, Korea</div>
+                            <div class="title">Control System Team Member</div>
+                            <div class="year">September 2023 - November 2023</div>
+                            <div class="job_description">
+                                <ul class="job_description_ul">
+                                    <li>
+                                        Tested Cooperative Intelligent Transport Systems (C-ITS) techniques on vehicles to demonstrate functionality; 
+                                        presented the findings at TS Korea Transportation Safety Authority.
+                                    </li>
+                                    <li>
+                                        Researched and tested methods for localization and mapping utilizing path planning techniques, 
+                                        including Simultaneous Localization and Mapping (SLAM) and Rapidly-exploring Random Trees Star (RRT*), 
+                                        to minimize navigation and mapping errors.
+                                    </li>
+                                    <li>
+                                        Developed Graphical User Interface (GUI) to remotely manage the vehicle's navigation and monitor its real-time location.
+                                    </li>
+                                    <li>
+                                        The team was awarded <strong>3rd place</strong> at the <strong>2023 International EV Competition</strong>, 
+                                        hosted by the Korea Autonomous Testing & Research Institute in October 2023.
+                                    </li>
+                                    <li>
+                                        The team was awarded <strong>4th place</strong> at the <strong>2023 Autonomous Driving Software Advancement 
+                                        Competition</strong>, hosted by the Future Mobile Technology Center in November 2023.
+                                    </li>
+                                    <li>
+                                        <strong>Projects: </strong> QGIS Clothoid Path | FMUC GUI Interface
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="gallery_grid">
+
+                    <div class="container">
                         <div>
-                            <img src="images/research/mbl/gallery_photo1.jpg" alt="gallery">
+                            <div class="logo">
+                                <img src="assets/logo/BU_logo.png" alt="Boston University Logo", width="60px", height="auto"/>
+                            </div>
                         </div>
-                        <div>
-                            <img src="images/research/mbl/gallery_photo2.jpg" alt="gallery">
+                        <div class="company_description">
+                            <div class="company_name">Boston University (BU): Mars Rover, Robotics Team</div>
+                            <div class="company_location">📍 Cambridge, MA, USA</div>
+                            <div class="title">Vice President, Executive Board Member</div>
+                            <div class="year">November 2022 - December 2022</div>
+                            <div class="job_description">
+                                <ul class="job_description_ul">
+                                    <li>
+                                        Secured a dedicated workspace for the team after several months of discussions with engineering director, chairperson, 
+                                        and deans, enabling more effective collaboration on projects.
+                                    </li>
+                                    <li>
+                                        Recruited five professors as advisors and mentors for the team, and maintain regular communication with them to update on project progress.
+                                    </li>
+                                    <li>
+                                        Collaborated with sub-team leaders to discuss project progress, ensuring plans remain on track, 
+                                        while mentoring the team with tools that enhance engagement and foster a stronger community.
+                                    </li>
+                                    <li>
+                                        Conducted bi-monthly General Body Meetings to update team members on projects, and establish relationships 
+                                        with engineering directors, chairpersons, and deans to garner support and enhance collaboration.      
+                                    </li>
+                                    <li>
+                                        Achieved a successful launch of social media platforms, including a LinkedIn page, gaining over 110 followers through 
+                                        strategic engagement, resulting in significant support from sponsors and donors.    
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="title">Robotic Arm Hardware Team Member</div>
+                            <div class="year">September 2021 - August 2022</div>
+                            <div class="job_description">
+                                <ul class="job_description_ul">
+                                    <li>
+                                        <strong>Projects: </strong> Robotics End Effector
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+                    </div>
+
+                    <div class="container">
                         <div>
-                            <img src="images/research/mbl/gallery_photo3.JPG" alt="gallery">
+                            <div class="logo">
+                                <img src="assets/logo/BU_logo.png" alt="Boston University Logo", width="60px", height="auto"/>
+                            </div>
                         </div>
-                        <div>
-                            <img src="images/research/mbl/gallery_photo4.jpg" alt="gallery">
+                        <div class="company_description">
+                            <div class="company_name">Boston University (BU): Terrier Motorsport, Formula SAE Team</div>
+                            <div class="company_location">📍 Cambridge, MA, USA</div>
+                            <div class="title">Safety Officer, Executive Board Member</div>
+                            <div class="year">January 2022 - August 2022</div>
+                            <div class="job_description">
+                                <ul class="job_description_ul">
+                                    <li>
+                                        Supervised safety of 80+ members, discussed improvements with sub-team leaders, 
+                                        and checked vehicle components to ensure safety before submitting documentation for the competition.
+
+                                    </li>
+                                    <li>
+                                        Engaged with companies and universities to secure sponsorship and support, successfully obtaining $22,000 in funding in 2022.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="title">Electrical Team Member</div>
+                            <div class="year">September 2021 - August 2022</div>
+                            <div class="job_description">
+                                <ul class="job_description_ul">
+                                    <li>
+                                        <strong>Projects: </strong> Tractive System Active Lamp (TSAL) | Failure Mode and Effects Analysis (FMEA)
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="gallery_section gallery_zero">
-                    <h3 class="gallery_card_h3">Seoul National University Zero Team</h3>
-                    <div style="margin-bottom:10px; width: 100%; height: auto;">
-                        <img src="images/extracurricular/zero/zero-group_photo1.jpg" alt="Team Photo">
-                    </div>
-                    <h4 class="gallery_card_h4">2023 International EV Competition</h4>
-                    <p class="gallery_card_p">@Korea Automobile Testing & Research Institute</p>
-                    <div class="gallery_grid">
-                        <div>
-                            <img src="images/extracurricular/zero/zero-photo1_1.jpg" alt="gallery">
+                <div id="projects">
+                    <h2>Engineering Projects</h2>
+                    <div class="project_grid">
+                        <div class="container project_card">
+                            <div class="company_description">
+                                <div class="project_name">Portfolio Website</div>
+                                <div class="project_type">Personal Project</div>
+                                <div class="year">May 2023 - Present</div>
+                                <div class="skills">#HTML #CSS #Javascript</div>
+                                <div>
+                                    <img class="project_img" src="assets/project/project-Engineering_Portfolio.jpg" alt="Portfolio">
+                                </div>
+                                <div>
+                                    <div class="project_description">
+                                        Developed and designed the engineering portfolio using HTML, CSS, and JavaScript.<br><br>
+                                        Plan to update it as frequently as possible.
+                                    </div>
+                                    <button class="project_button" onclick="window.location.href='index.html'">Website</button>
+                                </div>
+                            </div>                   
                         </div>
-                        <div>
-                            <img src="images/extracurricular/zero/zero-photo1_2.jpg" alt="gallery">
+    
+                        <div class="container project_card">
+                            <div class="company_description">
+                                <div class="project_name">Tactical Combat Casualty Care</div>
+                                <div class="project_type">Republic of Korea Army</div>
+                                <div class="year">March 2024 - August 2024</div>
+                                <div class="skills">#CAD</div>
+                                <div>
+                                    <img class="project_img" src="assets/project/project-TCCC.jpg" alt="Photo of the TCCC">
+                                </div>
+                                <div>
+                                    <div class="project_description">
+                                        Led the redesign and manufacturing of a prototype for Republic of Korea Army combat shirts with integrated tourniquet 
+                                        attachments, significantly reducing the tourniquet application time to 5 seconds in time-sensitive combat situations.
+                                    </div>
+                                    <a class="project_button" href='https://youtu.be/FjpZ4Uo5590' target="_blank">Video</a>
+                                </div>
+                            </div>                   
                         </div>
-                        <div>
-                            <img src="images/extracurricular/zero/zero-photo1_3.jpg" alt="gallery">
+
+                        <div class="container project_card">
+                            <div class="company_description">
+                                <div class="project_name">QGIS Clothoid Path</div>
+                                <div class="project_type">
+                                    Seoul National University<br>
+                                    Zero, Autonomous Vehicle
+                                </div>
+                                <div class="year">September 2023 - November 2023</div>
+                                <div class="skills">#MATLAB</div>
+                                <div>
+                                    <img class="project_img" src="assets/project/project-QGIS_Clothoid_Path.jpg" alt="QGIS Clothoid Path">
+                                </div>
+                                <div>
+                                    <div class="project_description">
+                                        Authored a handbook on utilizing Quantum Geographic Information System (QGIS) and MATLAB to effectively set map checkpoints, 
+                                        aimed at educating the team and enabling them to implement these concepts to achieve competition objectives.
+                                    </div>
+                                    <a class="project_button" href='https://github.com/jungjae01eng/ZERO-QGIS_ClothoidPath/blob/master/Zero_QGIS.pdf' target="_blank">Paper</a>
+                                </div>
+                            </div>                   
                         </div>
-                        <div>
-                            <img src="images/extracurricular/zero/zero-photo1_4.jpg" alt="gallery">
+        
+                        <div class="container project_card">
+                            <div class="company_description">
+                                <div class="project_name">FMUC GUI Interface</div>
+                                <div class="project_type">
+                                    Seoul National University<br>
+                                    Zero, Autonomous Vehicle
+                                </div>
+                                <div class="year">September 2023 - November 2023</div>
+                                <div class="skills">#GUI #Python</div>
+                                <div>
+                                    <img class="project_img" src="assets/project/project-FMUC_GUI_Interface.jpg" alt="FMUC GUI Interface">
+                                </div>
+                                <div>
+                                    <div class="project_description">
+                                        Developed a Graphical User Interface (GUI) to remotely manage the vehicle's navigation and 
+                                        monitor its real-time location from a centralized control room.
+                                    </div>
+                                    <a class="project_button" href='https://github.com/jungjae01eng/ZERO-QGIS_ClothoidPath/blob/master/Zero_QGIS.pdf' target="_blank">Paper</a>
+                                </div>
+                            </div>                   
                         </div>
-                        <div>
-                            <img src="images/extracurricular/zero/zero-photo1_5.jpg" alt="gallery">
+    
+                        <div class="container project_card">
+                            <div class="company_description">
+                                <div class="project_name">A UI for Visualizing Average Image Data</div>
+                                <div class="project_type">
+                                    Boston University<br>
+                                    ENG EC 327: Software Engineering
+                                </div>
+                                <div class="year">October 2022 - December 2022</div>
+                                <div class="skills">#CPP #Python #MATLAB #ML</div>
+                                <div>
+                                    <img class="project_img" src="assets/project/project-Avg_Image_Data.jpg" alt="A UI for Visualizing Average Image Data">
+                                </div>
+                                <div>
+                                    <div class="project_description">
+                                        Designed user interface that allows users to input two labeled directories containing large amounts of image data 
+                                        and utilized machine learning algorithms to visualize the average of the two datasets.
+                                    </div>
+                                    <a class="project_button" href='https://drive.google.com/file/d/1qpJYMl3s4fFjupr67ij5zKyfcIylPfVu/view?usp=sharing' target="_blank">Video</a>
+                                    <a class="project_button" href='https://github.com/jungjae01eng/BostonU-EC327-ImageDataVisualization' target="_blank">GitHub</a>
+                                </div>
+                            </div>                   
                         </div>
-                        <div>
-                            <img src="images/extracurricular/zero/zero-photo1_6.jpg" alt="gallery">
+    
+                        <div class="container project_card">
+                            <div class="company_description">
+                                <div class="project_name">Desk Lamp</div>
+                                <div class="project_type">
+                                    Boston University<br>
+                                    ENG EK 210: Engineering Design
+                                </div>
+                                <div class="year">September 2022 - December 2022</div>
+                                <div class="skills">#Arduino #Soldering #CAD</div>
+                                <div>
+                                    <img class="project_img" src="assets/project/project-Desk_Lamp.jpg" alt="Desk Lamp">
+                                </div>
+                                <div>
+                                    <div class="project_description">
+                                        Prototyped custom desk lamp prototype for individuals with ADHD and Autism to regulate sleep 
+                                        patterns by adjusting the light spectrum according to the time of day.<br><br>
+                                        Innovated user-friendly switches and pliable materials to accommodate individuals with limited fine motor skills.
+                                    </div>
+                                    <a class="project_button" href='https://docs.google.com/presentation/d/1BXslzm9hQ2UGxjr_N0Mx3avHFRZnhsDyolYfk0bAcNs/edit?usp=sharing' target="_blank">Presentation</a>
+                                    <a class="project_button" href='https://github.com/jungjae01eng/BostonU-EK210-DeskLamp/blob/eeff4433fddfd92e5bafa932e961f32ed6263c70/Desk%20Lamp%20Report.pdf' target="_blank">Final Report</a>
+                                </div>
+                            </div>                   
                         </div>
-                        <div>
-                            <img src="images/extracurricular/zero/zero-photo1_7.jpg" alt="gallery">
+    
+                        <div class="container project_card">
+                            <div class="company_description">
+                                <div class="project_name">Real-Time Adventures in a 2D Realm</div>
+                                <div class="project_type">
+                                    Boston University<br>
+                                    ENG EC 327: Software Engineering
+                                </div>
+                                <div class="year">September 2022 - December 2022</div>
+                                <div class="skills">#CPP #Python #MATLAB</div>
+                                <div>
+                                    <img class="project_img" src="assets/project/project-Pokemon_Game.jpg" alt="Real-Time Adventures in a 2D Realm">
+                                </div>
+                                <div>
+                                    <div class="project_description">
+                                        Developed a two-dimensional Pokémon game featuring intelligent objects that move and interact in real time.<br><br>
+                                        Implemented an intuitive command system that allows users to control the behavior of these objects seamlessly.<br><br>
+                                        Designed software that utilizes inheritance, polymorphism, and Model-View-Controller pattern to create object behaviors 
+                                        through incorporation of object classes.
+                                    </div>
+                                    <a class="project_button" href='https://github.com/jungjae01eng/BostonU-EK327-PokemonGame' target="_blank">GitHub</a>    
+                                </div>
+                            </div>                   
                         </div>
-                        <div>
-                            <img src="images/extracurricular/zero/zero-photo1_8.jpg" alt="gallery">
+
+                        <div class="container project_card">
+                            <div class="company_description">
+                                <div class="project_name">Magnetic Momentum</div>
+                                <div class="project_type">
+                                    Personal Project
+                                </div>
+                                <div class="year">May 2022 - August 2022</div>
+                                <div class="skills">#Magnetic #3D Printing</div>
+                                <div>
+                                    <img class="project_img" src="assets/project/project2_1.jpg" alt="Magnetic Momentum">
+                                </div>
+                                <div>
+                                    <div class="project_description">
+                                        During my time in the Physics 2 lecture, I wanted to explore the possibility of creating energy 
+                                        by using magnetic flux to design a helicopter wing.<br><br>
+                                        Although I was unable to complete this project, I gained an in-depth understanding of magnetic fields and flux.
+                                    </div>
+                                </div>
+                            </div>                   
                         </div>
-                    </div>
-                    <h4 class="gallery_card_h4">2023 Advanced Autonomous Driving Software Competition</h4>
-                    <p class="gallery_card_p">@Future Mobility Technology Center</p>
-                    <div class="gallery_grid">
-                        <div>
-                            <img src="images/extracurricular/zero/zero-photo2_2.jpg" alt="gallery">
+                        
+                        <div class="container project_card">
+                            <div class="company_description">
+                                <div class="project_name">Failure Mode and Effects Analysis (FMEA)</div>
+                                <div class="project_type">
+                                    Boston University<br>
+                                    Terrier Motorsport, Formula SAE
+                                </div>
+                                <div class="year">January 2022 - May 2022</div>
+                                <div class="skills">#Analysis</div>
+                                <div>
+                                    <img class="project_img" src="assets/project/project-FMEA.jpg" alt="FMEA">
+                                </div>
+                                <div>
+                                    <div class="project_description">
+                                        Performed Failure Mode and Effects Analysis to identify where failures can occur and how frequently 
+                                        it could happen to maintain highest quality vehicle safety standards and prepare for worst situation.
+                                    </div>
+                                </div>
+                            </div>                   
+                        </div>    
+    
+                        <div class="container project_card">
+                            <div class="company_description">
+                                <div class="project_name">Robootics End Effector</div>
+                                <div class="project_type">
+                                    Boston University<br>
+                                    Mars Rover, Robotics
+                                </div>
+                                <div class="year">January 2022 - May 2022</div>
+                                <div class="skills">#CAD</div>
+                                <div>
+                                    <img class="project_img" src="assets/project/project-robotics_arm.jpg" alt="Robotics End Effector">
+                                </div>
+                                <div>
+                                    <div class="project_description">
+                                        Led the Robotics End Effector project by designing the first and second prototypes using SolidWorks, 
+                                        focusing on functionality and durability to ensure compatibility with other components and systems.
+                                    </div>
+                                </div>
+                            </div>                   
                         </div>
-                        <div>
-                            <img src="images/extracurricular/zero/zero-photo2_3.JPG" alt="gallery">
+
+                        <div class="container project_card">
+                            <div class="company_description">
+                                <div class="project_name">Gavel Pen & Name Plate</div>
+                                <div class="project_type">
+                                    Personal Project
+                                </div>
+                                <div class="year">January 2022 - May 2022</div>
+                                <div class="skills">#Lathes #Milling</div>
+                                <div>
+                                    <img class="project_img" src="assets/project/project-Gavel_Pen_Name_Plate.jpg" alt="Gavel Pen & Name Plate">
+                                </div>
+                                <div>
+                                    <div class="project_description">
+                                        Designed a unique gavel using manual lathes, incorporating a functional pen holder within the handle.<br><br>
+                                        Crafted a personalized engraved plate featuring my initials, leveraging CNC milling techniques for hands-on learning.
+                                    </div>
+                                </div>
+                            </div>                   
                         </div>
-                        <div>
-                            <img src="images/extracurricular/zero/zero-photo2_4.JPG" alt="gallery">
+    
+                        <div class="container project_card">
+                            <div class="company_description">
+                                <div class="project_name">Room Temperature Monitor</div>
+                                <div class="project_type">
+                                    Boston University<br>
+                                    ENG EK 131: Engineering Hands On
+                                </div>
+                                <div class="year">January 2022 - May 2022</div>
+                                <div class="skills">#MATLAB #Arduino #3D Printing #Soldering #Circuit Design #CAD</div>
+                                <div>
+                                    <img class="project_img" src="assets/project/project-Room_Temperature_Monitor.jpg" alt="Room Temperature Monitor">
+                                </div>
+                                <div>
+                                    <div class="project_description">
+                                        Developed room temperature monitor with LCD screen to monitor temperature and alarm to notify 
+                                        users when temperature goes out of desired range using Arduino, Thermistor, and Piezo capsule.<br><br>
+                                        Constructed battery box using CAD and 3D printer to prevent battery from falling out of device.
+                                    </div>
+                                    <a class="project_button" href='https://github.com/jungjae01eng/BostonU-EK131-RoomTempMonitor/blob/master/Arduino.ino' target="_blank">Arduino Code</a>
+                                    <a class="project_button" href='https://github.com/jungjae01eng/BostonU-EK131-RoomTempMonitor/blob/master/Monitor_Design_Report.pdf' target="_blank">Final Report</a>
+                                </div>
+                            </div>                   
                         </div>
-                        <div>
-                            <img src="images/extracurricular/zero/zero-photo2_5.JPG" alt="gallery">
+
+                        <div class="container project_card">
+                            <div class="company_description">
+                                <div class="project_name">Tractive System Active Lamp (TSAL)</div>
+                                <div class="project_type">
+                                    Boston University<br>
+                                    Terrier Motorsport, Formula SAE
+                                </div>
+                                <div class="year">September 2021 - January 2022</div>
+                                <div class="skills">#PCB #Circuit Design #Soldering</div>
+                                <div>
+                                    <img class="project_img" src="assets/project/project-TSAL.jpg" alt="TSAL Project">
+                                </div>
+                                <div>
+                                    <div class="project_description">
+                                        Engineering a Printed Circuit Board (PCB) using KiCad to feature a red flashing lamp operating at 
+                                        a frequency of 3 Hz, designed to be mounted above the driver to indicate voltage power.<br><br>
+                                        Related work can be found on page 24 of the Competition Report.
+                                    </div>
+                                    <a class="project_button" href='https://github.com/jungjae01eng/TM-TSAL_System/blob/main/TSAL%20System.pdf' target="_blank">Final Report</a>
+                                    <a class="project_button" href='https://docs.google.com/document/d/1MoZfU1hfXyS7ZoeUlv_51n64_MBDvMeHghrC-t6IEa0/edit' target="_blank">Competition Report</a>
+                                </div>
+                            </div>                   
+                        </div>
+
+                        <div class="container project_card">
+                            <div class="company_description">
+                                <div class="project_name">Analysis of the Health of Low-Income Families</div>
+                                <div class="project_type">
+                                    Boston University<br>
+                                    ENG EK 125: Programming
+                                </div>
+                                <div class="year">November 2021 - December 2021</div>
+                                <div class="skills">#MATLAB #ML #Data Analysis</div>
+                                <div>
+                                    <img class="project_img" src="assets/project/project-Solution_for_Health.jpg" alt="Analysis of the Health of Low-Income Families">
+                                </div>
+                                <div>
+                                    <div class="project_description">
+                                        Monitored correlation between low-income families’ healthcare and cause of death to find specific causes 
+                                        of fatalities correlates with the ability to seek treatment using MATLAB and Machine Learning.
+                                    </div>
+                                    <a class="project_button" href='https://docs.google.com/document/d/1_n9gceYiubJf97mL8kV1vI1nZyCBsz72DHls9GYW_1c/edit?usp=sharing' target="_blank">Final Report</a>
+                                </div>
+                            </div>                   
+                        </div>
+    
+                        <div class="container project_card">
+                            <div class="company_description">
+                                <div class="project_name">Analysis of the Force Exerted by an Elevator</div>
+                                <div class="project_type">
+                                    Boston University<br>
+                                    ENG EK 125: Programming
+                                </div>
+                                <div class="year">October 2021 - November 2021</div>
+                                <div class="skills">#MATLAB #Data Analysis</div>
+                                <div>
+                                    <img class="project_img" src="assets/project/project-Testing_Force_Exerted_By_Elevator.jpg" alt="Testing Force-exerted by Elevator">
+                                </div>
+                                <div>
+                                    <div class="project_description">
+                                        Collected acceleration data of three different elevators at Boston University Warren Tower to 
+                                        compute maximum and minimum forces exerted by elevators to determine consistency and correlation 
+                                        of acceleration and gravity with MATLAB.
+                                    </div>
+                                    <a class="project_button" href='https://docs.google.com/document/d/1Th-Lg_VTd58958W6QPklpQryJUs6eTrcC9E6Ib9kSmk/edit?usp=sharing' target="_blank">Final Report</a>
+                                </div>
+                            </div>                   
                         </div>
                     </div>
                 </div>
 
-
-                <div class="gallery_section gallery_mars_rover">
-                    <h3 class="gallery_card_h3">Boston University Mars Rover Team</h3>
-                    <div style="margin-bottom:10px; width: 100%; height: auto;">
-                        <img src="images/extracurricular/mr/mr-group_photo.jpg" alt="Team Photo">
-                    </div>
-
-                    <h4 class="gallery_card_h4" style="margin-bottom: 15px;">Team Meeting</h4>
-                    <div class="gallery_grid">
+                <div id="gallery">
+                    <h2>Gallery</h2>
+                    <div class="gallery_section gallery_srbl">
+                        <div class="gallery_company_name">Seoul National University Soft Robotics & Bionics Laboratory</div>
                         <div>
-                            <img src="images/extracurricular/mr/mr-photo1_1.JPG" alt="gallery">
-                        </div>
-                        <div>
-                            <img src="images/extracurricular/mr/mr-photo1_2.jpg" alt="gallery">
-                        </div>
-                        <div>
-                            <img src="images/extracurricular/mr/mr-photo1_3.jpg" alt="gallery">
-                        </div>
-                        <div>
-                            <img src="images/extracurricular/mr/mr-photo1_4.jpg" alt="gallery">
-                        </div>
-                        <div>
-                            <img src="images/extracurricular/mr/mr-photo1_5.jpg" alt="gallery">
-                        </div>
-                        <div>
-                            <img src="images/extracurricular/mr/mr-photo1_6.jpg" alt="gallery">
-                        </div>
-                        <div>
-                            <img src="images/extracurricular/mr/mr-photo1_7.jpg" alt="gallery">
+                            <img src="assets/research/srbl/srbl-group_photo.jpg" alt="Team Photo">
+                        </div>                        
+                        <div class="gallery_desc">2023 Soft Robot Symposium @Soft Robotics Research Center</div>
+                        <div class="gallery_grid">
+                            <div>
+                                <img src="assets/research/srbl/gallery_photo2.jpg" alt="gallery">
+                            </div>
+                            <div>
+                                <img src="assets/research/srbl/gallery_photo3.jpg" alt="gallery">
+                            </div>
                         </div>
                     </div>
-
-                    <h4 class="gallery_card_h4">Collaboration with other Teams</h4>
-                    <p class="gallery_card_p">Northeastern University (NU Rover) & University of Toronto (Robotics for Space Exploration)</p>
-                    <div class="gallery_grid">
+    
+                    <div class="gallery_section gallery_mbl">
+                        <div class="gallery_company_name">Boston University Morphable Biorobotics Laboratory</div>
                         <div>
-                            <img src="images/extracurricular/mr/mr-photo2_1.jpg" alt="gallery">
+                            <img src="assets/research/mbl/mbl-group_photo.jpg" alt="Team Photo">
                         </div>
-                        <div>
-                            <img src="images/extracurricular/mr/mr-photo2_2.jpg" alt="gallery">
-                        </div>
-                        <div>
-                            <img src="images/extracurricular/mr/mr-photo2_3.jpg" alt="gallery">
-                        </div>
-                        <div>
-                            <img src="images/extracurricular/mr/mr-photo2_4.jpg" alt="gallery">
-                        </div>
-                    </div>
-
-                    <h4 class="gallery_card_h4" style="margin-bottom: 15px;">Robotics Arms Hardware Team</h4>
-                    <div class="gallery_grid">
-                        <div>
-                            <img src="images/extracurricular/mr/mr-photo3_1.jpg" alt="gallery">
+                        <div class="gallery_desc"></div>
+                        <div class="gallery_grid">
+                            <div>
+                                <img src="assets/research/mbl/gallery_photo1.jpg" alt="gallery">
+                            </div>
+                            <div>
+                                <img src="assets/research/mbl/gallery_photo2.jpg" alt="gallery">
+                            </div>
+                            <div>
+                                <img src="assets/research/mbl/gallery_photo3.JPG" alt="gallery">
+                            </div>
+                            <div>
+                                <img src="assets/research/mbl/gallery_photo4.jpg" alt="gallery">
+                            </div>
                         </div>
                     </div>
-                </div>
-            
-                <div class="gallery_section gallery_terrier_motorsport">
-                    <h3 class="gallery_card_h3">Boston University Terrier Motorsport Team</h3>
-                    <div style="margin-bottom: 10px; width: 100%; height: auto;">
-                        <img src="images/extracurricular/tm/tm-group_photo.jpg" alt="Team Photo">
-                    </div>
-
-                    <h4 class="gallery_card_h4" style="margin-bottom: 15px;">Electrical Team</h4>
-                    <div class="gallery_grid">
+    
+                    <div class="gallery_section gallery_zero">
+                        <div class="gallery_company_name">Seoul National University Zero Team</div>
                         <div>
-                            <img src="images/extracurricular/tm/tm-photo1.JPG" alt="gallery">
+                            <img src="assets/extracurricular/zero/zero-group_photo1.jpg" alt="Team Photo">
                         </div>
+                        <div class="gallery_desc">2023 International EV Competition @Korea Automobile Testing & Research Institute</div>
+                        <div class="gallery_grid">
+                            <div>
+                                <img src="assets/extracurricular/zero/zero-photo1_1.jpg" alt="gallery">
+                            </div>
+                            <div>
+                                <img src="assets/extracurricular/zero/zero-photo1_2.jpg" alt="gallery">
+                            </div>
+                            <div>
+                                <img src="assets/extracurricular/zero/zero-photo1_3.jpg" alt="gallery">
+                            </div>
+                            <div>
+                                <img src="assets/extracurricular/zero/zero-photo1_4.jpg" alt="gallery">
+                            </div>
+                            <div>
+                                <img src="assets/extracurricular/zero/zero-photo1_5.jpg" alt="gallery">
+                            </div>
+                            <div>
+                                <img src="assets/extracurricular/zero/zero-photo1_6.jpg" alt="gallery">
+                            </div>
+                            <div>
+                                <img src="assets/extracurricular/zero/zero-photo1_7.jpg" alt="gallery">
+                            </div>
+                            <div>
+                                <img src="assets/extracurricular/zero/zero-photo1_8.jpg" alt="gallery">
+                            </div>
+                        </div>
+                        <div class="gallery_desc">2023 Advanced Autonomous Driving Software Competition @Future Mobility Technology Center</div>
+                        <div class="gallery_grid">
+                            <div>
+                                <img src="assets/extracurricular/zero/zero-photo2_2.jpg" alt="gallery">
+                            </div>
+                            <div>
+                                <img src="assets/extracurricular/zero/zero-photo2_3.JPG" alt="gallery">
+                            </div>
+                            <div>
+                                <img src="assets/extracurricular/zero/zero-photo2_4.JPG" alt="gallery">
+                            </div>
+                            <div>
+                                <img src="assets/extracurricular/zero/zero-photo2_5.JPG" alt="gallery">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="gallery_section gallery_mars_rover">
+                        <div class="gallery_company_name">Boston University Mars Rover Team</div>
                         <div>
-                            <img src="images/extracurricular/tm/tm-photo2.jpg" alt="gallery">
+                            <img src="assets/extracurricular/mr/mr-group_photo.jpg" alt="Team Photo">
+                        </div>
+                        <div class="gallery_desc">Team Meeting</div>
+                        <div class="gallery_grid">
+                            <div>
+                                <img src="assets/extracurricular/mr/mr-photo1_1.JPG" alt="gallery">
+                            </div>
+                            <div>
+                                <img src="assets/extracurricular/mr/mr-photo1_2.jpg" alt="gallery">
+                            </div>
+                            <div>
+                                <img src="assets/extracurricular/mr/mr-photo1_3.jpg" alt="gallery">
+                            </div>
+                            <div>
+                                <img src="assets/extracurricular/mr/mr-photo1_4.jpg" alt="gallery">
+                            </div>
+                            <div>
+                                <img src="assets/extracurricular/mr/mr-photo1_5.jpg" alt="gallery">
+                            </div>
+                            <div>
+                                <img src="assets/extracurricular/mr/mr-photo1_6.jpg" alt="gallery">
+                            </div>
+                            <div>
+                                <img src="assets/extracurricular/mr/mr-photo1_7.jpg" alt="gallery">
+                            </div>
+                        </div>
+    
+                        <div class="gallery_desc">Collaboration with other Teams: Northeastern University (NU Rover) & University of Toronto (Robotics for Space Exploration)</div>
+                        <div class="gallery_grid">
+                            <div>
+                                <img src="assets/extracurricular/mr/mr-photo2_1.jpg" alt="gallery">
+                            </div>
+                            <div>
+                                <img src="assets/extracurricular/mr/mr-photo2_2.jpg" alt="gallery">
+                            </div>
+                            <div>
+                                <img src="assets/extracurricular/mr/mr-photo2_3.jpg" alt="gallery">
+                            </div>
+                            <div>
+                                <img src="assets/extracurricular/mr/mr-photo2_4.jpg" alt="gallery">
+                            </div>
+                        </div>
+    
+                        <div class="gallery_desc">Robotics Arms Hardware Team</div>
+                        <div class="gallery_grid">
+                            <div>
+                                <img src="assets/extracurricular/mr/mr-photo3_1.jpg" alt="gallery">
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="gallery_section gallery_terrier_motorsport">
+                        <div class="gallery_company_name">Boston University Terrier Motorsport Team</div>
+                        <div>
+                            <img src="assets/extracurricular/tm/tm-group_photo.jpg" alt="Team Photo">
+                        </div>
+                        <div class="gallery_desc">Electrical Team</div>
+                        <div class="gallery_grid">
+                            <div>
+                                <img src="assets/extracurricular/tm/tm-photo1.JPG" alt="gallery">
+                            </div>
+                            <div>
+                                <img src="assets/extracurricular/tm/tm-photo2.jpg" alt="gallery">
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-
-
-        <footer>
-            <p style="color: white">&copy; 2023-2024 Jungjae Lee. Boston University College of Engineering</p>
-            <div>
-                <a href="https://linkedin.com/in/jungjae-engineering"  target="_blank" style="color: white; text-decoration: none; margin: 0 8px;">LinkedIn</a>
-                <a href="https://github.com/jungjae01eng"  target="_blank" style="color: white; text-decoration: none; margin: 0 8px;">GitHub</a>
-                <a href="https://scholar.google.com/citations?hl=ko&user=NYXSU_MAAAAJ"  target="_blank" style="color: white; text-decoration: none; margin: 0 8px;">Google Scholar</a>
-            </div>
-        </footer>
-
-
-        <script src="index.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
