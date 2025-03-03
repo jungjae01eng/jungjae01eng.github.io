@@ -1,6 +1,6 @@
 /* Global */
 body {font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-    line-height: 1.5; color: #494e52; margin: 0; padding: 0;}
+    line-height: 1.5; color: #494e52; background-color: rgb(254, 254, 254); margin: 0; padding: 0;}
 header {background-color: #fff; display: flex; padding: 1em; justify-content: space-between;
     align-items: center; border-bottom: 1px solid #f2f3f3;}
 h1 {font-size: 20px; font-weight: normal; margin: 0;}
@@ -21,7 +21,7 @@ main {display: flex; max-width: 1280px; margin: 0 auto; padding: 2em 1em;}
     justify-content: center; align-items: center; color: white; font-weight: bold; margin-right: 10px;}
 
 /* Global: Container */
-.container {display: flex; align-items: center; background-color: white; border-radius: 8px; 
+.container {display: flex; align-items: center; background-color: rgb(255, 253, 253); border-radius: 8px; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 10px 0; padding: 10px 20px;}
 .container:hover {transform: translateY(-2px);}
 
@@ -51,6 +51,7 @@ aside {width: 25%; padding-right: 3em;}
 .company_location {font-size: 14px; margin-bottom: 5px;}
 .title {color: #3d33ab; font-size: 16px; padding-top: 5px;}
 .degree, .year {font-size: 14px;}
+.courses {font-size: 14px; padding-top:5px;}
 
 /* Home: Work Experience (Work Experience) */
 .job_description {font-size: 14px; margin-top: -10px; margin-right: 25px;}
