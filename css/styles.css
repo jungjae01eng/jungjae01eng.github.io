@@ -1,9 +1,9 @@
 /* Global */
 body {font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-    line-height: 1.5; color: #494e52; background-color: rgb(254, 254, 254); margin: 0; padding: 0;}
-header {background-color: #fff; display: flex; padding: 1em; justify-content: space-between;
+    line-height: 1.5; color: #494e52; background-color: rgb(248, 248, 248); margin: 0; padding: 0;}
+header {background-color: rgb(252, 252, 252); display: flex; padding: 1em; justify-content: space-between;
     align-items: center; border-bottom: 1px solid #f2f3f3;}
-h1 {font-size: 20px; font-weight: normal; margin: 0;}
+h1 {font-size: 22px; font-weight: normal; margin: 0;}
 h2 {font-size: 20px; font-weight: bold; margin-top: 1.5em;}
 
 /* Global: Header & Navigation */
@@ -21,9 +21,13 @@ main {display: flex; max-width: 1280px; margin: 0 auto; padding: 2em 1em;}
     justify-content: center; align-items: center; color: white; font-weight: bold; margin-right: 10px;}
 
 /* Global: Container */
-.container {display: flex; align-items: center; background-color: rgb(255, 253, 253); border-radius: 8px; 
+.container {display: flex; align-items: center; background-color: rgb(253, 253, 253); border-radius: 8px; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 10px 0; padding: 10px 20px;}
 .container:hover {transform: translateY(-2px);}
+.reward_container {background-color: rgb(253, 253, 253); border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 10px 0; padding: 10px 20px;}
+.reward_container:hover {transform: translateY(-2px);}
+
 
 /* Global: Profile Intro */
 aside {width: 25%; padding-right: 3em;}
@@ -38,40 +42,46 @@ aside {width: 25%; padding-right: 3em;}
 #content {width: 75%;}
 
 /* Global: ID (Education, Experience, Publications, Leadership Experience, Engineering Projects, Gallery */
-#education, #work_experience, #publications, #leadership_experience, #projects, #gallery {margin-top: 3rem;}
+#education, #work_experience, #publications, #leadership_experience, #awards, #projects, #gallery {margin-top: 3rem;}
 
 
 
 /* Home: About Me! (About Me) */
 .main_AboutMe_par {font-size: 15px;}
+.cv_button {display: inline-block; background: transparent; color: black; border: 1px solid #ddd; text-decoration: none; margin-top: 5px;
+    padding: 0.5rem 1rem; border-radius: 50px; transition: all 0.3s ease-in; font-size: 12px; font-family: Arial, sans-serif; cursor: pointer;}
+.cv_button:hover {background-color: #212c3a; color: #fff;}
 
 /* Home: Company Description (Education, Work Experience, Leadership Experience) */ 
 .company_description {display: flex; flex-direction: column; justify-content: center;}
 .company_name {font-size: 18px; font-weight: bold;}
-.company_location {font-size: 14px; margin-bottom: 5px;}
-.title {color: #3d33ab; font-size: 16px; padding-top: 5px;}
+.company_sub_name {font-size: 16px; font-weight: bold;}
+.company_location {font-size: 14px; margin-top: 3px; margin-bottom: 5px;}
+.title {color: #3d33ab; font-size: 16px; padding-top: 8px;}
 .degree, .year {font-size: 14px;}
 .courses {font-size: 14px; padding-top:5px;}
 
 /* Home: Work Experience (Work Experience) */
 .job_description {font-size: 14px; margin-top: -10px; margin-right: 25px;}
 .job_description_ul {list-style-type: disc;}
-.work_experience_button {background-color: #b3d6f7; color: #494e52; margin-top: 1px; padding: 8px 8px; 
-    border: none; border-radius: 4px; cursor: pointer; font-family: Arial, sans-serif; 
-    font-size: 12px; display: inline-block; text-decoration: none;}
-.work_experience_button:hover {background-color: #2b6cb0;}
+.work_experience_button {display: inline-block; background: transparent; color: black; border: 1px solid #ddd; text-decoration: none; margin-top:10px;
+    padding: 0.5rem 1rem; border-radius: 50px; transition: all 0.3s ease-in; font-size: 12px; font-family: Arial, sans-serif; cursor: pointer;}
+.work_experience_button:hover {background-color: #212c3a; color: #fff;}
 
 /* Home: Publications (Publications) */
 .publication_types {font-size: 16px; font-weight: bold; margin-top: 10px;}
 .publication_grid {display: grid; flex-wrap: wrap; justify-content: space-between; width: 100%;
-    background-color: rgb(255, 255, 255); grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px;}
+    background-color: rgb(248, 248, 248); grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px;}
 .publication_card {display: flex; flex-direction: column; justify-content: space-between;}
 .publication_card_row1 {flex: 10;}
 .publication_card_row2 {flex: .1;}
-.publication_button {background-color: #b3d6f7; color: #494e52; margin-top: 1px; padding: 8px 8px; 
-    border: none; border-radius: 4px; cursor: pointer; font-family: Arial, sans-serif; 
-    font-size: 12px; display: inline-block; text-decoration: none;}
-.publication_button:hover {background-color: #2b6cb0;}
+.publication_button {display: inline-block; background: transparent; color: black; border: 1px solid #ddd; text-decoration: none; margin-top:10px;
+    padding: 0.5rem 1rem; border-radius: 50px; transition: all 0.3s ease-in; font-size: 12px; font-family: Arial, sans-serif; cursor: pointer;}
+.publication_button:hover {background-color: #212c3a; color: #fff;}
+
+/* Home: Awards & Honors (Awards) */
+.award_year {font-size: 16px; font-weight: bold;}
+.award_ul {font-size: 14px; margin-top: 0px; margin-bottom: 15px; list-style-type: disc;}
 
 /* Home: Engineering Projects (Projects) */
 .project_grid {display: grid; flex-wrap: wrap; justify-content: space-between; 
@@ -82,11 +92,10 @@ aside {width: 25%; padding-right: 3em;}
 .project_type {font-size: 14px;}
 .skills {font-size: 14px; padding-bottom: 10px;}
 .project_img {width: 100%; height: auto; border-radius: 10px;}
-.project_description {font-size: 14px;margin-top: 5px;}
-.project_button{background-color: #b3d6f7; color: #494e52; margin-top: 10px; padding: 8px 8px; 
-    border: none; border-radius: 4px; cursor: pointer; font-family: Arial, sans-serif; 
-    font-size: 12px; display: inline-block; text-decoration: none;}
-.project_button:hover {background-color: #2b6cb0;}
+.project_description {font-size: 14px;margin-top: 5px; text-align: justify;}
+.project_button {display: inline-block; background: transparent; color: black; border: 1px solid #ddd; text-decoration: none; margin-top:10px;
+    padding: 0.5rem 1rem; border-radius: 50px; transition: all 0.3s ease-in; font-size: 12px; font-family: Arial, sans-serif; cursor: pointer;}
+.project_button:hover {background-color: #212c3a; color: #fff;}
 
 /* Home: Gallery (Gallery) */
 .gallery_section {border: 1px solid #7187a5; border-radius: 8px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -105,6 +114,7 @@ aside {width: 25%; padding-right: 3em;}
 
 
 
+
 /* Company: Intro */
 .company_intro {font-size: 18px; padding-bottom: 15px;}
 .company_summary_card {background-color: rgba(235, 248, 233, 0.9); border: 0px; margin-top: 16px;}
@@ -113,10 +123,9 @@ aside {width: 25%; padding-right: 3em;}
 .company_publication_card {border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     padding: 1rem; background-color: white; transition: transform 0.2s; margin-bottom: 16px;}
 .company_publication_card:hover {transform: translateY(-2px);}
-.company_publication_button{background-color: #b3d6f7; color: #494e52; margin-top: 10px; padding: 8px 8px; 
-    border: none; border-radius: 4px; cursor: pointer; font-family: Arial, sans-serif; 
-    font-size: 12px; display: inline-block; text-decoration: none;}
-.company_publication_button:hover {background-color: #2b6cb0;}
+.company_publication_button {display: inline-block; background: transparent; color: black; border: 1px solid #ddd; text-decoration: none; margin-top:10px;
+    padding: 0.5rem 1rem; border-radius: 50px; transition: all 0.3s ease-in; font-size: 12px; font-family: Arial, sans-serif; cursor: pointer;}
+.company_publication_button:hover {background-color: #212c3a; color: #fff;}
 
 /* Company: Projects (Projects) */
 .company_project_container {margin-bottom: 7rem;}
