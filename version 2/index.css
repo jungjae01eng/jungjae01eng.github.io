@@ -186,13 +186,14 @@ nav {display: flex; justify-content: center; align-items: center; position: rela
 .gallery_card_h4 {font-size: 1.3rem; margin-top: 2rem;}
 .gallery_card_p {font-size: 1.3rem; margin-top: 0px; margin-bottom: 15px}   /* To change the margin-bottom, be sure to adjust the gap on a few margin-bottom on the `gallery_card_h4` elements. */
 
+.gallery_aril {background-color: #f5ecfc;}
 .gallery_srbl {background-color: #ecf2fc;}
 .gallery_mbl {background-color: #f5ecfc;}
 .gallery_zero {background-color: #ecf2fc;}
 .gallery_mars_rover {background-color: #f5ecfc;}
 .gallery_terrier_motorsport {background-color: #ecf2fc;}
 
-.gallery_grid .gallery_card:hover{transform: translateY(-2px);}
+/* .gallery_grid .gallery_card:hover{transform: translateY(-2px);} */
 
 
 
@@ -211,6 +212,7 @@ nav {display: flex; justify-content: center; align-items: center; position: rela
 .sub_project {border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; background-color: #eff1f4; 
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); display: flex; align-items: center; margin: 16px 0;}
 .sub_project img {width: 200px; height: auto; border-radius: 8px; margin-right: 16px;}
+.sub_project video {width: 200px; height: auto; border-radius: 8px; display: block;}
 
 
 
