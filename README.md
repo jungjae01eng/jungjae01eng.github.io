@@ -1,6 +1,6 @@
 # jungjae01eng.github.io
  ## Contributor
-  - JUNGJAE LEE - jacob25@bu.edu  
+  - JUNGJAE LEE - jungjae@bu.edu  
 
 ---
 

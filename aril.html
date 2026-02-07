@@ -14,7 +14,7 @@
                 <ul>
                     <li><a href="index.html#work_experience">Experiences</a></li>
                     <li><a href="index.html#publications">Publications</a></li>
-                    <li><a href="index.html#leadership_experience">Leadership</a></li>
+                    <li><a href="index.html#leadership_experience">Activities & Leadership</a></li>
                     <li><a href="index.html#projects">Projects</a></li>
                     <li><a href="index.html#gallery">Gallery</a></li>
                 </ul>
@@ -29,7 +29,7 @@
                 <ul class="contact_info">
                     <li><span class="icon">🌏</span> Boston USA; Seoul KR</li>
                     <li><span class="icon">🏛️</span> Boston University</li>
-                    <li><span class="icon">✉️</span> <a class="contact_info_a" href="mailto:jacob25@bu.edu">jacob25@bu.edu</a></li>
+                    <li><span class="icon">✉️</span> <a class="contact_info_a" href="mailto:jungjae@bu.edu">jungjae@bu.edu</a></li>
                     <li><span class="icon">🌐</span> <a class="contact_info_a" href="https://www.linkedin.com/in/jungjae-engineering/">LinkedIn</a></li>
                     <li><span class="icon">🎓</span> <a class="contact_info_a" href="https://scholar.google.com/citations?hl=en&user=NYXSU_MAAAAJ">Google Scholar</a></li>
                     <li><span class="icon">🐙</span> <a class="contact_info_a" href="https://github.com/jungjae01eng">Github</a></li>
@@ -44,17 +44,123 @@
                 </div>
                 <div class="container company_summary_card">
                     <p>
-                        
+                        Our research goal is to develop autonomous robotic systems that can perceive, reason, and act in complex real-world environments.<br><br>
+                        We are interested in robot intelligence, autonomous navigation, perception, decision-making, and the integration of AI to create self-sufficient robotic systems.
                     </p>
                 </div>
                 
                 <div id="publications">
                     <h2>Publications</h2>
-                    
+                    <div class="company_publication_card">
+                        <div class="project_title">Beyond Destinations: Instruction-Aware Graph Path Planning and Navigation with OpenStreetMap (Conference)</div>
+                        <p>Under Review.</p>
+                        <!-- <a class="company_publication_button" href='' target="_blank">Wiley</a>
+                        <a class="company_publication_button" href='' target="_blank">ResearchGate</a> -->
+                    </div>
+                    <div class="company_publication_card">
+                        <div class="project_title">REACTOR: Replanning and Execution with Affordance-awareContextual Tool-use for Humanoid Mobile-manipulation Reasoning (Conference)</div>
+                        <p>Manuscript In Preparation.</p>
+                        <!-- <a class="company_publication_button" href='' target="_blank">Wiley</a>
+                        <a class="company_publication_button" href='' target="_blank">ResearchGate</a> -->
+                    </div>
                 </div>
 
                 <div class="company_project_container">
                     <h2>Projects</h2>
+                    <div class="project project_summary">
+                        <div class="project_title">Humanoid Project</div>
+                        <div class="company_project_details">
+                            <strong>Project Led by: </strong>Min-Taek Oh, Ph.D. Candidate<br>
+                            <strong>Time Commitment: </strong>April 2025 - August 2025<br>
+                            <strong>Skills: </strong>Python, Isaac Sim, ROS, Linux, Git 
+                        </div>
+                        <div class="sub_project">
+                            <img src="assets/research/aril/Unavailable.jpg"></img>
+                            <div>
+                                <div class="sub_project_title">Robotic Box Manipulation</div>
+                                <ul style="list-style-type: disc; padding-left: 50px; margin: 0; max-width: 90%;">
+                                    <li>
+                                        Simulated box-opening in Isaac Sim with a knife, controlling robot joints and kinematics to replicate realistic manipulation.                                        
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="sub_project">
+                            <video src="assets/research/aril/humanoid1.mp4" controls muted loop playsinline></video>
+                            <div>
+                                <div class="sub_project_title">Robot Locomotion & Navigation</div>
+                                <ul style="list-style-type: disc; padding-left: 50px; margin: 0; max-width: 90%;">
+                                    <li>
+                                        Implemented the Nav2 package on the humanoid Go 1 robot in Isaac Sim to enable autonomous navigation and obstacle avoidance.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project project_summary">
+                        <div class="project_title">Robot Dog Project</div>
+                        <div class="company_project_details">
+                            <strong>Project Led by: </strong>Donghwi Jung, Ph.D.<br>
+                            <strong>Time Commitment: </strong>April 2025 - August 2025<br>
+                            <strong>Skills: </strong>Python, ROS, Linux, Git
+                        </div>
+                        <div class="sub_project">
+                            <img src="assets/research/aril/robotdog1.png">
+                            <div>
+                                <div class="sub_project_title">LLM and VLM Application</div>
+                                <ul style="list-style-type: disc; padding-left: 50px; margin: 0; max-width: 90%;">
+                                    <li>
+                                        Integrated speech-to-text (STT) and text-to-speech (TTS) systems to enable natural human–robot interaction.
+                                    </li>
+                                    <li>
+                                        Developed intent parsing to interpret user input and determine navigation actions.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="sub_project">
+                            <img_column>
+                                <img src="assets/research/aril/robotdog3.png">
+                                <img src="assets/research/aril/robotdog4.png">
+                                <img src="assets/research/aril/robotdog2.png">
+                            </img_column>
+                            <div>
+                                <div class="sub_project_title">Mapping and Localization</div>
+                                <ul style="list-style-type: disc; padding-left: 50px; max-width: 90%;">
+                                    <li>
+                                        Collected ROS bag data from LiDAR mounted on the Go 1 robot dog and replayed it in SLAM to generate maps.
+                                    </li>
+                                    <li>
+                                        Processed maps to remove noise and correct errors, ensuring accurate mapping results.
+                                    </li>
+                                    <li>
+                                        Evaluated multiple SLAM algorithms, including Cartographer, slam_toolbox, and RTAB-Map, to produce the most precise map.
+                                    </li>
+                                    <li>
+                                        Compared 2D and 3D maps and aligned them to ensure proper spatial consistency.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="sub_project">
+                            <img_column>
+                                <img src="assets/research/aril/robotdog5.jpg" target="_blank">
+                                <img src="assets/research/aril/robotdog6.jpg" target="_blank">
+                            </img_column>
+                            <div>
+                                <div class="sub_project_title">GPS Tracking</div>
+                                <ul style="list-style-type: disc; padding-left: 50px; max-width: 90%;">
+                                    <li>
+                                        Designed and developed an Android app to collect real-time GPS and heading angle data from the Go 1 robot dog and generate maps as a temporary solution while awaiting official GPS availability.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </section>

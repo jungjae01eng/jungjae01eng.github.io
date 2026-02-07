@@ -23,10 +23,10 @@ main {display: flex; max-width: 1280px; margin: 0 auto; padding: 2em 1em;}
 /* Global: Container */
 .container {display: flex; align-items: center; background-color: rgb(253, 253, 253); border-radius: 8px; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 10px 0; padding: 10px 20px;}
-.container:hover {transform: translateY(-2px);}
+/* .container:hover {transform: translateY(-2px);} */
 .reward_container {background-color: rgb(253, 253, 253); border-radius: 8px; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 10px 0; padding: 10px 20px;}
-.reward_container:hover {transform: translateY(-2px);}
+/* .reward_container:hover {transform: translateY(-2px);} */
 
 
 /* Global: Profile Intro */
@@ -87,7 +87,7 @@ aside {width: 25%; padding-right: 3em;}
 .project_grid {display: grid; flex-wrap: wrap; justify-content: space-between; 
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px;}
 .project_card {display: flex; flex-direction: column; justify-content: space-between;}
-.project_card:hover {transform: translateY(-2px);}
+/* .project_card:hover {transform: translateY(-2px);} */
 .project_name {font-size: 18px; font-weight: bold;}
 .project_type {font-size: 14px;}
 .skills {font-size: 14px; padding-bottom: 10px;}
@@ -103,9 +103,10 @@ aside {width: 25%; padding-right: 3em;}
 .gallery_company_name {font-size: 18px; font-weight: bold; text-align: center; padding-bottom: 10px;}
 .gallery_desc {font-size: 16px; font-weight: bold; padding-top: 20px; padding-bottom: 10px;}
 .gallery_grid {display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 16px;}
-.gallery_grid:hover{transform: translateY(-2px);}
+/* .gallery_grid:hover{transform: translateY(-2px);} */
 .gallery_section img {display: block; max-width: 100%; height: auto; margin: 0 auto;}
 
+.gallery_aril {background-color: #f5ecfc;}
 .gallery_srbl {background-color: #ecf2fc;}
 .gallery_mbl {background-color: #f5ecfc;}
 .gallery_zero {background-color: #ecf2fc;}
@@ -117,12 +118,12 @@ aside {width: 25%; padding-right: 3em;}
 
 /* Company: Intro */
 .company_intro {font-size: 18px; padding-bottom: 15px;}
-.company_summary_card {background-color: rgba(235, 248, 233, 0.9); border: 0px; margin-top: 16px;}
+.company_summary_card {background-color: #e2e8f0; border: 0px; margin-top: 16px;}
 
 /* Company: Publications (Publications) */
 .company_publication_card {border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     padding: 1rem; background-color: white; transition: transform 0.2s; margin-bottom: 16px;}
-.company_publication_card:hover {transform: translateY(-2px);}
+/* .company_publication_card:hover {transform: translateY(-2px);} */
 .company_publication_button {display: inline-block; background: transparent; color: black; border: 1px solid #ddd; text-decoration: none; margin-top:10px;
     padding: 0.5rem 1rem; border-radius: 50px; transition: all 0.3s ease-in; font-size: 12px; font-family: Arial, sans-serif; cursor: pointer;}
 .company_publication_button:hover {background-color: #212c3a; color: #fff;}
@@ -132,10 +133,12 @@ aside {width: 25%; padding-right: 3em;}
 .project_summary {margin-bottom: 16px; padding: 16px; background-color: #e2e8f0; border-radius: 8px;}
 .project_title {font-size: 18px; font-weight: bold; padding-bottom: 15px;}
 .company_project_details {font-size: 16px;}
-.sub_project {border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; background-color: #eff1f4; transition: transform 0.2s;
+.sub_project {border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; background-color: #eff1f4;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); display: flex; align-items: center; margin: 16px 0; font-size: 16px;}
-.sub_project:hover {transform: translateY(-2px);}
-.sub_project img {width: 150px; height: auto; border-radius: 8px; margin-right: 16px;}
+/* .sub_project:hover {transform: translateY(-2px);} */
+.sub_project img {width: 150px; height: auto; border-radius: 8px; display: block; margin-right: 16px;}
+.sub_project video {width: 150px; height: auto; border-radius: 8px; display: block; margin-right: 16px;}
+.sub_project img_column {width: 150px; height: auto; border-radius: 8px; display: flex; flex-direction: column; gap: 10px; margin-right: 16px;}
 .sub_project_title {font-size: 16px; font-weight: bold; padding-top: 5px;}
 
 
